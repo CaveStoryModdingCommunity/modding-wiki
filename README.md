@@ -1,19 +1,19 @@
-# git-wiki-skeleton
+# The Return of the Cave Story Modding Wiki?
 
-NOTE: it's fully supported by github platform, you don't need to install anything locally
+IDK maybe I guess. This is trial run #1: using the **git-wiki-theme** project. You can see more details with the original readme found on the [skeleton 💀](skeleton) page. This page will be here as an example of the syntax for wiki pages, but the actual info there really only pertains to Enlight and Brayconn.
 
-This is a [skeleton](skeleton) repository that can be used as a template to bootstrap your wiki using "[remote_theme](https://github.com/benbalter/jekyll-remote-theme)" config
+This wiki uses GitHub accounts, so make sure to login to that. If you have admin/maintainer privileges for the GitHub repository the edits will be instant. Otherwise they should make something called a "pull request" that can be approved by the admins.
 
-For documentation, installation guide and demo of git-wiki-theme visit [THIS PAGE](http://drassil.github.io/git-wiki/)
+Discussion of this project is primarily found on the [CSMC Discord Server](https://discord.gg/xRsWpz6). If this doesn't work out then Enlight can try other solutions. Also if we determine to stick with this then of course this homepage here will also get changed to something more serious.
 
-## The git-wiki project
+## Helpful Links:
 
-The git-wiki project is composed by 3 different repository:
+Oh my gosh it's 3 links with which you can click on:
 
-- [git-wiki-theme](https://github.com/Drassil/git-wiki-theme): This is the repository of the theme that implements the wiki functionalities. You would have not fork it unless you need to send a Pull Request or create your wiki project from scratch.
+- [CSMC Discord Server](https://discord.gg/xRsWpz6): The Discord Server for the Cave Story Modding Community. It was mentioned earlier. They mod Undertale there.
 
-- [git-wiki-skeleton](https://github.com/Drassil/git-wiki-skeleton): This is the repo that you should fork or use as a template. It uses the [jekyll remote theme](https://github.com/benbalter/jekyll-remote-theme) functionality that allows you to create your own wiki based on git-wiki-theme. By using the remote functionality you can automatically keep your wiki always updated with latest features from the **git-wiki-theme**, but you can also fully customize it. 
+- [Booster's Lab](boosters-lab): This is a page for Booster's Lab, an editor for modifying maps and scripts in **Cave Story**. The page doesn't exist yet. Nothing exists yet. Why don't you create the page to tell the world about the joys of The Booster's Lab Editor for the Cave Story family of systems.
 
-- [git-wiki](https://github.com/Drassil/git-wiki): This is the documentation repository and website of the **git-wiki-theme** project. You would have not fork it unless you want to contribute to the git-wiki project documentation.
+- [cavestory.org](https://cavestory.org): If you haven't played **Cave Story** yet, you are probably lost on the internet. I would recommend that you acquire a map or follow a quest marker to make your way to the destination you are trying to reach.
 
-Version: 1.0.8
+As mentioned earlier, this homepage will be more serious eventually.
