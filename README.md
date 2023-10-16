@@ -14,6 +14,8 @@ Oh my gosh it's 3 links with which you can click on:
 
 - [Booster's Lab](boosters-lab): This is a page for Booster's Lab, an editor for modifying maps and scripts in **Cave Story**. The page doesn't exist yet. Nothing exists yet. Why don't you create the page to tell the world about the joys of The Booster's Lab Editor for the Cave Story family of systems.
 
+- [The Example Page](example-page): Which does exist. *For now.*
+
 - [cavestory.org](https://cavestory.org): If you haven't played **Cave Story** yet, you are probably lost on the internet. I would recommend that you acquire a map or follow a quest marker to make your way to the destination you are trying to reach.
 
 As mentioned earlier, this homepage will be more serious eventually.
