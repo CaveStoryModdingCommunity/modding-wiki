@@ -6,4 +6,4 @@
 
 Sky Dragon Editor is an in-progress editor developed by **Jakzie**.
 
-[Download](https://gitlab.com/jakzie2/csdataeditor)
+[Download](https://jakzie.eu/cavestory/editor)
