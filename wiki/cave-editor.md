@@ -5,7 +5,7 @@
       - Xaser, 2007
 
 
-Cave Editor is a Cave Story editor created by Wistil. The editor was first unveiled in 2006 and was abandoned in 2010, thus making it abandonware.
+**Cave Editor** is an editor created by **Wistil**. The editor was first unveiled in 2006 and was abandoned in 2010, thus making it abandonware.
 
 Unlike the rest of the legacy modding tools, Cave Editor is entirely stable, additionally supporting external custom resource hacking.
 
