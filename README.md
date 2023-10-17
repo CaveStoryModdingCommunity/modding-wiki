@@ -12,7 +12,9 @@ Oh my gosh it's 3 links with which you can click on:
 
 - [CSMC Discord Server](https://discord.gg/xRsWpz6): The Discord Server for the Cave Story Modding Community. It was mentioned earlier. They mod Undertale there.
 
-- [Editors](cave-story-editors): Editors for modifying **The Most Excellent Game Cave Story**.
+- [Editors](cavestory-editors): Editors for modifying **The Most Excellent Game Cave Story**.
+
+- [Engines](cavestory-engines): Engines for running **The Most Excellent Game Cave Story**.
 
 - [The Example Page](example-page): Which does exist. *For now.*
 
