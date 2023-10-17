@@ -12,7 +12,7 @@ Oh my gosh it's 3 links with which you can click on:
 
 - [CSMC Discord Server](https://discord.gg/xRsWpz6): The Discord Server for the Cave Story Modding Community. It was mentioned earlier. They mod Undertale there.
 
-- [Booster's Lab](boosters-lab): This is a page for Booster's Lab, an editor for modifying maps and scripts in **Cave Story**. ~~The page doesn't exist yet. Nothing exists yet. Why don't you create the page to tell the world about the joys of The Booster's Lab Editor for the Cave Story family of systems.~~ This page exists now!
+- [Editors](cave-story-editors): Editors for modifying **The Most Excellent Game Cave Story**.
 
 - [The Example Page](example-page): Which does exist. *For now.*
 
