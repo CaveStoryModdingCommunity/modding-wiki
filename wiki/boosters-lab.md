@@ -8,7 +8,7 @@
 
 **Booster's Lab** is a Java-based cross platform Cave Story editor created by **Noxid**. Its features include a complete map editor, a tool for applying hacks more easily than other editors and a hex patcher.
 
-[Download](https://github.com/taedixon/boosters-lab/releases/tag/0.5.1.1)
+[Download](https://github.com/autumn-mnya/boosters-lab/releases/tag/0.5.1.3)
 
 [Forum Thread Link](https://www.cavestory.org/forums/threads/boosters-lab-its-pretty-good-now.3865/)
 
