@@ -8,7 +8,7 @@ Discussion of this project is primarily found on the [CSMC Discord Server](https
 
 ## Helpful Links:
 
-Oh my gosh it's 3 links with which you can click on:
+Oh my gosh it's ~~3~~ 4 links with which you can click on:
 
 - [CSMC Discord Server](https://discord.gg/xRsWpz6): The Discord Server for the Cave Story Modding Community. It was mentioned earlier. They mod Undertale there.
 
