@@ -4,7 +4,7 @@
   *"4) Fix SW's compatibility issues with CE."* - Andwhyisit, 2009
     
 
-Sue's Workshop is a defunct tool created in 2006 by **Benjamin Schulte**, also known as **ProfEich**. The tool was abandoned in 2007, and updates were planned to be released by ex-CSTSF admin S.P. Gardebiter but this new version never came to fruition.
+**Sue's Workshop** is a defunct tool created in 2006 by **Benjamin Schulte**, also known as **ProfEich**. The tool was abandoned in 2007, and updates were planned to be released by ex-CSTSF admin S.P. Gardebiter but this new version never came to fruition.
 The tool also packaged in the old version of the "Cave Story Deluxe Package" on the Tribute Site.
 
 [Download](https://www.cavestory.org/downloads/Editor0.3A.zip) (Version 0.3A).
