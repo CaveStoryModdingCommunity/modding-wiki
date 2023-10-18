@@ -7,9 +7,9 @@ The various Cave Story engines and versions available for your modding pleasure.
 
 [Freeware](freeware)
 
-[Cave Story Engine 2](cse2)
+[Cave Story Engine 2 (CSE2)](cse2)
 
-[doukutsu-rs](doukutsu-rs)
+[doukutsu-rs (d-rs)](doukutsu-rs)
 
 
 ## Nicalis Releases
@@ -22,3 +22,10 @@ The various Cave Story engines and versions available for your modding pleasure.
 ## Obsolete
 
 [NX-Engine](nx-engine)
+
+
+## Unreleased
+
+[Cave Story Engine (CSE)](cse)
+
+[Geobox](geobox)
