@@ -11,13 +11,13 @@ disable_edit: false
 # (boolean) Enable/disable wiki page list in sidebar
 show_wiki_pages: true
 # (integer) Maximum number of wiki page to shown in sidebar
-show_wiki_pages_limit: 10
+show_wiki_pages_limit: 5
 # (boolean) Enable/disable blog feature
 blog_feature: false
 # (boolean) Enable/disable wiki posts list in sidebar (needs blog_feature enabled)
 show_wiki_posts: false
 # (integer) Maximum number of wiki posts to shown in sidebar
-show_wiki_posts_limit: 10
+show_wiki_posts_limit: 1
 # from jekyll (read jekyll doc)
 paginate: 5
 paginate_path: "/assets/blog/page:num"
@@ -138,7 +138,7 @@ inc_after_meta :
 inc_before_scripts : 
 inc_after_scripts : 
 inc_before_styles : 
-inc_after_styles : 
+inc_after_styles : style.html
 inc_before_header : 
 inc_after_header : 
 inc_before_tail : 
@@ -146,7 +146,7 @@ inc_after_tail :
 inc_before_tools : 
 inc_after_tools : 
 
-inc_before_page_list :
-inc_after_page_list : sidebar.html
+inc_before_page_list : sidebar.html
+inc_after_page_list : 
 inc_before_post_list :
 inc_after_post_list :
