@@ -119,7 +119,7 @@ Just remember to use DOUBLE INDENTS, not single indents.
 
 ***
 
-You can also create tasklists using - [ ]` and `- [x]`.
+You can also create tasklists using `- [ ]` and `- [x]`.
 - [ ] We need to do a thing
 - [x] But we did the other thing.
 - [ ] \(But to have parenthesis, it needs to be escaped using backslash (explained later)).
