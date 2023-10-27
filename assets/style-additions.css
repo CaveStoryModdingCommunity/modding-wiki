@@ -1,0 +1,49 @@
+figure {
+  border: 2px #ccc solid;
+  padding: 4px;
+  margin: 4px;
+  max-width: 35%;
+  float: right;
+  transition:max-width 0.3s ease;
+  cursor: pointer;
+}
+
+/*
+figure:hover {
+  max-width: 40%;
+  -webkit-transform:scale(1.5);
+  transform:scale(1.5);
+}
+*/
+figure:active {
+  max-width: 100%;
+}
+
+figcaption {
+  background-color: #e5e5e5;
+  color: #333;
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+}
+
+fieldset {
+  border: 2px #ccc solid;
+  padding: 4px;
+  margin: 4px;
+  max-width: 35%;
+  float: right;
+  transition:max-width 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+/*
+  background-color: #f1f1f1;
+*/
+}
+legend {
+  text-align:center;
+}
+fieldset > * {
+    padding: 0.5em;
+}
