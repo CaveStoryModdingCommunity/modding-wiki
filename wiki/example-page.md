@@ -1,9 +1,13 @@
 <fieldset>
 <legend>Cave Editor:</legend>
-<img src="img/CE_icon.png">
-| Creator: | Wistil |
-| Year: | 2006 |
-| Status: | Stable but I'm adding more text here to test the max size constraints |
+<img src="/wiki/img/CE_icon.png">
+<table><tbody>
+
+<tr><td>Creator:</td><td>Wistil</td></tr>
+<tr><td>Year:</td><td>2006</td></tr>
+<tr><td>Status:</td><td>Stable but I'm adding more text here to test the max size constraints</td></tr>
+
+</tbody></table>
 </fieldset>
 
 # Syntax Testing Page
@@ -85,7 +89,7 @@ This is different from a quote, which uses a Right-Angle bracket.
 ***
 
 <figure>
-  <img src="img/CE_mainmenu.webp" alt="Cave Editor's Menu">
+  <img src="/wiki/img/CE_menu.webp" alt="Cave Editor's Menu">
   <figcaption>Cave Editor's Main Menu with really really long text supcalifragilshutup</figcaption>
 </figure>
 
@@ -115,10 +119,10 @@ Just remember to use DOUBLE INDENTS, not single indents.
 
 ***
 
-You can also create tasklists using `[ ]` and `[x]`.
-[ ] We need to do a thing
-[x] But we did the other thing.
-[ ] \(But to have parenthesis, it needs to be escaped using backslash (explained later)).
+You can also create tasklists using - [ ]` and `- [x]`.
+- [ ] We need to do a thing
+- [x] But we did the other thing.
+- [ ] \(But to have parenthesis, it needs to be escaped using backslash (explained later)).
 
 I don't know if we'll ever need to use this. Maybe to compare the features of editors?
 
@@ -134,7 +138,8 @@ To use the first footnote, use `[^1]` at the end of a word[^1].
 ```
 [^1]: You can then write the footnote right below on the next line (to keep it together). It'll automatically display at the bottom.
 
-Obviously you want to increase the number with each footnote[^2], and also note they only support single lines. You CANNOT add multiple lines to them.
+Obviously you want to increase the number with each footnote[^2], and also note they only support single lines. You CANNOT add multiple lines to them, and make sure to double newline like any other text!!!
+
 [^2]: This is the 2nd footnote. There can only be one line in a footnote.
 
 ***
