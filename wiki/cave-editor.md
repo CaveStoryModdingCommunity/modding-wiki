@@ -10,7 +10,7 @@
 
 Unlike the rest of the legacy modding tools, Cave Editor is entirely stable, additionally supporting external custom resource hacking.
 
-![Cave Editor main menu.](/wiki/img/CE_mainmenu.webp)
+![Cave Editor main menu.](img/CE_menu.webp)
 
 
 
