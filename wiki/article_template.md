@@ -10,6 +10,7 @@
 
 <tr><td>Creator:</td><td>Nobody</td></tr>
 <tr><td>Year:</td><td>2XXX</td></tr>
+<tr><td>Platform:</td><td>TempleOS</td></tr>
 <tr><td>Status:</td><td>Yeah</td></tr>
 
 </tbody></table>
