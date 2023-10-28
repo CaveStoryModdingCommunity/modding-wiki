@@ -20,14 +20,14 @@
 Intro spiel - **who** made it, when it was released, platforms it (natively) runs on.
 
 
-### Download Links
+# Download Links
 
 Site A ([Download](https://www.youtube.com/watch?v=dQw4w9WgXcQ&feature=youtu.be))
 
 Site B ([Download](https://www.youtube.com/watch?v=dQw4w9WgXcQ&feature=youtu.be))
 
 
-### Available Features
+## Available Features
 
 | Platform | Engine Compatibility | Etc |
 | :--- | :--- | :--- |
@@ -40,6 +40,6 @@ Site B ([Download](https://www.youtube.com/watch?v=dQw4w9WgXcQ&feature=youtu.be)
 - Beetles
 
 
-### Trivia
+#### Trivia
 - Cannot make your mod for you.
 - Does not contain a waffle button.
