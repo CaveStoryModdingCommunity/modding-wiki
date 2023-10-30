@@ -8,8 +8,11 @@
 <tr><td>Creator(s):</td><td>Clownacy Et al.</td></tr>
 <tr><td>Year:</td><td>2019</td></tr>
 <tr><td>Platform:</td><td>Mac OS, Linux OS, Windows OS</td></tr>
-<tr><td>Status:</td><td>DMCA'd</td></tr>
+<tr><td>Status:</td><td>
+<p style="color:#B00000;">DMCA'd</p>
+</td></tr>
 <tr><td>Info:</td><td><a href="https://forum.cavestory.org/threads/cse2-the-cave-story-decompilation-project.14657/">Original Forum Thread</a></td></tr>
+
 </tbody></table>
 </fieldset>
 
@@ -57,15 +60,31 @@ I'm glad that Cave Story was one of them. [Patching a dusty old executable from 
 ## Official Branches
 When CSE2 was publicly available, these branches existed:
 
-* Accurate: Designed to be as close to the original Cave Story as possible
-* Portable: Similar to accurate, but the DirectX backend was removed in favor of others, such as SDL2, OpenGL, 3DS, and others
-* Wii: Designed to be built and deployed in the Nintendo Wii
-* Enhanced: Contains quality-of-life features like widescreen support, and smooth scrolling
-* Enhanced-Lite: Similar to Enhanced, but optimized for modding
-* Emscripten: Designed to be compiled with Emscripten and [run in a web browser](https://sonicresearch.org/clownacy/cave.html)
+* **Accurate:** The main decompilation branch. The code is intended to be as close to the original as possible, down to all the bugs and platform-dependencies.
+
+* **Portable:** This branch ports the engine away from WinAPI and DirectX, and addresses numerous portability issues, allowing it to run on other platforms.
+
+* **Enhanced-Lite:** Based on the `portable` branch, this branch is **intended for modders**, and adds several enhancements and features to the engine:
+  * Widescreen
+  * Options menu:
+    * Control remapping (keyboard and gamepad)
+    * Soundtrack selection
+    * V-sync toggle
+    * 50FPS/60FPS toggle
+    * Option to disable the design choice that locks sprites to a 320x240 grid when drawn, making them move smoother
+  * Bugfixes
+
+* **Enhanced:** Based on the `enhanced-lite` branch, this branch is **intended for players**, and adds further enhancements and features to the engine:
+  * Support for alternate soundtracks
+
+* **Emscripten:** This branch allows the game to be compiled with [Emscripten](http://emscripten.org/), enabling it to be played in a browser. This requires fairly extensive (and messy) modifications to the engine, to remove its dependency on "mainloops" - the infinite loops games put themselves in so they can run indefinitely. It's because of this that Emscripten support is limited to this branch: it's just so invasive. A proof-of-concept can be found [here](https://sonicresearch.org/clownacy/cave.html).
+
+* **Wii:** Ports the engine to the Nintendo Wii.
+
 
 ## DMCA Takedown
-Unfortunately, Nicalis issued a DMCA takedown of the port when development was nearing completion. Despite this, late copies of the engine are complete, playable from start to finish.
+Unfortunately, Nicalis issued a DMCA takedown of CSE2 when development was nearing completion. 
+The first of these takedowns was submitted on [November 19, 2020](https://github.com/github/dmca/blob/master/2020/11/2020-11-19-nicalis.md), with a second one following up on [December 8, 2020](https://github.com/github/dmca/blob/master/2020/12/2020-12-08-cave-story.md). Despite this, late copies of the engine are complete, playable from start to finish.
 
 In contrast to the original engine, Nicalis has not gone after mods based on CSE2, and it still remains popular for modding usage.
 
