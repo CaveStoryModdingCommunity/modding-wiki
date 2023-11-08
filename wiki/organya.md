@@ -71,10 +71,10 @@ The first 6+12 (18) bytes are header info, containing the:
 <details>
   <summary style="font-size:80%;"><i><b>Example: The header of ACCESS.org</b></i></summary>
 
-
-  ```
+  <p style="background-color:#D0D0D0;">
   4F 72 67 2D 30 32 64 00 04 04 00 00 00 00 80 00 00 00
-  ```
+  </p>
+
 </details>
 
 
@@ -97,9 +97,9 @@ Bit structure:
   <summary style="font-size:80%;"><i><b>Example: The track info section of ACCESS.org</b></i></summary>
 
 
-  ```
-E8 03 46 00 00 00 E8 03 46 00 31 00 E8 03 20 00 00 00 E8 03 00 00 00 00 E8 03 00 00 00 00 E8 03 00 00 00 00 E8 03 00 00 00 00 E8 03 00 00 00 00 E8 03 00 00 18 00 E8 03 02 00 08 00 E8 03 05 00 2C 00 E8 03 06 00 00 00 E8 03 04 00 03 00 E8 03 00 00 00 00 E8 03 00 00 00 00 E8 03 00 00 00 00
-```
+  <p style="background-color:#D0D0D0;">
+E8 03 46 00 00 00 E8 03 46 00 31 00 E8 03 20 00 00 00 E8 03 00 00 00 00 E8 03 00 00 00 00 E8 03 00 00 00 00 E8 03 00 00 00 00 E8 03 00 00 00 00 E8 03 00 00 18 00 E8 03 02 00 08 00 E8 03 05 00 2C 00 E8 03 06 00  00 00 E8 03 04 00 03 00 E8 03 00 00 00 00 E8 03 00 00 00 00 E8 03 00 00 00 00
+  </p>
 </details>
 
 
@@ -132,9 +132,9 @@ Access.org uses only 1 non-percussion channel: **channel 2**. This means that th
   <summary style="font-size:80%;"><i><b>Example: Note X offsets for the second track in ACCESS.org</b></i></summary>
 
 
-  ```
+  <p style="background-color:#D0D0D0;">
   00 00 00 00 02 00 00 00 04 00 00 00 08 00 00 00 0A 00 00 00 0C 00 00 00 10 00 00 00 12 00 00 00 14 00 00 00 18 00 00 00 1A 00 00 00 1C 00 00 00 20 00 00 00 22 00 00 00 24 00 00 00 28 00 00 00 2A 00 00 00 2C 00 00 00 30 00 00 00 32 00 00 00 34 00 00 00 38 00 00 00 3A 00 00 00 3C 00 00 00 40 00 00 00 42 00 00 00 44 00 00 00 48 00 00 00 4A 00 00 00 4C 00 00 00 50 00 00 00 52 00 00 00 54 00 00 00 58 00 00 00 5A 00 00 00 5C 00 00 00 60 00 00 00 62 00 00 00 64 00 00 00 68 00 00 00 6A 00 00 00 6C 00 00 00 70 00 00 00 72 00 00 00 74 00 00 00 78 00 00 00 7A 00 00 00 7C 00 00 00 7E 00 00 00
-  ```
+  </p>
 </details>
 
 
@@ -142,9 +142,9 @@ Access.org uses only 1 non-percussion channel: **channel 2**. This means that th
   <summary style="font-size:80%;"><i><b>Example: Note Y offsets for the second track in ACCESS.org</b></i></summary>
 
 
-  ```
+  <p style="background-color:#D0D0D0;">
   26 26 2A 24 24 28 26 26 2A 24 24 28 26 26 2A 24 24 28 26 26 2A 24 24 28 22 22 26 20 20 24 22 22 26 20 20 24 22 22 26 20 20 24 22 22 26 20 20 23 25
-  ```
+  </p>
 </details>
 
 
@@ -156,9 +156,9 @@ Access.org uses only 1 non-percussion channel: **channel 2**. This means that th
   <summary style="font-size:80%;"><i><b>Example: Note lengths for the second track in ACCESS.org</b></i></summary>
 
 
-  ```
+  <p style="background-color:#D0D0D0;">
   01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01 01
-  ```
+  </p>
 </details>
 
 
@@ -168,9 +168,9 @@ Access.org uses only 1 non-percussion channel: **channel 2**. This means that th
   <summary style="font-size:80%;"><i><b>Example: Note panning for the second track in ACCESS.org</b></i></summary>
 
 
-  ```
+  <p style="background-color:#D0D0D0;">
   06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06 06
-  ```
+  </p>
 </details>
 
 

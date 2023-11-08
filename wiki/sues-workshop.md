@@ -20,15 +20,12 @@
 </fieldset>
 
 
-<br></br>
-
-
   >*"4) Fix SW's compatibility issues with CE."* - Andwhyisit, 2009"
 
 
 
 
-<p style="color:#B00000;"><i>Note: It is <b>Not</b> recommended to use Sue's workshop for Cave Story modding in any capacity! The program can and will corrupt your cave story executable, especially if used in tandem with other <a href="cavestory-editors">editors</a>. The page and instructions are still here for archival purposes only.</i></p>
+<p style="color:#B00000;"><i>Note: It is <b>Not</b> recommended to use Sue's workshop for Cave Story modding in any capacity! The program can and will corrupt your cave story executable, especially if used in tandem with other <a href="{{ '/cavestory-editors' | relative_url }}">editors</a>. The page and instructions are still here for archival purposes only.</i></p>
 
 
 **Sue's Workshop** is a defunct tool created in 2006 by **Benjamin Schulte**, also known as **ProfEich**. The tool was abandoned in 2007, and updates were planned to be released by ex-CSTSF admin S.P. Gardebiter but this new version never came to fruition.
