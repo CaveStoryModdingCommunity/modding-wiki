@@ -34,18 +34,18 @@ Since this engine is still in active development, there is still no "Official" r
 
 
 d-rs is designed to be a drop-in replacement for all existing versions of cave story, including:
-* [Cave Story Freeware](https://wiki.doukutsu.club/freeware)
+* [Cave Story Freeware](freeware)
 * Cave Story +
 * Cave Story Switch
-* [CSE2](https://wiki.doukutsu.club/cse2)
-* [NXEngine](https://wiki.doukutsu.club/nx-engine)
+* [CSE2](cse2)
+* [NXEngine](nx-engine)
 
 
 
 
 D-rs will alter its behavior to closely mimic these engines, depending on which one it is supposed to replace. For example, it will adopt fancy water when coupled with the Nintendo Switch port, or animated facepics with the NXEngine files. The engine also supports 2 player multiplayer analogous to CS-Switch.
 
-
+D-rs also has support for pxpack mapfiles, similar to those used in Pixel's newer games like Kero Blaster. Pxpack uses 8x8 tiles and has multiple layers.
 
 
 ### Lighting

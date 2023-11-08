@@ -1,9 +1,24 @@
 # Freeware
 
+<fieldset>
+<legend>Freeware:</legend>
+<img src="/wiki/img/engines/freeware-assets/Icon3.bmp">
+<table><tbody>
 
-**Freeware** refers to the original engine and release of Cave Story, created by **Daisuke 'Pixel' Amaya** and released December 20th, 2004.
+<tr><td>Creator(s):</td><td>Daisuke 'Pixel' Amaya</td></tr>
+<tr><td>Year:</td><td>2004</td></tr>
+<tr><td>Platform:</td><td>Windows (Mac/Linux with Wine)</td></tr>
+<tr><td>Status:</td><td>
+<p style="color:#00B000;">Finished</p>
+</td></tr>
+<tr><td>Website:</td><td><a href="https://www.cavestory.org/">Tribute Site</a></td></tr>
 
-As its source code is not available, it is primarily modified with one of two options: the 86x Assembly programming language, commonly referred to in the community as '**ASM**'/'**ASM hacks**', or the dll tool **Modloader**.
+</tbody></table>
+</fieldset>
+
+Cave Story '**Freeware**' refers to the original engine and release of Cave Story, created by **Daisuke 'Pixel' Amaya** and released December 20th, 2004.
+
+As its source code is not available, Freeware is primarily modified with one of two options: the 86x Assembly programming language, commonly referred to in the community as ['ASM'/'ASM hacks'](assembly), or the dll tool [Modloader](modlaoder).
 
 It is considered the most beginner-friendly engine, primarily due to extensive documentation as well as the large library of user-made hacks made over the years.
 
