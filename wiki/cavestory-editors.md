@@ -35,16 +35,7 @@ A Cave Story "Editor" is a tool that typically allows the user to add and edit m
 
 Link to the original table spreadsheet can be found [here](https://docs.google.com/spreadsheets/d/1Z-GUJJO_U6uplE6uukqBbIF9-M6zQVudNugcFcAUODg/edit#gid=0).
 
-<style>
-    .editTbl th {
-        background: #A0A0A0;
-        word-wrap: break-word;
-        text-align: center;
-    }
 
-</style>
-
-<div class="editTbl">
 
 | Editor												| Miza  						| Sue's Workshop						| Cave Editor						| Booster's Lab								| The King's Table	|
 |-														|-								|-										|-									|-											|-					|
@@ -142,6 +133,3 @@ Link to the original table spreadsheet can be found [here](https://docs.google.c
 | Flag list												| No							| No									| No								| Partial (&lt;FLJ, &lt;FL+, &lt;FL- only)	| No				|
 | TRA list												| No							| No									| No								| Yes										| No				|
 |														|								|										|									|											|					|
-
-</div>
-
