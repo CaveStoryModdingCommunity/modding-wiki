@@ -19,8 +19,9 @@
 </tbody></table>
 </fieldset>
 
+<br>
 
-  >*"4) Fix SW's compatibility issues with CE."* - Andwhyisit, 2009"
+  >*"4) Fix SW's compatibility issues with CE."* - Andwhyisit, 2009
 
 
 
