@@ -6,7 +6,7 @@
 
 ___
 
-
+Link: [Original forum post](https://forum.cavestory.org/threads/dll-mod-loader-extra-music-formats-mod.13879/)
 
 The DLL modloader was developed by Clownacy and initially released in 2017. It supplements [Freeware](freeware) Cave Story by allowing the user to inject their own code into the executable at runtime.
 
