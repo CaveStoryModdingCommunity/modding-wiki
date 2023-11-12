@@ -7,7 +7,7 @@
 **The King's Table** (most commonly abbreviated as 'TKT') is an in-progress editor being developed by **Brayconn**. 
 
 
-![The main menu of TKT](img/TKT_menu.png)
+![The main menu of TKT](img/editors/tkt-assets/TKT_menu.png)
 
 
 [Download](https://github.com/Brayconn/TheKingsTable)

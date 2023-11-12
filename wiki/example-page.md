@@ -1,6 +1,6 @@
 <fieldset>
 <legend>Cave Editor:</legend>
-<img src="/wiki/img/CE_icon.png">
+<img src="/wiki/img/editors/ce-assets/CE_icon.png">
 <table><tbody>
 
 <tr><td>Creator:</td><td>Wistil</td></tr>
@@ -29,8 +29,8 @@ Header four doesn't get added to the auto-generated table of contents at the top
 ### Adding Images
 First, add the image(s) to [this img folder](https://github.com/CaveStoryModdingCommunity/modding-wiki/tree/master/wiki/img) using the button on the top right.
 
-Then you can format it like so: `![alt text](img/CE_menu.webp)`
-![Cave Editor's Main Menu](img/CE_menu.webp)
+Then you can format it like so: `![alt text](img/editors/ce-assets/CE_menu.webp)`
+![Cave Editor's Main Menu](img/editors/ce-assets/CE_menu.webp)
 
 Note: do not add a `/` before "img", otherwise it'll try loading from a folder that isn't there.
 
@@ -89,7 +89,7 @@ This is different from a quote, which uses a Right-Angle bracket.
 ***
 
 <figure>
-  <img src="/wiki/img/CE_menu.webp" alt="Cave Editor's Menu">
+  <img src="/wiki/img/editors/ce-assets/CE_menu.webp" alt="Cave Editor's Menu">
   <figcaption>Cave Editor's Main Menu with really really long text supcalifragilshutup</figcaption>
 </figure>
 

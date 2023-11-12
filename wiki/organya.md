@@ -9,8 +9,8 @@
 
 Organa is a custom music tracker format created by Pixel in [insert proper date here].
 It is most prominently known for its use in Cave Story, but several other games use it, too, such as:
-* (list of games here)
-* (game 2)
+- (list of games here)
+- (game 2)
 
 
 The format allows the playback of 13-16 simultaneous channels, with 8 note polyphony and 5-8 different percussion instruments, depending on the player used.
@@ -20,11 +20,11 @@ Cave Story only allows 5 of the 8 available percussion tracks to be used, and ea
 These instruments are:
 
 
-* **Channel Q:** Instrument_1
-* **Channel W:** Instrument_2
-* **Channel E:** Instrument_3
-* **Channel R:** Instrument_4
-* **Channel T:** Instrument_5
+- **Channel Q:** Instrument_1
+- **Channel W:** Instrument_2
+- **Channel E:** Instrument_3
+- **Channel R:** Instrument_4
+- **Channel T:** Instrument_5
 
 
 This is the case because unlike the org editors which use .wav samples for drums, Cave Story uses the .pxtone format. This means that drum samples can be replaced in the same manner as [other sfx](add_a_proper_URL!), but the other drum formats used in Orgmaker2 will need to be recreated using a pixtone editor, such as [seatone](add_a_proper_URL!).
@@ -58,14 +58,13 @@ The instruments are baked into the reader (the file tells the player what instru
 
 
 The first 6+12 (18) bytes are header info, containing the:
-* Org Type (6 char string). This can be `org-01`, `org-02`, or `org-03` and corresponds to the capabilities that the file has, such as fancy drums or using pipi.
+- Org Type (6 char string). This can be `org-01`, `org-02`, or `org-03` and corresponds to the capabilities that the file has, such as fancy drums or using pipi.
 
-
-* Wait (tempo, 2 bytes), see **Org Tempo**
-* Line (number of beats per measure, 1 byte), can also be thought of as the number of vertical "lines" the editor shows between each measure.
-* Dot (resolution, number of notes in each beat, 1 byte)
-* Repeat_x (start of repeat loop, 4 bytes) (These values are per “dot” individual note, despite the player only allowing these to be set at the start of each measure)
-* End_x (end of repeat loop, 4 bytes)
+- Wait (tempo, 2 bytes), see **Org Tempo**
+- Line (number of beats per measure, 1 byte), can also be thought of as the number of vertical "lines" the editor shows between each measure.
+- Dot (resolution, number of notes in each beat, 1 byte)
+- Repeat_x (start of repeat loop, 4 bytes) (These values are per “dot” individual note, despite the player only allowing these to be set at the start of each measure)
+- End_x (end of repeat loop, 4 bytes)
 
 
 <details>
@@ -87,10 +86,10 @@ After this, there is a chunk of (16 (tracks, including drums AND notes) *6 (byte
 
 
 Bit structure:
-* Frequency/pitch detune (2 bytes)
-* Wave_no (waveform/percussion instrument) (1 byte)
-* Pipi(1 byte) (only regarded if org version is 2 or more, otherwise is set to 0, is a binary value)
-* Note_num (2 bytes) (total number of notes in the song from this track, including note modifiers, such as pan or volume events).
+- Frequency/pitch detune (2 bytes)
+- Wave_no (waveform/percussion instrument) (1 byte)
+- Pipi(1 byte) (only regarded if org version is 2 or more, otherwise is set to 0, is a binary value)
+- Note_num (2 bytes) (total number of notes in the song from this track, including note modifiers, such as pan or volume events).
 
 
 <details>
@@ -114,11 +113,11 @@ The file then goes by individual tracks, starting at instrument track 0 and incr
 
 
 Each track length has the note data in the following order, each piece of data is repeated by the number of notes in the track in question (I.E all the note values are written back-to-back for the first track, then all the pan values, etc.):
-* 4 bytes determining X location (start of note)
-* 1 byte determining Y location (tone, doesn’t need to be as big of a number, 00 is low, FF is high, FF if the note does not exist (is instead a modifier event like pan/vol))
-* 1 byte determining the length of each note (from X location, 01 if note is just something like a volume change)
-* 1 byte determining note volume (`0x00` is quiet, `0xFF` is loud) (Orgmaker limits this between 4 and 252) (`0xFF` is given to undefined notes)
-* 1 byte determining note pan (Left pan is `0x00`. `0x0C` is right pan, given `0xFC` if undefined)
+- 4 bytes determining X location (start of note)
+- 1 byte determining Y location (tone, doesn’t need to be as big of a number, 00 is low, FF is high, FF if the note does not exist (is instead a modifier event like pan/vol))
+- 1 byte determining the length of each note (from X location, 01 if note is just something like a volume change)
+- 1 byte determining note volume (`0x00` is quiet, `0xFF` is loud) (Orgmaker limits this between 4 and 252) (`0xFF` is given to undefined notes)
+- 1 byte determining note pan (Left pan is `0x00`. `0x0C` is right pan, given `0xFC` if undefined)
 
 
 Each note has a total of 8 bytes allocated for it.

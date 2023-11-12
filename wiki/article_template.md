@@ -5,7 +5,7 @@
 
 <fieldset>
 <legend>Program Name:</legend>
-<img src="/wiki/img/CE_icon.png">
+<img src="/wiki/img/editors/ce-assets/CE_icon.png">
 <table><tbody>
 
 <tr><td>Creator:</td><td>Nobody</td></tr>

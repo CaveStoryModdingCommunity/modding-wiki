@@ -34,11 +34,11 @@ Since this engine is still in active development, there is still no "Official" r
 
 
 d-rs is designed to be a drop-in replacement for all existing versions of cave story, including:
-* [Cave Story Freeware](freeware)
-* Cave Story +
-* Cave Story Switch
-* [CSE2](cse2)
-* [NXEngine](nx-engine)
+- [Cave Story Freeware](freeware)
+- Cave Story +
+- Cave Story Switch
+- [CSE2](cse2)
+- [NXEngine](nx-engine)
 
 
 
@@ -79,18 +79,18 @@ This engine has a built-in debugger. Debug functions can be accessed by pressing
 
 
 
-* **F3**: Godmode
-* **F4**: Infinite Booster
-* **F5**: Toggle subpixel scrolling
-* **F6**: Toggle motion interpolation
-* **F8**: Reduce game speed by 10%
-* **F9**: Increase game speed by 10%
-* **F10**: Show NPC debug points, Red dot on NPC's origin, white dots on currently colliding tiles
-* **F11**: Show Average FPS and TPS
-* **F12**: Show debug window
-* **`**: Toggle Command line
-* **Ctrl + F3**: Reload Sound Manager
-* **Ctrl + S**: Quick Save
+- **F3**: Godmode
+- **F4**: Infinite Booster
+- **F5**: Toggle subpixel scrolling
+- **F6**: Toggle motion interpolation
+- **F8**: Reduce game speed by 10%
+- **F9**: Increase game speed by 10%
+- **F10**: Show NPC debug points, Red dot on NPC's origin, white dots on currently colliding tiles
+- **F11**: Show Average FPS and TPS
+- **F12**: Show debug window
+- **`**: Toggle Command line
+- **Ctrl + F3**: Reload Sound Manager
+- **Ctrl + S**: Quick Save
 
 
 
@@ -108,8 +108,7 @@ D-rs has comprehensive support for lua scripting, allowing for some engine or be
 
 ## Mascot
 
-
-<img src="/wiki/img/engines/d-rs-assets/sue.bmp">
+![The d-rs mascot](img/engines/d-rs-assets/sue.bmp)
 
 
 Since conception, d-rs has used Sue in some form as its mascot, per developer preference. As the port aged into a complete game, a custom version of Sue was made to go along with it. The mascot was tinted blue and given various crab-like features in order to relate back to Rust's mainstream mascot, [Ferris](https://rustacean.net/).

@@ -60,26 +60,26 @@ I'm glad that Cave Story was one of them. [Patching a dusty old executable from 
 ## Official Branches
 When CSE2 was publicly available, these branches existed:
 
-* **Accurate:** The main decompilation branch. The code is intended to be as close to the original as possible, down to all the bugs and platform-dependencies.
+- **Accurate:** The main decompilation branch. The code is intended to be as close to the original as possible, down to all the bugs and platform-dependencies.
 
-* **Portable:** This branch ports the engine away from WinAPI and DirectX, and addresses numerous portability issues, allowing it to run on other platforms.
+- **Portable:** This branch ports the engine away from WinAPI and DirectX, and addresses numerous portability issues, allowing it to run on other platforms.
 
-* **Enhanced-Lite:** Based on the `portable` branch, this branch is **intended for modders**, and adds several enhancements and features to the engine:
-  * Widescreen
-  * Options menu:
-    * Control remapping (keyboard and gamepad)
-    * Soundtrack selection
-    * V-sync toggle
-    * 50FPS/60FPS toggle
-    * Option to disable the design choice that locks sprites to a 320x240 grid when drawn, making them move smoother
-  * Bugfixes
+- **Enhanced-Lite:** Based on the `portable` branch, this branch is **intended for modders**, and adds several enhancements and features to the engine:
+  - Widescreen
+  - Options menu:
+    - Control remapping (keyboard and gamepad)
+    - Soundtrack selection
+    - V-sync toggle
+    - 50FPS/60FPS toggle
+    - Option to disable the design choice that locks sprites to a 320x240 grid when drawn, making them move smoother
+  - Bugfixes
 
-* **Enhanced:** Based on the `enhanced-lite` branch, this branch is **intended for players**, and adds further enhancements and features to the engine:
-  * Support for alternate soundtracks
+- **Enhanced:** Based on the `enhanced-lite` branch, this branch is **intended for players**, and adds further enhancements and features to the engine:
+  - Support for alternate soundtracks
 
-* **Emscripten:** This branch allows the game to be compiled with [Emscripten](http://emscripten.org/), enabling it to be played in a browser. This requires fairly extensive (and messy) modifications to the engine, to remove its dependency on "mainloops" - the infinite loops games put themselves in so they can run indefinitely. It's because of this that Emscripten support is limited to this branch: it's just so invasive. A proof-of-concept can be found [here](https://sonicresearch.org/clownacy/cave.html).
+- **Emscripten:** This branch allows the game to be compiled with [Emscripten](http://emscripten.org/), enabling it to be played in a browser. This requires fairly extensive (and messy) modifications to the engine, to remove its dependency on "mainloops" - the infinite loops games put themselves in so they can run indefinitely. It's because of this that Emscripten support is limited to this branch: it's just so invasive. A proof-of-concept can be found [here](https://sonicresearch.org/clownacy/cave.html).
 
-* **Wii:** Ports the engine to the Nintendo Wii.
+- **Wii:** Ports the engine to the Nintendo Wii.
 
 
 ## DMCA Takedown

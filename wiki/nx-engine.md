@@ -30,10 +30,10 @@
 
 
 NX-Engine was one of the first open-sourced Cave Story engines available, and as such, is the backbone of many older ports of the game, such as:
-* [The SEGA Genesis port](https://github.com/andwn/cave-story-md)
-* [The early IOS port](https://github.com/PIlin/NXEngine-iOS) (first port to use an SDL2 backend, which was re-used in NXEngine-evo)
-* [The RetroArch port](https://docs.libretro.com/library/nxengine/) (shipped with every downloaded copy of retroarch)
-* [At least one network port](https://forum.cavestory.org/threads/netxengine-nxengine-evo-with-online-multiplayer.14326/) | [(github source)](https://github.com/Yackerw/NetXEngine)
+- [The SEGA Genesis port](https://github.com/andwn/cave-story-md)
+- [The early IOS port](https://github.com/PIlin/NXEngine-iOS) (first port to use an SDL2 backend, which was re-used in NXEngine-evo)
+- [The RetroArch port](https://docs.libretro.com/library/nxengine/) (shipped with every downloaded copy of retroarch)
+- [At least one network port](https://forum.cavestory.org/threads/netxengine-nxengine-evo-with-online-multiplayer.14326/) | [(github source)](https://github.com/Yackerw/NetXEngine)
 
 
 As far as backend operation is concerned, the NX-Engine shares little similarity with the vanilla game. One notable example of this difference is its complete disregard for NPC tilesets, making even simple map editing with the engine difficult. These backend problems have made other engines much more popular for creating mods.

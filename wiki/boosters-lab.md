@@ -8,7 +8,7 @@
 
 **Booster's Lab** is a Java-based cross-platform Cave Story editor created by **Noxid**. Currently, it is the most recommended editor due to its stability, range of features and multi-engine compatibility.
 
-![The 'main menu' screen as seen when first starting Booster's Lab. No project is loaded.](img/BL_menu.png)
+![The 'main menu' screen as seen when first starting Booster's Lab. No project is loaded.](img/editors/bl-assets/BL_menu.png)
 
 [Download](https://github.com/autumn-mnya/boosters-lab/releases/tag/0.5.1.3)
 
