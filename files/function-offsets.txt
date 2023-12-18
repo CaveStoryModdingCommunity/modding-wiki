@@ -1,0 +1,1335 @@
+Cave Story Functions List by S. P. Gardebiter (gardebiter@tile44.org)
+Added upon and maintained by Noxid
+
+Thanks to RuneLancer and GIRakaCheezer.
+07.12.1923
+
+-=Inventory=-
+
+00401000 - Clear Weapons
+00401030 - Clear Inventory
+00401050 - TSC Give Weapon [AM+]				[08_ID | 0C_Ammo]
+00401160 - TSC Lose Weapon [AM-]				[08_ID]
+00401220 - TSC Trade Weapon [TAM]				[08_ID | 0C_NewID | 10_Ammo]
+004012D0 - TSC Give Item [IT+]					[08_ID]
+00401330 - TSC Lose Item [IT-]					[08_ID]
+004013C0 - Manage Inventory Cursor
+004016F0 - <Render Inventory Window?>
+00401D10 - Inventory Menu Code
+00401F20 - Check If Has Item					[08_ID]
+00401F60 - Check If Has Weapon					[08_ID]
+00401FA0 - Remove Ammo From Weapon				[08_NumAmmo]
+00402020 - Add Ammo To Weapon					[08_NumAmmo]
+00402090 - TSC Fill All Weapon Ammo [AE+]
+004020E0 - Switch to Next Weapon
+00402190 - Switch to Previous Weapon
+00402240 - Unequip Weapon
+
+-=Backgrounds=-
+
+00402270 - <Backgrounds?>
+00402370 - <Background Modes?>
+004023D0 - Background Code
+00402830 - Render Map Background (BackgroundMode 3 only)
+
+-=Bullets=-
+
+004029B0 - Checks for starblock tile & if bullet can break it
+00402B30 - Solid tile -> Two stage filter for blocks that bullets are s'posta collide with
+00402F50 - Generate effect, sound when Bullet hits wall							[08_WeaponObj]
+00402FC0 - Bullet Tile Collison, Roof Slope 1
+004030B0 - Bullet Tile Collison, Roof Slope 2
+004031A0 - Bullet Tile Collison, Roof Slope 3
+00403290 - Bullet Tile Collison, Roof Slope 4
+00403380 - Bullet Tile Collison, Floor Slope 1
+00403470 - Bullet Tile Collison, Floor Slope 2
+00403560 - Bullet Tile Collison, Floor Slope 3
+00403650 - Bullet Tile Collison, Floor Slope 4
+00403740 - Bullet Tile Detection Algorithm
+00403C00 - Clear All Weapon Object Slots
+00403C40 - Count Weapon Shot Occurences				[08_WeaponID]
+00403CB0 - Count All Slots Using Specific Shot			[08_ShotID]
+00403D10 - Free All Slots Using Specific Weapon			[08_WeaponID]
+00403D80 - Clear All Weapon Object Slots
+00403DC0 - Render Bullets
+00403F80 - Create Bullet				[08_BulletID | 0C_XPos | 10_YPos | 14_Direction]
+00404160 - Bullet 01: Snake Level 1				[08_WeaponObject]
+004043F0 - Bullet 02 - 03: Snake				[08_WeaponObject | 0C_Level]
+004047B0 - Bullet 04 - 06: Polar Star				[08_WeaponObject | 0C_Level]
+00404B30 - Bullet 07 - 09: Fireball				[08_WeaponObject | 0C_Level]
+00405120 - Bullet 0A - 0C: Machine Gun				[08_WeaponObject | 0C_Level]
+004055A0 - Bullet 0D - 0F: Missile Launcher				[08_WeaponObject | 0C_Level]
+00405D80 - Bullet 10 - 12: Missile Explosion				[08_WeaponObject | 0C_Level]
+00405F30 - Bullet 13: Bubbler Level 1				[08_WeaponObject]
+00406190 - Bullet 14: Bubbler Level 2				[08_WeaponObject]
+004064D0 - Bullet 15: Bubbler Level 3				[08_WeaponObject]
+004068B0 - Bullet 16: Bubble Spurs				[08_WeaponObject]
+004075E0 - Bullet 17: Blade Slashes				[08_WeaponObject]
+004078A0 - Bullet 18: Big Falling Spike				[08_WeaponObject]
+00406BB0 - Bullet 19: Blade Level 1				[08_WeaponObject]
+00406E60 - Bullet 1A: Blade Level 2				[08_WeaponObject]
+00407110 - Bullet 1B: Blade Level 3				[08_WeaponObject]
+00407910 - Bullet 1C - 1E: Super Missile Launcher				[08_WeaponObject | 0C_Level]
+00408080 - Bullet 1F - 21: Super Missile Explosion				[08_WeaponObject | 0C_Level]
+00408230 - Bullet 22 - 24: Nemesis				[08_WeaponObject | 0C_Level]
+00408710 - Bullet 25 - 27: Spur Level 2, 3, MAX				[08_WeaponObject | 0C_Level]
+00408AE0 - Bullet 28 - 2A: Spur Trails 2, 3, MAX				[08_WeaponObject | 0C_Level]
+00408230 - Bullet 2B: Curly Nemesis (Same as Nemesis Lvl 1)				[08_WeaponObject | 0C_Level]
+00408F40 - Bullet 2C: Clear All Enemies				[08_WeaponObject]
+00408F90 - Bullet 2D: Whimsical Star				[08_WeaponObject]
+00408FC0 - Runs Bullet AI
+0048F048 - Bullet Info (??? X 0x2C)
+0048F048 +0x00 - Bullet Damage
+0048F049 +0x01 - Bullet Impacts
+0048F04C +0x04 - Bullet MaxDistance
+0048F050 +0x08 - Bullet Flags
+0048F054 +0x0C - Bullet Left HitRect (/512)
+0048F058 +0x10 - Bullet Up HitRect (/512)
+0048F05C +0x14 - Bullet Right HitRect (/512)
+0048F060 +0x18 - Bullet Down HitRect (/512)
+0048F064 +0x1C - Bullet Left Offset? (/512)
+0048F068 +0x20 - Bullet Up Offset? (/512)
+0048F06C +0x24 - Bullet Right Offset? (/512)
+0048F070 +0x28 - Bullet Down Offset? (/512)
+
+-=Effects=-
+
+00409650 - Clear all animated effects
+00409680 - Animated Effect 0x01: Random Fountain Pulsing Disc	[08_Effect]
+00409880 - Animated Effect 0x02: Rising Disc/Exploding Diamond	[08_Effect]
+00409B80 - Animated Effect 0x03: Star				[08_Effect]
+00409C70 - Animated Effect 0x04: Fireball Impact		[08_Effect]
+00409E00 - Animated Effect 0x05: ZzZ...				[08_Effect]
+00409F60 - Animated Effect 0x06: Booster Smoke			[08_Effect]
+0040A120 - Animated Effect 0x07: Drowned Quote			[08_Effect]
+0040A1B0 - Animated Effect 0x08: Exclamation			[08_Effect]
+0040A280 - Animated Effect 0x09: Level Up/Down			[08_Effect]
+0040A3F0 - Animated Effect 0x0A: Red "Damage" Disc		[08_Effect]
+0040A5A0 - Animated Effect 0x0B: Big Explosion			[08_Effect]
+xxxxxxxx - Animated Effect 0x0C: no data
+0040A650 - Animated Effect 0x0D: headbonk circles
+0040A7E0 - Animated Effect 0x0E: Unused
+0040A8F0 - Animated Effect 0x0F: White Circle Explosion 	[08_Effect]
+0040A9E0 - Animated Effect 0x10: EMPTY! 			[08_Effect]
+0040AAA0 - Animated Effect 0x11: Push Jump Key 			[08_Effect]
+0040AB50 - Update All Effects
+0040ABC0 - Draw all effect objects
+0040AC90 - Create an Animated Effect 				[08_X | 0C_Y | 10_ID | 14_Mode]
+
+-=Config and Window procedures=-
+
+0040AD60 - Load Config.dat, check string DOUKUTSU20041206 (return 0 if not equal)
+0040AE30 - Sets Config.dat to default values (Called if check above fails)
+0040AEC0 - <Runs when you hit "Version" menu button>
+0040AFC0 - <Runs when you hit "Mute" menu button>
+0040B1D0 - <Runs when you hit "Debug Save" menu button> 
+0040B290 - <Runs when you hit "Quit" menu button>
+0040B320 - Set [49CDAC] = arg1, set [49CDA8] = arg2
+0040B340 - <Update Screen with window?> Also contains FPS delimiter
+
+-=Drawing (DDRAW) Procedures=-
+
+0040B450 - <DDRAW setup?>
+0040B6C0 - <DDRAW destroy? (Called on program exit)>
+0040B7A0 - <Destroy bitmap objects? (Called on program exit)>
+0040B800 - Load Image from Resource
+0040BAC0 - Load Image from file (Permanent)
+0040BE10 - Load Image (From Resource and relodable??)
+0040BFD0 - Load Image (Reloadable, must prep RAM first)
+0040C1D0 - <Prep RAM for Image?>
+0040C320 - Blit Rect From Image File Into Region		[08_DstRect | 0C_X | 10_Y | 14_SrcRect | 18_ImageFileID]
+0040C3C0 - Render Graphics
+0040C5B0 - Draw Object (Like 40C3C0 but used for Backgrounds)	[08_DstRect? | 0C_X? | 10_Y? | 14_SrcRect?]
+0040C7A0 - Some kind of blit? Used for damage numbers
+0040C8B0 - Set Background Color 				[08_Color]
+0040C9E0 - fillRect_memory				[08_PImgRect | 0C_MaskColor]
+0040CA80 - fillRect_memory
+0040CB30 - <Small subfunction of 40CB60>
+       0040CB60 - <Part of 40B340, seems to handle some kind of alternate drawing functionality (doesn't do much if removed...)>
+       
+       -=Font=-
+       
+       0040CD50 - Create font
+       0040CE00 - <Outputs text? Not called>
+       0040CEB0 - Draws text to screen (Message box writing?)						[08_X | 0C_Y | 10_String | 14_Color | 18_?]
+       0040CF70 - Delete Font Object
+       
+       -=Credits=-
+       
+       0040CF90 - Only called if Game Status == 8, unknown
+       0040D010 - <Draws something from Bitmap Slot 0x25>
+       0040D150 - <Draws some text>
+       0040D240 - <Draws some text>
+       0040D2D0 - <Does some odd stuff with a few variables based on what's the value of [49D608]
+       0040D350 - <Draws something from Bitmap Slot 0x24>
+       0040D3A0 - <The other instance of call 40BE10; Slot 24; Most likely used for Credit Pixel arts>
+       0040D3E0 - <Calls 480D30 twice>
+       0040D410 - Calls 48128B if [49D614] != 0
+       0040D440 - <Initialize Credits? Loads a file, puts casts.pbm into slot 0x25>
+       0040D5C0 - ?
+       0040D620 - ?
+       0040DB00 - ?
+       0040DB40 - [<SIL]
+       0040DB60 - [<CIL]
+       0040DB70 - TSC Show Distant View of Island [XX1]
+       
+       -=Main=-
+       
+       0040DD70 - Called On Esc
+       0040DE60 - ?
+       0040DE90 - ?
+       0040DEA0 - ?
+       0040DEC0 - [<FAO]
+       0040DF50 - [<FAI]
+       0040DFE0 - ?
+       0040E770 - Render Fade out / Fade in
+       0040E830 - ?
+       0040E850 - Clear Event Flags
+       0040E870 - <Clear skipflags?>
+       0040E890 - [<FL+]
+       0040E8E0 - [<FL-]
+       0040E930 - Check Flag (Returns 1 or 0)
+       0040E970 - [<SK+]
+       0040E9C0 - [<SK-]
+       0040EA10 - ?
+       0040EA50 - TSC Flash Screen [FLA] (?????)
+       0040EA70 - Explosion? (Also used for [<FLA]?)
+       0040EAC0 - Explosion frame handler
+       0040ED20 - <FLA handler
+       0040EDE0 - Main WhiteScreen Handler
+       0040EE20 - Draws the screen a particular colour maybe
+       0040EE60 - Sets 49E190 = 0
+       0040EE70 - Camera Code
+       0040F020 - Get Camera Position
+       0040F040 - Unused Camera function
+       0040F130 - Simple Camera Function
+       0040F220 - [<FOM]
+       0040F250 - [<FON]
+       0040F2D0 - [<FOB]
+       0040F310 - Set Soft Quake Duration [<QUA]			[08_Duration]
+       0040F320 - Set Hard Quake Duration 				[08_Duration]
+       0040F330 - Stop All Quake Effects
+       0040F350 - Return Random Number 				[08_Low | 0C_High]
+       0040F380 - Render Numbers (Level, HP and Ammo)
+       0040F5F0 - <Loads npc.tbl?>
+       0040F730 - Intro Cuscene Game Loop
+       0040F9B0 - Title Screen
+       00410400 - Main Game loop
+       004108B0 - ?
+       00410990 - Get Version Number
+       00410AB0 - Check for SndVol32.exe
+       00410BC0 - ?
+       00410C10 - ?
+       00410CA0 - Check If Param Time 2 < Now < Param Time 1 		[08_PSysTimeA | 0C_PSysTimeB]
+       00410D10 - ?
+       00410D80 - Get File Size 					[08_PFileName]
+       00410DE0 - Generate Error Message
+       00410E90 - ?
+       00410EE0 - Center the Game Window 				[08_GameWindowHandle]
+       00410FE0 - ?							[08_WindowHandle]
+       004111F0 - ?
+       004112E0 - <Loads File>
+       00411390 - Load Image Resources (Called at Startup)
+       00411E10 - ?
+       00411E60 - ?
+       00411EB0 - ?
+       00411EF0 - ?
+       00411FC0 - ?
+       004120F0 - ?
+       00412250 - ?
+       004122E0 - Update Keys
+       00412320 - ?
+       00412370 - ?
+       004123A0 - Time Elapsed In A Second
+       00412420 - Creates The Window <WinMain>
+       00412BC0 - ?
+       00412BF0 - ?
+       00412C30 - ?
+       00412CA0 - Seems to handle all sorts of input <Called by DispatchMessageA?> [08_HWND_hWnd | 0C_UINT_MSG | 10_WPARAM | 14_LPARAM]
+       *412E82* - The switch jump for the Key input table. Use this to modify key mapping
+*413039* - Switch jump for when the key is released
+00413570 --?
+004135E0 - ? 
+
+-=Map=-
+
+00413750 - Reserve memory for PXM data
+00413770 - Load data from pxm file
+004138A0 -4?
+00413930 -0?
+00413950 - Destroy Bitmap Object 02 (Dummied out)
+00413960 - ?
+004139A0 - Get Tile Type #
+00413A00 -#?
+00413A20 - [<SMP]
+00413A60 - [<CMP]
+00413AF0 - Render Background Layer Maptiles
+00413C60 - Render Foreground Layer Maptiles
+00413E40 -p?
+004140F0 - Store Map Name / Studio Pixel Presents (Each byte is 1 less than it should be) [08_Map Name Location]
+00414250 - Render Map Name (used by TSC [MNA])
+00414310 -S?
+00414330 -4?
+004143C0 - Render map system green stuff
+00414640 - Map System loop
+00414B00 -p?
+00414B20 -
+?
+00414B40 - Set MPJ array slot == true for map ID given [MP+]
+
+-=Player=-
+
+00414B50 - <Set Player Startup?>
+00414BF0 - Player frames
+00415220 - Toggle Player Visibility [<HMC/<SMC]
+00415250 - Render Player and Gun
+004156C0 - Agility Code and Jump Function And Booster
+00416470 - Player movement, Fish battle mode.
+004168C0 -v?
+00416990 - Handles drowning timer, and runs TSC when you drown.
+00416AA0 - Retreives Player X And Y Position 			[08_pXVar | 0C_pYVar]
+00416AC0 - [<MOV]
+00416B30 - Instantly Set Player X/Y Position 			[08_X | 0C_Y]
+00416B50 - Set Player Velocity X to 0
+00416B60 - TSC Check If In Fish Battle [UNJ]
+00416B70 - TSC Change Player Direction [MYD] 			[08_Direction]
+00416C40 - TSC Set In or Out of Fish Battle [UNI] 		[08_InBattle]
+00416C50 - Move Player 0x4000 Units Down Instantly <unused?>
+00416C70 - TSC Equip/Unequip Items [EQ+/-] 			[08_EquipID | 0C_SetToTrue]
+00416CA0 - Leave "Inspecting" Mode <unused?>
+00416CC0 - Set [49E6EC] = Arg1, Set [49E6F0] = Arg2, play Environment sounds [<SSS/<SPS]
+00416D40 - Set Enviroment sound (49E6EC) = 0, play sound 28,29,3A
+00416D80 - Play Environmental sounds (Propellor, stream sound)
+00416DF0 - Play sound 28,29,3A
+00416E20 - Clear Player Tiles (Set 49E63C = 0)
+00416E30 - Player Tile collision, Solid tiles
+00417160 - Player Bump Against Ceilling
+004171D0 - Player Tile Collision, Roof Slope 1
+004172E0 - Player Tile Collision, Roof Slope 2
+004173F0 - Player Tile Collision, Roof Slope 3
+00417500 - Player Tile Collision, Roof Slope 4
+00417610 - Player Tile Collision, Floor Slope 1
+00417720 - Player Tile Collision, Floor Slope 2
+00417830 - Player Tile Collision, Floor Slope 3
+00417940 - Player Tile Collision, Floor Slope 4
+00417A50 - Player Tile Collision, Water
+00417AE0 - Player Tile Collision, Spike
+00417B70 - Player Tile Collision, Spike (water)
+00417C00 - Player Tile Collision, Wind (Left)
+00417C90 - Player Tile Collision, Wind (Up)
+00417D20 - Player Tile Collision, Wind (Right)
+00417DB0 - Player Tile Collision, Wind (Down)
+00417E40 - PC Tile checking algorithm
+004187F0 - entityCollision, solid				[08_Entity]
+00418B10 - entityCollision, nonsolid				[08_Entity]
+00418C20 - entityCollision, specialsolid
+00419030 - Run collision checks for every entity vs. Player
+00419450 - Run collision checks with boss entities vs. Boss
+00419650 - Touch XP Chip
+004196F0 - Add Weapon EXP 					[08_EXP]
+00419890 - Reset Weapon Level
+004198C0 - <Returns 1 if weapon at MAX, 0 otherwise>
+00419910 - Take Damage
+00419B50 - TSC Reset Weapon Levels [ZAM]
+00419BA0 - Refill Some Rocket Ammo 				[0C_Ammo]
+00419C60 - TSC Increase Current Health [LI+]			[08_Amount]
+00419CB0 - TSC Increase Max Health [ML+]			[08_Amount]
+00419D10 - Render XP Bar, Weapon Level and Weapon Ammo Displays
+0041A0B0 - Render Weapon Icons
+0041A1D0 - Render HP Bar and HP NumbersWe
+0041A350 - Underwater Timer
+0041A430 - Render Nikumaru Counter Timer
+0041A5D0 - Write 290.rec
+0041A7C0 - Get Hell Time (Returns to EAX)
+
+-=Sound and ORGs=-
+
+0041A8F0 - <Some kind of sound procedure>
+0041ABA0 -e?
+0041AC70 -o?
+0041AD20 - <Regulates the Volume on ORG Notes?>
+0041ADC0 - <Play ORG notes?>
+0041B2A0 -4?
+0041B380 - <Error checking?>
+0041B3F0 - <Related to loading the ORG file>
+0041B440 -??
+0041B480 --?
+0041B4D0 -0?
+0041B510 - Play the Drum Sound of an ORG File
+0041B600 -G?
+0041B650 -B?
+0041B730 -1?
+0041B890 -4?
+0041BA70 -0?
+0041BAD0 - Loads an ORG File
+0041C0B0 - <Dummied out function and ORG related?>
+0041C180 -8?
+0041C1E0 -B?
+0041C230 - OrganyaPlayCallback
+0041C250 -C?
+0041C2B0 - <The main 'engine' of the ORG player?>
+0041C630 -0?
+0041C6C0 - <Related to loading ORG Files> (StartOrganya?
+0041C6F0 - LoadOrganya
+0041C730 - SetOrganyaPosition 
+0041C770 - GetOrganyaPosition
+0041C790 - PlayOrganyaMusic
+0041C7C0 - ChangeOrganyaVolume
+0041C7F0 - StopOrganyaMusic
+0041C880 - Sets 4A4E10 to 1
+0041C890 -0?
+0041C8F0 -a?
+0041CB10 - <Init procedure for SFX?>
+
+-=Saving and Loading=-
+
+0041CFC0 - Check for Profile.dat
+0041D040 - <Saving the game?>
+0041D260 - <Loading the game?>
+0041D550 - Pushes reserved space into RAM [<INI]
+0041D610 - clear flagdata (?)
+
+-=Teleporter=-
+
+0041D630 - <TSC Add Teleporter Slot [PS+]?>
+0041D6A0 -u?
+0041D740 -d?
+0041D840 -R?
+0041DA00 - <Teleporter something (Draw the icons?)> [<SLP]
+
+-=Weapons=-
+
+0041DBD0 - Weapon 01: Snake				[08_Level]
+0041DE60 - Weapon 02: Polar Star				[08_Level]
+0041E110 - Weapon 03: Fireball				[08_Level]
+0041E3D0 - Weapon 04: Machine Gun				[08_Level]
+0041E7B0 - Weapon 05: Missle Launcher				[08_Level|0C_Super]
+0041EFD0 - Weapon 07: Bubbler Lvl1				[08_Level]
+0041F280 - <Weapon 07: Bubbler Lvl2/3>				[08_Level]
+0041F580 - Weapon 09: Blade				[08_Level]
+0041F710 - Weapon 0C: Nemesis				[08_Level]
+0041F9E0 - Reset Spur Level
+0041FA10 - Weapon 0D: Spur				[08_Level]
+0041FE70 - <Weapon Selection?>
+
+-=ORG drums?=-
+
+004200C0 - <Directsound - Loading ORG Wave Data?>
+004201A0 - <Directsound?>
+00420240 - Loads WAV Files for Drums (Normally Dummied out)
+00420390 - <Creating Files?>
+00420640 - Play Sound						[08_SoundID | 0C_Mode]
+00420720 - <Directsound?>
+00420760 - <Directsound?>
+004207A0 - <Directsound?>
+004207E0 - Sound Loader
+
+-=TSC=-
+
+00420BE0 - TSC Transport to different Map [TRA]
+00420EE0 - TSC Change Music [CMU]				[08_SongID]
+00420F50 - TSC Restore Music [RMU]
+00420FA0 - TSC Init?
+00421040 - (map parser?)
+004213B0 --?
+004214E0 - <Creates Bitmap objects for text display>
+00421570 - <Destroy bitmap objects for text display, and textbox.bmp>
+004215C0 - Script parser? (maybe it decodes .tsc files)
+00421660 - <Load and execute Script?>
+00421750 - <Load and execute Head.tsc?>
+004218E0 - Calls strcpy
+00421900 - ASCII to Number					[08_Offset]
+00421990 - Call TSC Event					[08_ScriptID]
+00421AF0 - [<EVE]
+00421C50 -c?
+00421C80 - Text display
+00421D10 - [<NUM]
+00421E90 - [<CLR]
+00421F10 - Render Textboxes, Item Images and Text
+00422510 - TSC Parser
+
+-=???=-
+
+00425790 - <Render some text and stuff>
+004257F0 - Adds movement to # object
+004258B0 - Sin table (0-255)
+004258C0 - Cos table (0-255)
+004258E0 - Detects Player Collision
+00425B40 - Directional Trig
+00425B60 - Trig, calls Cos
+00425B80 - Directional Trig
+00425BA0 - Trig, calls Sin
+00425BC0 --?
+00425BF0 - Create Damage / XP Number Objects
+00426360 - Destroy # object
+00426430 - Render Dam/XP Objects
+
+-=Entities=-
+
+00426530 - NPC 000: <nothing>
+004265B0 - NPC 001: Weapon energy
+00426AF0 - NPC 002: Enemy - Behemoth
+00426FD0 - NPC 003: Disappearing null
+00427040 - NPC 004: Smoke
+00427480 - NPC 005: Enemy - Critter (hopping, green)
+00427820 - NPC 006: Enemy - Beetle (horiz, green)
+00427C60 - NPC 007: Enemy - Basil
+00427F00 - NPC 008: Enemy - Beetle (follow 1)
+00428260 - NPC 009: Balrog (drops in)
+00428540 - NPC 010: Boss - Balrog (shooting)
+004289B0 - NPC 011: Projectile - Balrog (energy shot)
+00428B10 - NPC 012: Balrog (cutscene)
+00429940 - NPC 013: Forcefield
+00429A30 - NPC 014: Santa's Key
+00429BF0 - NPC 015: Treasure chest (closed)
+00429E00 - NPC 016: Save point
+0042A0B0 - NPC 017: Health/ammo refill
+0042A360 - NPC 018: Door
+0042A490 - NPC 019: Balrog (busts in)
+0042A830 - NPC 020: Computer
+0042A940 - NPC 021: Treasure chest (open)
+0042A9C0 - NPC 022: Teleporter
+0042AA70 - NPC 023: Teleporter lights
+0042ABD0 - NPC 024: Enemy - Power Critter
+0042B280 - NPC 025: Lift platform
+0042B5E0 - NPC 026: Enemy - Bat (black, circling)
+0042BA90 - NPC 027: Deathtrap
+0042BAE0 - NPC 028: Enemy - Critter (flying)
+0042C1A0 - NPC 029: Cthulhu
+0042C320 - NPC 030: Hermit Gunsmith
+0042C4C0 - NPC 031: Enemy - Bat (black, hanging)
+0042CA10 - NPC 032: Life Capsule
+0042CAC0 - NPC 033: Projectile - Balrog (energy bounce)
+0042CC20 - NPC 034: Bed
+0042CCB0 - NPC 035: Enemy - Mannan
+0042D010 - NPC 036: Boss - Balrog (hovering)
+0042D760 - NPC 037: Signpost
+0042D810 - NPC 038: Fireplace fire
+0042D960 - NPC 039: Save sign
+0042D9F0 - NPC 040: Santa
+0042DE00 - NPC 041: Busted doorway
+0042DE70 - NPC 042: Sue
+0042E9F0 - NPC 043: Blackboard
+0042EAB0 - NPC 044: Enemy - Polish
+0042F060 - NPC 045: Enemy - Baby
+0042F320 - NPC 046: Horiz/vert trigger
+0042F3F0 - NPC 047: Enemy - Sandcroc (green)
+0042F780 - NPC 048: Projectile - Omega
+0042F9E0 - NPC 049: Enemy - Skullhead
+0042FEC0 - NPC 050: Projectile - Skeleton
+004301B0 - NPC 051: Enemy - Crow & Skullhead
+00430780 - NPC 052: Blue robot (sitting)
+004307D0 - NPC 053: Skullstep foot
+00430B00 - NPC 054: Enemy - Skullstep
+00430EB0 - NPC 055: Kazuma
+004311D0 - NPC 056: Enemy - Beetle (horiz, brown)
+004315E0 - NPC 057: Enemy - Crow
+00431C20 - NPC 058: Enemy - Basu (1)
+004321F0 - NPC 059: Enemy - Door
+00432460 - NPC 060: Toroko
+00432B50 - NPC 061: King
+004334C0 - NPC 062: Kazuma (computer)
+004336C0 - NPC 063: Toroko (attacking)
+00433C00 - NPC 064: Enemy - Critter (hopping, blue)
+00433FC0 - NPC 065: Enemy - Bat (blue)
+004342B0 - NPC 066: Bubble - Misery capturing Toroko?
+004345E0 - NPC 067: Misery (floating)
+00434D10 - NPC 068: Boss - Balrog (running)
+004355F0 - NPC 069: Enemy - Pignon
+00435AB0 - NPC 070: Sparkling item
+00435BA0 - NPC 071: Enemy - Chinfish
+00435DE0 - NPC 072: Sprinkler
+00435FC0 - NPC 073: Water drop
+00436180 - NPC 074: Jack
+00436540 - NPC 075: Kanpachi (fishing)
+00436650 - NPC 076: Flowers
+00436690 - NPC 077: Sandaime's pavilion
+004367E0 - NPC 078: Pot
+00436870 - NPC 079: Mahin
+00436AE0 - NPC 080: Enemy - Gravekeeper
+004370F0 - NPC 081: Enemy - Giant Pignon
+004375E0 - NPC 082: Misery (standing)
+00437D90 - NPC 083: Igor(cutscene)
+00438250 - NPC 084: Projectile - Basu (1)
+004383D0 - NPC 085: Terminal
+00438590 - NPC 086: Missile
+00438850 - NPC 087: Heart
+00438B10 - NPC 088: Boss - Igor
+00439580 - NPC 089: Igor (defeated)
+00439B00 - NPC 090: Background?
+00439B50 - NPC 091: Cage
+00439BC0 - NPC 092: Sue (computer)
+00439DC0 - NPC 093: Chaco
+0043A220 - NPC 094: Enemy - Kulala
+0043A680 - NPC 095: Enemy - Jelly
+0043AAF0 - NPC 096: Fan (left)
+0043AD10 - NPC 097: Fan (up)
+0043AF20 - NPC 098: Fan (right)
+0043B140 - NPC 099: Fan (down)
+0043B350 - NPC 100: Grate
+0043B410 - NPC 101: Power controls (screen)
+0043B4E0 - NPC 102: Power controls (power flow)
+0043B5F0 - NPC 103: Projectile - Mannan
+0043B7F0 - NPC 104: Enemy - Frog
+0043BD00 - NPC 105: Balloon ('Hey!' low)
+0043BDB0 - NPC 106: Balloon ('Hey!' high)
+0043BE00 - NPC 107: Malco (undamaged)
+0043C4B0 - NPC 108: Projectile - Balfrog
+0043C610 - NPC 109: Malco (damaged)
+0043C8E0 - NPC 110: Enemy - Puchi
+0043CDE0 - NPC 111: Quote (teleports out)
+0043D0A0 - NPC 112: Quote (teleports in)
+0043D320 - NPC 113: Prof. Booster
+0043D860 - NPC 114: Enemy - Press
+0043DAE0 - NPC 115: Enemy - Ravil
+0043E190 - NPC 116: Red Flowers (petals)
+0043E1E0 - NPC 117: Curly
+0043E9B0 - NPC 118: Boss - Curly
+0043F230 - NPC 119: Table & chair
+0043F280 - NPC 120: Colon 1
+0043F310 - NPC 121: Colon 2
+0043F4A0 - NPC 122: Enemy - Colon
+0043FC70 - NPC 123: Projectile - Curly
+0043FEF0 - NPC 124: Sunstone
+004400D0 - NPC 125: Hidden heart/missile
+004401F0 - NPC 126: Puppy (runs away)
+00440760 - NPC 127: Glows momentarily?
+004408B0 - NPC 128: Glows momentarily?
+00440CF0 - NPC 129: Glows momentarily?
+00441000 - NPC 130: Puppy (tail wag)
+00441360 - NPC 131: Puppy (sleeping)
+00441440 - NPC 132: Puppy (bark)
+004419B0 - NPC 133: Jenka
+00441B20 - NPC 134: Enemy - Armadillo
+00441EC0 - NPC 135: Enemy - Skeleton
+00442340 - NPC 136: Puppy (carried)
+00442540 - NPC 137: Large doorway (frame)
+00442590 - NPC 138: Large doorway (doors)
+00442790 - NPC 139: Doctor (crowned)
+00442BF0 - NPC 140: Boss - Frenzied Toroko
+00443AC0 - NPC 141: Toroko Block
+00443EC0 - NPC 142: Enemy - Flowercub
+00444190 - NPC 143: Jenka (collapsed)
+00444230 - NPC 144: Toroko (teleports in)
+00444620 - NPC 145: <CRASH>
+00444780 - NPC 146: Lightning
+00444930 - NPC 147: Enemy - Critter (hover)
+00445050 - NPC 148: Projectile - Critter
+00445170 - NPC 149: Moving block (horiz)
+00445660 - NPC 150: Quote
+00445E30 - NPC 151: Blue robot
+00445FA0 - NPC 152: Shutter (stuck)
+00446020 - NPC 153: Enemy - Gaudi
+00446500 - NPC 154: Enemy - Gaudi (defeated)
+00446710 - NPC 155: Enemy - Gaudi (flying)
+00446B60 - NPC 156: Projectile - Gaudi (flying)
+00446CA0 - NPC 157: Moving block (vert)
+00447180 - NPC 158: Projectile - Monster X
+004474C0 - NPC 159: Boss - Monster X (defeated)
+00447700 - NPC 160: Boss - Pooh Black
+00447CB0 - NPC 161: Projectile - Pooh Black
+00447E90 - NPC 162: Pooh Black (defeated)
+004482A0 - NPC 163: Dr. Gero
+00448410 - NPC 164: Nurse Hasumi
+00448580 - NPC 165: Curly (collapsed)
+004486E0 - NPC 166: Chaba
+004487F0 - NPC 167: Prof. Booster (fall)
+00448A10 - NPC 168: Boulder
+00448BE0 - NPC 169: Boss - Balrog (missiles)
+004495A0 - NPC 170: Projectile - Balrog (missiles)
+004498C0 - NPC 171: Enemy - Fire Whirrr
+00449C10 - NPC 172: Projectile - Fire Whirrr
+00449D70 - NPC 173: Enemy - Gaudi Armor
+0044A3C0 - NPC 174: Projectile - Gaudi Armor
+0044A610 - NPC 175: Enemy - Gaudi Egg
+0044A7D0 - NPC 176: Enemy - Buyobuyo Base
+0044ABB0 - NPC 177: Enemy - Buyobuyo
+0044AEE0 - NPC 178: Projectile - Core (spinner)
+0044B080 - NPC 179: Projectile - Core (wisp)
+0044B210 - NPC 180: Curly (A.I.)
+0044BE10 - NPC 181: <nothing?>
+0044C220 - NPC 182: <nothing?>
+0044C630 - NPC 183: <nothing?>
+0044C7A0 - NPC 184: Shutter (large)
+0044CA60 - NPC 185: Shutter (small)
+0044CBE0 - NPC 186: Lift block
+0044CDB0 - NPC 187: Enemy - Fuzz Core
+0044D070 - NPC 188: <CRASH>
+0044D3A0 - NPC 189: Projectile - Homing Flame
+0044D5E0 - NPC 190: Surface robot
+0044D740 - NPC 191: Water level
+0044DA00 - NPC 192: Scooter
+0044DE20 - NPC 193: Scooter (pieces)
+0044DEA0 - NPC 194: Blue robot (pieces)
+0044DF10 - NPC 195: Grate mouth
+0044DF60 - NPC 196: Motion wall
+0044E020 - NPC 197: Enemy - Porcupine Fish
+0044E260 - NPC 198: Projectile - Ironhead
+0044E400 - NPC 199: Underwater current
+0044E5F0 - NPC 200: Enemy - Dragon Zombie
+0044EC40 - NPC 201: Dragon Zombie (dead)
+0044ECE0 - NPC 202: Projectile - Dragon Zombie
+0044EE40 - NPC 203: Enemy - Critter (hopping, aqua)
+0044F1F0 - NPC 204: Falling Spike (small)
+0044F3E0 - NPC 205: Falling Spike (large)
+0044F6D0 - NPC 206: Enemy - Counter Bomb
+0044FB40 - NPC 207: Balloon (countdown)
+0044FCB0 - NPC 208: Enemy - Basu (2)
+00450280 - NPC 209: Projectile - Basu (2)
+00450400 - NPC 210: Enemy - Beetle (follow 2)
+00450760 - NPC 211: Spikes
+00450810 - NPC 212: Sky Dragon
+00450BF0 - NPC 213: Enemy - Night Spirit
+004512A0 - NPC 214: Projectile - Night Spirit
+00451430 - NPC 215: Enemy - Sandcroc (white)
+004517F0 - NPC 216: Debug cat
+00451840 - NPC 217: Itoh
+00451CA0 - NPC 218: Projectile?
+00451DA0 - NPC 219: Generator - Smoke/Underwater current
+00451E90 - NPC 220: Shovel Brigade
+00452000 - NPC 221: Shovel Brigade (walking)
+00452470 - NPC 222: Prison bars
+004524E0 - NPC 223: Momorin
+00452700 - NPC 224: Chie
+004528D0 - NPC 225: Megane
+00452A50 - NPC 226: Kanpachi
+00452D10 - NPC 227: Bucket
+00452D60 - NPC 228: Droll (guard)
+004530D0 - NPC 229: Red Flowers (sprouts)
+00453190 - NPC 230: Red Flowers (blooming)
+00453260 - NPC 231: Rocket
+004536F0 - NPC 232: Enemy - Orangebell
+004539B0 - NPC 233: <CRASH>
+00453E60 - NPC 234: Red Flowers (picked)
+00453F20 - NPC 235: Enemy - Midorin
+00454310 - NPC 236: Enemy - Gunfish
+004548B0 - NPC 237: Projectile - Gunfish
+00454A00 - NPC 238: Enemy - Press (killer)
+00454DF0 - NPC 239: Cage bars
+00454F00 - NPC 240: Mimiga (jailed)
+00455370 - NPC 241: Enemy - Critter (hopping, red)
+00455710 - NPC 242: Enemy - Bat (red)
+00455A10 - NPC 243: Generator - Bat (red)
+00455AB0 - NPC 244: Acid drop
+00455C10 - NPC 245: Generator - Acid drop
+00455E00 - NPC 246: Enemy - Press (proximity)
+00456110 - NPC 247: Boss - Misery
+00456F50 - NPC 248: Boss - Misery (vanish)
+004570B0 - NPC 249: Projectile - Misery (energy shot)
+00457180 - NPC 250: Projectile - Misery (lightning ball)
+00457470 - NPC 251: Projectile - Misery (lightning)
+00457570 - NPC 252: <CRASH>
+004579D0 - NPC 253: Energy Capsule
+00457B00 - NPC 254: Helicopter
+00457D70 - NPC 255: <CRASH>
+00458010 - NPC 256: Doctor (crowned, facing away)
+00458360 - NPC 257: Red Crystal
+004585A0 - NPC 258: Mimiga (sleeping)
+004585F0 - NPC 259: Curly (carried, unconscious)
+00458810 - NPC 260: Shovel Brigade (caged)
+00458A70 - NPC 261: Chie (caged)
+00458C30 - NPC 262: Chaco (caged)
+00458DF0 - NPC 263: Boss - Doctor
+00459950 - NPC 264: Projectile - Doctor (red wave)
+00459B30 - NPC 265: Projectile - Doctor (red ball - fast vanish)
+00459C00 - NPC 266: Projectile - Doctor (red ball - slow vanish)
+00459D80 - NPC 267: Boss - Muscle Doctor
+0045B3D0 - NPC 268: Enemy - Igor
+0045BCB0 - NPC 269: Enemy - Bat (red energy)
+0045BF10 - NPC 270: Red energy
+0045C230 - NPC 271: Underwater block
+0045C500 - NPC 272: Generator - Underwater block
+0045C5A0 - NPC 273: Projectile - Droll
+0045C750 - NPC 274: Enemy - Droll
+0045CC80 - NPC 275: Puppy (with items)
+0045CEA0 - NPC 276: Boss - Red Demon
+0045D780 - NPC 277: Projectile - Red Demon
+0045D930 - NPC 278: Little family
+0045DCF0 - NPC 279: Falling block (large)
+0045E110 - NPC 280: Sue (teleported in by Misery)
+0045E360 - NPC 281: Doctor (red energy form)
+0045E4C0 - NPC 282: Mini Undead Core - floats forward
+0045E950 - NPC 283: Enemy - Misery (transformed)
+0045F910 - NPC 284: Enemy - Sue (transformed)
+00460910 - NPC 285: Projectile - Undead Core (orange spiral shot)
+00460AE0 - NPC 286: Orange Dot
+00460BB0 - NPC 287: Orange Smoke
+00460D70 - NPC 288: Projectile - Undead Core (glowing rock thing)
+004610D0 - NPC 289: Enemy - Critter (hopping, orange)
+004614A0 - NPC 290: Enemy - Bat (orange)
+00461800 - NPC 291: Mini Undead Core (before fight)
+004618B0 - NPC 292: Quake
+004618C0 - NPC 293: Projectile - Undead Core (huge energy shot)
+004619E0 - NPC 294: Quake & Generator - Falling blocks
+00461B90 - NPC 295: Cloud
+00461E40 - NPC 296: Generator - Cloud
+00461FD0 - NPC 297: <CRASH> (Sometimes)
+00462050 - NPC 298: Doctor (uncrowned)
+004623D0 - NPC 299: Balrog/Misery (bubble)
+004624E0 - NPC 300: Demon Crown
+004625A0 - NPC 301: Enemy - Fish Missile (orange)
+00462890 - NPC 302: Something with ending Scenes
+00462AF0 - NPC 303: <nothing?>
+00462C80 - NPC 304: Gaudi (sitting)
+00462E00 - NPC 305: Puppy (small)
+00462F60 - NPC 306: Balrog (nurse)
+004630F0 - NPC 307: Santa (caged)
+004632B0 - NPC 308: Enemy - Stumpy
+00463710 - NPC 309: Enemy - Bute
+00463AC0 - NPC 310: Enemy - Bute (sword)
+00464090 - NPC 311: Enemy - Bute (archer)
+00464740 - NPC 312: Projectile - Bute (archer)
+00464BB0 - NPC 313: Boss - Ma Pignon
+00465CC0 - NPC 314: Falling, Indestructible
+00465F60 - NPC 315: Enemy (hopping, disappears)
+004664B0 - NPC 316: Enemy - Bute (defeated)
+00466790 - NPC 317: Enemy - Mesa
+00466B80 - NPC 318: Enemy - Mesa (defeated)
+00466E50 - NPC 319: <CRASH>
+004670C0 - NPC 320: Curly (carried, shooting)
+004673F0 - NPC 321: <nothing?>
+004676D0 - NPC 322: Enemy - Deleet
+00467C60 - NPC 323: Enemy - Bute (generator)
+00467F40 - NPC 324: Generator - Bute
+00467FE0 - NPC 325: Projectile - Heavy Press
+00468230 - NPC 326: Itoh/Sue (turning human)
+00468830 - NPC 327: <CRASH>
+00468990 - NPC 328: Transmogrifier
+004689E0 - NPC 329: Building fan
+00468A90 - NPC 330: Enemy - Rolling
+00468D70 - NPC 331: Projectile - Ballos (bone)
+00468F50 - NPC 332: Projectile - Ballos (shockwave)
+00469140 - NPC 333: Projectile - Ballos (lightning)
+00469290 - NPC 334: Sweat
+00469430 - NPC 335: Ika-chan
+00469610 - NPC 336: Generator - Ika-chan?
+004696B0 - NPC 337: Numahachi
+00469800 - NPC 338: Enemy - Green Devil
+00469AA0 - NPC 339: Generator - Green Devil
+00469B40 - NPC 340: Boss - Ballos
+0046B240 - NPC 341: <CRASH>
+0046B340 - NPC 342: <CRASH>
+0046BD80 - NPC 343: <CRASH>
+0046BE10 - NPC 344: <CRASH>
+0046BF00 - NPC 345: Projectile - Ballos (skull)
+0046C1D0 - NPC 346: <CRASH>
+0046C710 - NPC 347: Enemy - Hoppy
+0046C9B0 - NPC 348: Ballos spikes (rising)
+0046CAC0 - NPC 349: Statue
+0046CB50 - NPC 350: Enemy - Bute (archer, red)
+0046D340 - NPC 351: Statue (can shoot)
+0046D5D0 - NPC 352: King (sword)
+0046DBE0 - NPC 353: Enemy - Bute (sword, red)
+0046E110 - NPC 354: Invisible deathtrap wall
+0046E280 - NPC 355: <CRASH> (Sometimes)
+0046E480 - NPC 356: Balrog (rescue)
+0046E730 - NPC 357: Puppy (ghost)
+0046E870 - NPC 358: Misery (wind)
+0046E9E0 - NPC 359: Generator - Water drop
+0046EA90 - NPC 360: 'Thank you!'
+0046EB30 - Clear All Entity Data
+0046EB50 - Load enemies (?) from PXE file
+0046EE50 - Set data from npc.tbl
+0046EFD0 - Create NPC						[08_EntityID | 0C_X | 10_Y | 14_MoveX | 18_MoveY | 1C_Direction | 20_? | 24_BaseSlotID]
+0046F150 - Create Explosion
+0046F200 - Explosion Generator 					[08_X | 0C_Y | 10_? | 14_NumExplosions]
+0046F2B0 - Spawn EXP
+0046F430 - Spawn missles
+0046F630 - Spawn heart					[ 08_XPos | 0C_YPos | 10_Health ]
+0046F760 - (Spawn something? possibly smoke)
+0046F810 - Render Entities
+0046FA00 - Run entity AI
+0046FAB0 - [<CNP]
+0046FD10 - [<INP]
+0046FF90 - [<ANP]
+00470060 - [<MNP]
+00470150 - [<MYB]
+00470250 - [<DNP]
+004702D0 - [<DNA]
+00470460 -e?
+00470490 - [<NCJ] (also?)
+004704F0 - TSC Entity Jump [ECJ] (returns true or false)
+00470560 - [<NCJ] (returns true or false)
+004705C0 - Entity Solid Tile
+00470870 - Entity Tile Slope L1 Top
+00470970 - Entity Tile Slope L2 Top
+00470A70 - Entity Tile Slope R1 Top
+00470B70 - Entity Tile Slope R2 Top
+00470C70 - Entity Tile Slope L1 Bottom
+00470D80 - Entity Tile Slope L2 Bottom
+00470E90 - Entity Tile Slope R1 Bottom
+00470FA0 - Entity Tile Slope R2 Bottom
+004710B0 - Entity Water Tile
+00471160 - Entity Tile Collision Algorithms
+00471B80 - (Enemy dies?)
+00471D50 - Entity Bullet Collis
+
+-=Boss?=-
+
+00472400 -0?
+00472710 -l?
+00472740 - <Clears Boss Data?>
+00472770 -u?
+00472940 - [<BOA]
+00472950 --?
+00472FF0 - Boss 0: No special boss
+00473000 -t?
+00473080 - Tile Collision Algorithm for larger entities
+004739B0 -y?
+00473D60 -2?
+00473DE0 -7?
+00474340 -i?
+00474400 - Boss 4: The Core
+004753D0 - Boss 7: Undead Core
+00476790 -y?
+004769A0 -1?
+00476B90 -7?
+00476E50 -y?
+00477230 -L?
+004772F0 - Boss 9: Ballos (Ball)
+00478AA0 -t?
+00478FE0 -0?
+00479010 -e?
+00479030 - Boss 2: Balfrog
+0047A6A0 -e?
+0047A800 -1?
+0047A8A0 - Boss 5: Ironhead
+0047B450 -0?
+0047B460 - [<BSL]
+0047B500 -D?
+0047B540 -B?
+0047B6F0 - Boss 1: Omega
+0047C380 - 
+0047C4E0 -1?
+0047C7A0 -7?
+0047C820 - Boss 8: Heavy Press
+0047D170 - Boss 6: Dragon Sisters
+0047DAA0 -2?
+0047DF10 -:?
+0047E6F0 - Boss 3: Monster X
+0047F710 --?
+00480090 -i?
+004802A0 -m?
+00480550 -n?
+004808C0 -3?
+
+22:24, May 18, 2017 (UTC)22:24, May 18, 2017 (UTC)22:24, May 18, 2017 (UTC)~~-=Lib functions=-22:24, May 18, 2017 (UTC)22:24, May 18, 2017 (UTC)22:24, May 18, 2017 (UTC)22:24, May 18, 2017 (UTC)22:24, May 18, 2017 (UTC)
+
+00480A36 - DirectDrawCreate and DirectInputCreate
+00480A50 - DirectInputCreateA
+00480D28 - DirectSoundCreate
+00480D30 - Memset 						[04_Offset | 08_Value | 0C_Size]
+00480D8B - 
+00480D90 -0?
+00480DB1 - <Exit Code 3?>
+00480DC1 - if ECX0!= [498B20], JMP to 480D90
+00480DCF - __fclose_lk
+00480E1B - _fclose
+00480E41 -0?
+00480E6C - fread
+00480F3F -4?
+00480F55 - fread
+00480F97 -4?
+00480FA1 - _fsopen
+00480FF3 - calls __unlock_file
+00480FFD - _fopen
+00481010 - _sprintf
+00481070 - _strcmp - Compare two strings, return 0 if equal
+00481100 - _strcpy <loads string from offset 0C and places the pointer into offset 08?>
+00481110 - _strcat
+004811DA -4?
+004811E7 -1?
+004811F0 -0?
+00481200 - _strlen
+0048126D -i?
+00481277 -a?
+00481281 -0?
+0048128B - _free
+004812E7 -8?
+004812FC - __heap_alloc
+0048136B -s?
+00481377 - __nh_malloc
+004813A3 - _malloc
+004813C0 - _memcpy						[08_Address | 0C_Resource | 10_Size]
+00481523 -!?
+0048152F -J?
+00481541 -
+?
+0048155B -_?
+004816BF -0?
+004816CD -c?
+004816E3 -4?
+004816FD - _srand
+0048170A - _rand <Randomize (Returned to EAX)>
+00481730 - _memcmp
+00481783 -F?
+004817E8 - _sscanf
+0048181C - _fprintf
+00481870 -1?
+0048187A - _fwrite
+0048196D -p?
+004819C3 -w?
+004819CD - __fseek_lk
+00481A5C - _fseek
+00481A9B -a?
+00481AA5 - <nothing?>
+00481AA6 - _cfltcvt_init
+00481ADE - _fpmath
+00481B00 -s?
+00481B14 - _sin
+00481BB0 - _ftol2
+00481C30 -??
+00481C44 - _cos
+00481CDE - _amsg_exit
+00481D03 - _fast_error_exit
+00481D27 - ENTRY POINT
+00481ED6 -2?
+00481EFC - ___security_init_cookie
+00481F62 -h?
+00481F9E -8?
+004820AC - __SEH_prolog
+004820E7 - __SEH_epilog
+00482100 - __except_handler3
+004821E6 - _seh_longjmmp_unwind(x)
+00482201 - __close_lk
+00482284 - __close
+00482303 -8?
+0048231F - __freebuf
+0048234A - __flush
+004823A7 - __fflush_lk
+004823D5 - __flsall
+004823DE -
+?
+00482486 -??
+004824A1 - ?
+004824AA -8?
+004824B3 -n?
+00482503 -7?
+0048255C -A?
+00482570 - __lock_file
+00482594 - __lock_file2
+0048259F -l?
+004825B3 --?
+004825C2 - __unlock_file
+004825E6 -t?
+004825F1 - __unlock_file2
+00482605 -1?
+00482614 - __filbuf
+004826DF -8?
+004826F5 - __read_lk
+004828D0 - __read
+0048295F -C?
+0048297B - __openfile
+00482AE3 - __errno
+00482AEC - ___doserrno
+00482AF5 - __dosmaperr
+00482B2B -
+?
+00482B3C -_?
+00482B5A -n?
+00482B68 - __getstream
+00482C7E - ?
+00482C8A - __flsbuf
+00482DA3 - _write_char
+00482DD3 -4?
+00482DD6 - _write_multi_char
+00482DFA - _write_string
+00482E31 - __output
+0048362B - ___heap_select
+00483641 -0?
+00483645 - _heap_init
+00483692 -3?
+00483696 - __mtinitlocks
+004836DF - __mtdeletelocks
+00483734 - __unlock
+00483749 - __mtinitlocknum
+004837E0 -A?
+004837E9 - __lock
+0048381A - ___sbh_heap_init
+00483837 -l?
+00483862 - ___sbh_find_block
+0048388D - ___sbh_free_block
+00483BA5 - ___sbh_alloc_new_region
+00483BDA -4?
+00483C5C - ___sbh_alloc_new_group
+00483D62 - ___sbh_resize_block
+00484041 - ___sbh_alloc_block
+0048433D - __callnewh
+00484355 -0?
+00484358 - __crtTIsAlloc(x)
+00484361 - __mtterm
+0048437E - __getptd
+004843EF - _freefls(x)
+0048452A -0?
+00484536 - __mtinit
+00484547 -B?
+00484625 - __inc
+00484633 -??
+0048463B - __input
+00484C69 -2?
+004853B7 - __stbuf
+0048543B -4?
+0048543F - __ftbuf
+00485469 - __write_lk
+00485637 - __write
+004856C6 -
+?
+004856E2 - __lseek_lk
+00485703 -4?
+00485756 - __lseek
+004857E5 -0?
+00485801 - __ftell_lk
+00485963 - __forcdecpt
+0048599F -t?
+004859EA -3?
+00485A01 - Clear EAX and Return
+00485A04 - __fassign
+00485A2D -9?
+00485A42 - __shift
+00485A5F - __cftoe2
+00485B0D - __cftoe
+00485B79 - __cftof2
+00485C15 - __cftof
+00485C77 - __cftog
+00485D11 - __cfltcvt
+00485D39 -i?
+00485D62 - __setdefaultprecision
+00485D74 - __ms_p5_test_fdif
+00485DB0 - Checks if processor feature 0x00 exists
+00485DB4 - __ms_p5_mp_test_fdiv
+00485DD8 -4?
+00485DE0 -l?
+00485EDD -3?
+00485EEB -m?
+00485EF2 -7?
+00485F0F -4?
+00485F1D -e?
+00485F47 -4?
+00485F86 -8?
+00485FA3 -n?
+00485FB0 -4?
+00485FC5 -5?
+00485FDC -4?
+00485FE9 -0?
+00485FF5 -n?
+00486007 -9?
+00486038 -B?
+00486049 -b?
+0048604E -
+?
+0048605B -_?
+00486080 -5?
+00486085 -e?
+004860DE -7?
+004860E5 -0?
+004860EA --?
+00486140 -_?
+00486193 -4?
+004861C3 - __lockexit
+004861CC - __unlockexit
+004861D5 - __initterm
+004861ED - __cinit
+00486257 - _doexit
+00486314 -
+?
+0048631A - _exit
+0048632B - __exit
+0048633C - __cexit
+0048634B - __c_exit
+0048635A - __NMSG_WRITE
+004864D1 - __FF_MSGBANNER
+0048650A - __XcptFilter
+0048666E - __wincmdln
+004866CB - __setenvp
+00486792 - _parse_cmdline
+004868FE - __setargv
+004869A0 - ___crtGetEnvironmentStringsA
+00486AC2 - __ioinit
+00486CC0 -i?
+00486CF1 -f?
+00486D04 -e?
+00486D35 -D?
+00486D50 - __alloca_probe
+00486D65 -??
+00486D8D - ___crtMessageBoxA
+00486E90 - _strncpy
+00486EFE -8?
+00486F35 -4?
+00486FB4 - Unwind the stack					[08_PreviousFrame]
+00486FD4 - __unwind_handler
+00486FF6 - __local_unwind2
+0048705E - __abnormal_termination
+0048708A - __NLG_Notify
+004870A2 - __ValidateEH3RN
+004872CB - __set_osfhnd
+00487347 - __free_osfhnd
+004873C6 - __get_osfhandle
+004873F0 -4?
+00487407 - __lock_fhandle
+0048749B -6?
+004874A7 - __unlock_fhandle
+004874C9 - __alloc_osfhnd
+004875AB -8?
+0048763C -i?
+00487645 - __commit
+004876ED -t?
+00487701 - __calloc
+004877B4 -_?
+004877BC - __fcloseall
+0048784E -5?
+00487857 - __getbuf
+0048789B - __tsopen_lk
+004878EB -8?
+00487961 -
+?
+00487B82 - __sopen
+00487BC7 -B?
+00487BD7 - __crtInitCritSecNoSpinCount(x,x)
+00487BE7 - ___crtInitCritSecAndSpinCount
+00487C52 -i?
+00487C72 - __isatty
+00487C81 -C?
+00487C9C - __wctomb_mt
+00487CFC - __wctomb
+00487D30 - __aulldvrm
+00487DD0 - _memcpy_0
+00487F33 -D?
+00487F3F -s?
+00487F51 -8?
+00487F6B -c?
+00487FC1 -0?
+004880CF -5?
+004880DD -B?
+004880F3 -h?
+0048810D - ___freetlocinfo
+004881DD - ___updatetlocinfo_lk
+0048829E - ___updatetlocinfo
+004882D0 -_?
+004882D9 - _CPtoLCID
+004882F0 - Set EAX to $0404 and Return
+004882F6 - Set EAX to $0412 and Return
+004882FC - Set EAX to $0804 and Return
+00488302 - Set EAX to $0411 and Return
+00488308 - _setSBCS
+00488331 - _setSBUpLow
+004884BD - __setmbcp_lk
+0048864D - __setmbcp
+00488794 -??
+0048879D - ___initmbctable
+004887BB - _isdigit
+004887E6 -0?
+004887F5 - _isxdigit
+00488823 -C?
+00488834 - _isspace
+0048885F -4?
+0048886E - _ungetc
+004888DA - ___mbtowc_mt
+0048899A - _mbtowc
+004889C5 - _resetstkoflw
+00488AB0 - __allmul
+00488AC9 -t?
+00488AE4 - __lseeki64_lk
+00488B67 - ___tolower_mt
+00488C2F - _tolower
+00488C51 - __ZeroTail
+00488C73 -
+?
+00488C83 - __IncMan
+00488CD0 - __RoundMan
+00488D42 - __CopyMan
+00488D5D - __IsZeroMan
+00488D73 - Clear EAX and Return
+00488D76 - __ShrMan
+00488DF1 - __ld12cvt
+00488F49 -4?
+00488F5F --?
+00488F75 -0?
+00488FB2 -3?
+00488FEF - __fptostr
+00489066 - ___dtold
+00489120 - __fltout2
+0048918C - __fptrap_0
+00489195 - __abstract_cw
+00489227 - __hw_cw
+00489265 -0?
+004892B5 - __control87
+004892E4 -8?
+004892E7 - __controlfp
+004892FD - __87except
+004893F5 - __onexit_lk
+0048944B -8?
+00489475 -X?
+0048948D -d?
+0048949D - __onexit
+004894CF - Call 004861CC and Return
+004894D5 - _atexit
+004894E7 - _x_ismbbtype
+00489516 - Clear EAX and then increase it by 1
+0048951A - __ismbblead
+0048952B - __chsize_lk
+0048966C - __free_lc_time
+004897FC - ___free_lconv_num
+0048985B - ___free_lconv_mon
+00489940 - _strcspn
+00489986 - ___crtGetStringTypeA
+00489A63 -0?
+00489B40 - _strncmp
+00489B80 - _strpbrk
+00489BC0 - ___crtLCMapStringA
+00489CBA -m?
+00489D88 --?
+00489EBD -0?
+00489F7C - ___isctype_mt
+00489FEA -4?
+00489FF3 - ___addl
+0048A014 - ___add_12
+0048A072 - ___shl_12
+0048A0A0 - ___shr_12
+0048A0CD - ___mtold12
+0048A1AB - ___strgtold12
+0048A5DF - _$|10_OUTPUT
+0048A86D - __raise_exc
+0048A948 -??
+0048AAF6 -0?
+0048AB02 --?
+0048AB12 - __handle_exc
+0048AD36 -0?
+0048AD52 -4?
+0048AD5E - Clear EAX and Return
+0048AD61 - __statfp
+0048AD6C - __clrfp
+0048AD78 - __ctrlfp
+0048AD9C - __set_statfp
+0048ADF2 - _realloc
+0048AF63 -7?
+0048AF9F - _msize
+0048B009 -7?
+0048B015 - __setmode_lk
+0048B071 -9?
+0048B090 - ___ascii_stricmp
+0048B0DE - _atol
+0048B166 - _xtoa
+0048B1A4 - __itoa
+0048B1CE - ___ansicp
+0048B211 - ___convertcp
+0048B2E7 -e?
+0048B3DA - ___ld12mul
+0048B414 -c?
+0048B418 -1?
+0048B60C - ___multtenpow12
+0048B692 - __set_exp
+0048B6BC - __decomp
+0048B780 - ___ascii_strnicmp
+0048B7F0 -4?
+0048B800 - _strchr
+0048B87A -9?
+0048B8A9 -p?
+0048B8B0 --?
+0048B8B7 -r?
+0048B8BE - VerQueryValueA
+0048B8C4 - GetFileVersionInfoA
+0048B8CA - GetFileVersionInfoSizeA
+0048B8D0 - ImmReleaseContext
+0048B8D6 - ImmSetOpenStatus
+0048b8DC - ImmGetContext
+0048B8E2 - RtlUnwind

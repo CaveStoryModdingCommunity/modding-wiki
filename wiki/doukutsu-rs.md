@@ -71,17 +71,18 @@ The engine supports the following stage formats in priority order[^1]:
 [^2]: *This is a custom map format created by d-rs when it extracts freeware assets. It represents a raw chunk of memory taken from the executable where the vanilla maps are stored.*
 
 ### Sound
-The engine supports all formats of [.org]() as well as .ogg soundtracks. The formats it plays can be selected in the same manner as with Cave Story+.
+The engine supports all formats of [.org](organya) as well as .ogg soundtracks. The formats it plays can be selected in the same manner as with Cave Story+.
 
-To create the sound database for the .ORG engine, The backend uses a `.bin` format that combines the `wav100.bin` file with the `wav` samples of the drums into a single file. This file is hard-baked into the executable at compile time, so it cannot be replaced in the filesystem. *(note: wave100 is named thus because it contains 100 insturments with 256 samples per)*
+To create the sound database for the .ORG engine, The backend uses a `.bin` format that combines the `wav100.bin` file with the `wav` samples of the drums into a single file. This file is hard-baked into the executable at compile time, so it cannot be replaced in the filesystem. *(note: wave100 is named thus because it contains 100 insturments with 256 samples each)*
 
 In the words of the developer:
 >...and the format is wave100.bin + wav files with drums concatenated 
 
->Image
+*Todo: add the accompanying image*
 
 >This is how it was created:
 `cat WAVE100 fx96.wav fx97.wav fx98.wav fx99.wav fx9a.wav fx9b.wav fx00.wav fx00.wav > organya-wavetable-doukutsu.bin` .
+
 >On windows, it's `copy WAVE100 + fx96.wav + fx97.wav + fx98.wav + fx99.wav + fx9a.wav + fx9b.wav + fx00.wav + fx00.wav organya-wavetable-doukutsu.bin`
 
 This method is different from Cave Story Vanilla and CSE2. Both of those versions render the drums from `.pxt` (pixtone) files, not `.wav`. This makes using org3 formatted soundtracks with these players much more difficult, and requires (in the case of CSE2) re-writing part of the ORG backend to handle `.wav` samples like d-rs *(This is possible, and has been done multiple times by various CS modders)*.

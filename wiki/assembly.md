@@ -1,10 +1,6 @@
 # Assembly Hacking
 
-*This page is a stub! You can help by expanding it!*
-
----
-
-This section provides more information on the resources/findings for hacking Cave Story using OllyDbg, or the Doukutsu Assembler.
+This section provides more information on the resources/findings for hacking Cave Story using [OllyDbg](ollydbg), or the Doukutsu Assembler.
 
 
 ### Advanced Hacking Tutorials
@@ -16,12 +12,9 @@ This section provides more information on the resources/findings for hacking Cav
 <p style="color:#B00000;"><i>note: the headers below need links and pages!</i></p>
 
 ### Other Assembly Pages (ASM) *unfinished*
-- Assembly Compendium
 - Definitive Bullet ID List
-- TSC Command Offsets
-- Cave Story Functions Offset List
-- GUI Offset List
-- Cave Story Entity AI Offset and ID List
+- Cave Story Entity AI Offset and ID List [(Google Sheets)](https://docs.google.com/spreadsheets/d/12iC9uRGNZ2MnrhpS4s_KvIRYHhC56mPXCnCcsDjxit0/edit#gid=0)
+- [Combined Offset list](asm-offsets.md)
 
 ### Doukutsu Assembler Pages (DouA) *unfinished*
 - "Defines" List Document
