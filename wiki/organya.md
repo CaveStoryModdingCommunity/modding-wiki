@@ -176,7 +176,23 @@ Access.org uses only 1 non-percussion channel: **channel 2**. This means that th
 ### ORG Tempo:
 ORG music can handle 1000 individual notes per second. The wait time is expressed in milliseconds, with the shortest time possible for a single note being 1 millisecond *(having a wait value of "1")*.
 
+To convert BPM to "WAIT", use the following formula:
+`60000/(BPM * NPB) = WAIT`
 
+To convert from "WAIT" to BPM, use the following formula:
+`60000/(WAIT * NPB) = BPM`
+
+Where:
+- `WAIT` is the time in milliseconds each note takes to play (ORG's internal tempo format)
+- `NPB` is the number of notes per beat
+- `BPM` is the number of beats per minute
+
+Example, with a new org file, the wait value is 128, with 4 notes per beat.
+Plugging this in yields: `60000/(128*4)=117.1875`
+
+Converting 117 BPM back to WAIT yields: `60000/(117*4)=128.205`
+
+Note that ORG Wait time is in decimals only, so 128.205 would be truncated to 128.
 
 
 
