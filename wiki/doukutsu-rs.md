@@ -35,12 +35,10 @@ Since this engine is still in active development, there is still no "Official" r
 
 d-rs is designed to be a drop-in replacement for all existing versions of cave story, including:
 - [Cave Story Freeware](freeware)
-- Cave Story +
+- [Cave Story +](cavestoryplus-pc)
 - Cave Story Switch
 - [CSE2](cse2)
 - [NXEngine](nx-engine)
-
-
 
 
 D-rs will alter its behavior to closely mimic these engines, depending on which one it is supposed to replace. For example, it will adopt fancy water when coupled with the Nintendo Switch port, or animated facepics with the NXEngine files. The engine also supports 2 player multiplayer analogous to CS-Switch.
@@ -52,19 +50,24 @@ D-rs also has support for pxpack mapfiles, similar to those used in Pixel's newe
 D-rs also has a custom lighting engine that implements basic raycasting and colored point lights. This can be enabled or disabled during gameplay, but is overridden by some of the other ports' files (an example of this being CS-Switch).
 
 
-
-
 ### Data
 To avoid legal issues, d-rs does not ship with any cave story assets, and must be placed in a pre-existing install folder. If placed with vanilla Cave Story, it will automatically extract all embedded assets into the `./data` subdirectory.
-
-
-
 
 The engine supports the following stage formats in priority order[^1]:
 1. stage.tbl
 2. stage.sect[^2]
 3. mrmap.bin
 4. stage.dat
+
+D-rs hard-bakes some assets into the executable at compile-time, but all internal assets can be replaced by putting their replacements in the `./data/builtin` folder next to the final executable.
+Things that can be replaced in this manner include:
+- Localizations
+- Fonts
+- ORG soundfonts
+- Controller mappings
+- Screen buttons *(mobile devices only)*
+- Crabby-Sue Headbands *(See: [Mascot](#mascot))*
+- Lightmaps
 
 
 [^1]: *Stage tables with higher priority will be loaded in lieu of lower ones, even if multiple share the same directory.*
@@ -73,27 +76,41 @@ The engine supports the following stage formats in priority order[^1]:
 ### Sound
 The engine supports all formats of [.org](organya) as well as .ogg soundtracks. The formats it plays can be selected in the same manner as with Cave Story+.
 
-To create the sound database for the .ORG engine, The backend uses a `.bin` format that combines the `wav100.bin` file with the `wav` samples of the drums into a single file. This file is hard-baked into the executable at compile time, so it cannot be replaced in the filesystem. *(note: wave100 is named thus because it contains 100 insturments with 256 samples each)*
+
+To create the sound database for the .ORG engine, The backend uses a `.bin` format that combines the `wav100.bin` file with the `wav` samples of the drums into a single file.[^3]
+
+
+[^3]: *(note: wave100 is named thus because it contains 100 instruments with 256 samples each)*
+
+
+This file is hard-baked into the executable at compile time, but can be replaced by naming the new file `organya-wavetable-doukutsu.bin` and placing it in `./data/builtin` in the final game directory.
+
 
 In the words of the developer:
->...and the format is wave100.bin + wav files with drums concatenated 
+>...and the format is wave100.bin + wav files with drums concatenated
 
-*Todo: add the accompanying image*
+
+>![The input files and their corresponding output](img/engines/d-rs-assets/org-soundfont.png)
+
 
 >This is how it was created:
 `cat WAVE100 fx96.wav fx97.wav fx98.wav fx99.wav fx9a.wav fx9b.wav fx00.wav fx00.wav > organya-wavetable-doukutsu.bin` .
 
+
 >On windows, it's `copy WAVE100 + fx96.wav + fx97.wav + fx98.wav + fx99.wav + fx9a.wav + fx9b.wav + fx00.wav + fx00.wav organya-wavetable-doukutsu.bin`
+
+
+A pre-made version of the full org3 wavetable can be found here: [organya-wavetable-orgmaker.bin](files/organya-wavetable-orgmaker.bin)
+
+
+If the org file is `org-02` or `org-01`, the game will ignore the instruments chosen for drums and hard-index them based on track number, just like CS-Freeware. If the org file is `org-03`, the instrument variable will be used to select the correct sample. This means that dropping a new soundfont file into the game may produce the wrong drum sounds unless the header of each ORG is changed to `org-03` or `org-02` accordingly. The simplest way to do that is to use a [HEX editor](https://mh-nexus.de/en/hxd/) to edit the header. [ORGMaker]() can also be used to do this by editing the drum instruments and re-saving.
+
 
 This method is different from Cave Story Vanilla and CSE2. Both of those versions render the drums from `.pxt` (pixtone) files, not `.wav`. This makes using org3 formatted soundtracks with these players much more difficult, and requires (in the case of CSE2) re-writing part of the ORG backend to handle `.wav` samples like d-rs *(This is possible, and has been done multiple times by various CS modders)*.
 
 
-
 ## Debugger Functions
 This engine has a built-in debugger. Debug functions can be accessed by pressing the following function keys:
-
-
-
 
 - **F3**: Godmode
 - **F4**: Infinite Booster
