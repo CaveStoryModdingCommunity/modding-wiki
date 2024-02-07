@@ -144,7 +144,7 @@ D-rs has comprehensive support for lua scripting, allowing for some engine or be
 ![The d-rs mascot](img/engines/d-rs-assets/sue.bmp)
 
 
-Since conception, d-rs has used Sue in some form as its mascot, per developer preference. As the port aged into a complete game, a custom version of Sue was made to go along with it. The mascot was tinted blue and given various crab-like features in order to relate back to Rust's mainstream mascot, [Ferris](https://rustacean.net/).
+Since conception, d-rs has used Sue in some form as its mascot, per developer preference. As the port aged into a complete game, a custom version of Sue was made to go along with it by user Daedliy. The mascot was tinted blue and given various crab-like features in order to relate back to Rust's mainstream mascot, [Ferris](https://rustacean.net/).
 
 
 In order to celebrate the engine's rust heritage, every year on July 7, all in-game instances of Sue will become "crabby", taking on the color and crab features of the engine's mascot. This feature can also be enabled manually using the "more rust" option in the debug menu.

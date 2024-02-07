@@ -1,7 +1,7 @@
 # The King's Table
 
 
-> *"evil brayconn be like 'hey everyone check out my editor BEANS'"* - Eli
+> *"evil brayconn be like 'hey everyone check out my editor BEANS'"* - Eli, refrencing an in-joke about the program's placeholder icon
 
 
 **The King's Table** (most commonly abbreviated as 'TKT') is an in-progress editor being developed by **Brayconn**. 

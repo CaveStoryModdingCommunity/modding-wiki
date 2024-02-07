@@ -9,25 +9,25 @@
 
 Organa is a custom music tracker format created by Pixel in [insert proper date here].
 It is most prominently known for its use in Cave Story, but several other games use it, too, such as:
-- (list of games here)
-- (game 2)
+- [Stargazer](http://www5b.biglobe.ne.jp/~kiss-me/aji/star/)
 
 
-The format allows the playback of 13-16 simultaneous channels, with 8 note polyphony and 5-8 different percussion instruments, depending on the player used.
+The format allows the playback of 14-16 simultaneous channels, with 8 note polyphony and 6-8 different percussion instruments, depending on the player used.
 
 
-Cave Story only allows 5 of the 8 available percussion tracks to be used, and each is hard-baked to a specific instrument. Changing percussion instruments in the editor will not affect which one will be used during playback ingame. Any notes put in tracks V, W, and X will be ignored during playback.
+Cave Story only allows 6 of the 8 available percussion tracks to be used, and each is hard-baked to a specific instrument. Changing percussion instruments in the editor will not affect which one will be used during playback ingame. Any notes put in tracks U and I will be ignored during playback.
 These instruments are:
 
+- **Channel Q:** Bass01
+- **Channel W:** Snare01
+- **Channel E:** HiClose
+- **Channel R:** HiOpen
+- **Channel T:** Tom01
+- **Channel Y:** Per01
+- **Channel U:** Unused (Bass01 by default in OrgMaker)
+- **Channel I:** Unused (Bass01 by default in OrgMaker)
 
-- **Channel Q:** Instrument_1
-- **Channel W:** Instrument_2
-- **Channel E:** Instrument_3
-- **Channel R:** Instrument_4
-- **Channel T:** Instrument_5
-
-
-This is the case because unlike the org editors which use .wav samples for drums, Cave Story uses the .pxtone format. This means that drum samples can be replaced in the same manner as [other sfx](add_a_proper_URL!), but the other drum formats used in Orgmaker2 will need to be recreated using a pixtone editor, such as [seatone](add_a_proper_URL!).
+This is the case because unlike the org editors which use .wav samples for drums, Cave Story uses the .pxtone format. This means that drum samples can be replaced in the same manner as [other sfx](freeware-asset-replacement), but the other drum formats used in Orgmaker2 will need to be recreated using a pixtone editor, such as [SeaTone](freeware-asset-replacement).
 
 
 
@@ -36,13 +36,13 @@ This is the case because unlike the org editors which use .wav samples for drums
 
 *:warning: Information Incomplete: Fillers currently in use*
 
-Two original versions of the org editor have been released to the public, titled Orgmaker and Orgmaker2, respectively.
+Two original versions of the org editor have been released to the public, titled [Orgmaker](orgmaker1) and [Orgmaker2](orgmaker2), respectively.
 
 
 The Orgmaker2 editor allows for different drum types to be specified.
 
 
-Several other community efforts have been made to update or completely replace these editors and add some missing quality-of-life features. [Example](add_a_proper_URL!).
+Several other community efforts have been made to update or completely replace these editors and add some missing quality-of-life features. A notable example of this is [Orgmaker3](orgmaker3).
 
 
 ## File format

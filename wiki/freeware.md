@@ -20,6 +20,8 @@ Cave Story '**Freeware**' refers to the original engine and release of Cave Stor
 
 As its source code is not available, Freeware is primarily modified with one of two options: the 86x Assembly programming language, commonly referred to in the community as ['ASM'/'ASM hacks'](assembly), or the dll tool [Modloader](modloader).
 
+For basic asset replacement, see the guide on how to replace [ORGs, SFX, and Credits images](freeware-asset-replacement).
+
 Many hacks already exist for Freeware. Chances are, if you want some feature, it's already been made into a convenient patch. Many of these patches can be applied with [Booster's lab](boosters-lab) or other [editors](cavestory-editors).
 For more specifics, please see the [Advanced Freeware Hacking](advanced-freeware-hacking) page.
 

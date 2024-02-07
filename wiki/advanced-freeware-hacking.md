@@ -9,7 +9,6 @@ Before you begin doing such advanced hacking, it is strongly recommended that yo
 ### HEX patches and XML addons
 - See the [CaveStoryModdingCommunity's Freeware Hacks Repository (Github)](https://github.com/CaveStoryModdingCommunity/FreewareHacks)
 
-
 ## Assembly (ASM/DouA) Lists and Notes, and tutorials
 
 - See the [Assembly page](assembly)
