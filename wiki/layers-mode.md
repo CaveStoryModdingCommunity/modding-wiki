@@ -1,0 +1,62 @@
+# Layers Mode
+
+
+Layers mode refers to a modification of the Cave Story mapdata that allows tiles to be drawn in one of 4 separate layers, as opposed to only one.
+
+
+It was originally created by user NOXID and supported in their editor, [Booster's lab](boosters-lab).
+
+
+This allows for more elaborate maps to be created with fewer tiles and less complicated setup.
+
+
+Another feature of layers mode is the support for extended tilemaps. By default, tilesets can only be 16x16 tiles, totaling 256, or the length of 1 byte. This is because the `.pxm` files store each tile's address using a single byte, so anything larger than that cannot be included in the map.
+
+
+Layers mode extends the `.pxa` by addressing the tiles with 2 bytes rather than 1, increasing the theoretical tile limit to 65536![^1]
+
+
+[^1]: Tilesets still have to be 16 tiles wide due to how the game wraps around when addressing tiles, but they can now be much taller.
+
+
+## Operation
+In layers mode, the tile's `foreground` or `background` attribute is ignored. Tiles that need to be in front or behind the scene can simply be placed on the corresponding layer.
+
+
+Collision is only registered with tiles on the `foreground` layer. Tiles with collision attributes will be treated as if they have nothing. Tiles that are animated such as wind will also be treated as static. Anything that interacts with the player or NPCs should be on the `foreground` layer.
+
+
+## Engine Support
+
+
+This mod is readily available for Freeware as a [dll patch](advanced-freeware-hacking) created by user **Periwinkle** that can be downloaded here: [(download)](files/layers.zip)[^2]
+
+
+[^2]:To improve performance, this hack doesn't draw tiles in slot 0 (top left corner), since this tile is usually left transparent anyway. Use this tile for "air" only.
+
+
+CSE2 and d-rs don't support layers mode out-of-the-box, but their open-source nature and the simple implementation of the mode itself make it easy to add it.
+
+
+User **JakeV** posted a tutorial on how to [implement layers in CSE2](https://gitlab.com/-/snippets/2177785) as well as enable [extended tilemaps](https://gitlab.com/-/snippets/2179513) (described above).
+
+User **Dr_Glaucous** has created several mods that add layers support to d-rs. [Their source code can be found on github](https://github.com/DrGlaucous/CaveS-Public/tree/main/Mythbust) and used as a substitute template until more official versions of this are developed.
+
+
+Although some editors can convert normal-mode tiles to layers-mode tiles on the fly (Booster's lab is one such example), not all versions of layers mode may be backwards compatible with the original format. Fortunately, a pre-converted version of the vanilla assets can be downloaded [here](files/Stage.zip).
+## Editor Support
+
+
+Most modern [Cave Story Editors](cavestory-editors) support layers.
+
+
+Currently, editors known to support layers are:
+- [Booster's Lab](boosters-lab)
+- [SDE](sky-dragon-editor)
+- [TKT](the-kings-table)
+
+
+
+
+
+

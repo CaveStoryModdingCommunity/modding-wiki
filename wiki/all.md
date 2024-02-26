@@ -24,6 +24,7 @@ Not all pages link to each other yet, so this page contains a list of all the su
 - [freeware](freeware)
 - [freeware-asset-replacement](freeware-asset-replacement)
 - [geobox](geobox)
+- [layers-mode](layers-mode)
 - [miza](miza)
 - [modloader](modloader)
 - [nx-engine](nx-engine)
