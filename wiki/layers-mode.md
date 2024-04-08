@@ -25,6 +25,10 @@ In layers mode, the tile's `foreground` or `background` attribute is ignored. Ti
 
 Collision is only registered with tiles on the `foreground` layer. Tiles with collision attributes will be treated as if they have nothing. Tiles that are animated such as wind will also be treated as static. Anything that interacts with the player or NPCs should be on the `foreground` layer.
 
+Some versions of the layers mode mod include new commands to supplement vanilla's `<CMP` and `<SMP` for editing the different layers. These commands are as follows:
+- `<CMLwwww:xxxx:yyyy:zzzz`, Sets the tile at (xxxx,yyyy) to type zzzz, on layer wwww [0/back, 1/mid, 2/fore, 3/far fore]
+- `<SMLwwww:xxxx:yyyy`, Subtracts 1 from tile type at (xxxx,yyyy) on layer wwww [0/back, 1/mid, 2/fore, 3/far fore]
+
 
 ## Engine Support
 
@@ -40,7 +44,7 @@ CSE2 and d-rs don't support layers mode out-of-the-box, but their open-source na
 
 User **JakeV** posted a tutorial on how to [implement layers in CSE2](https://gitlab.com/-/snippets/2177785) as well as enable [extended tilemaps](https://gitlab.com/-/snippets/2179513) (described above).
 
-User **Dr_Glaucous** has created several mods that add layers support to d-rs. [Their source code can be found on github](https://github.com/DrGlaucous/CaveS-Public/tree/main/Mythbust) and used as a substitute template until more official versions of this are developed.
+User **Dr_Glaucous** has created a fork that add layers support to d-rs. [The fork's source code can be found on github](https://github.com/DrGlaucous/doukutsu-rs-nm/tree/master) and used as a substitute template until more official versions of this are developed.
 
 
 Although some editors can convert normal-mode tiles to layers-mode tiles on the fly (Booster's lab is one such example), not all versions of layers mode may be backwards compatible with the original format. Fortunately, a pre-converted version of the vanilla assets can be downloaded [here](files/Stage.zip).

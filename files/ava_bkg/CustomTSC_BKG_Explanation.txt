@@ -1,0 +1,125 @@
+# <BKG Explanation #
+
+<BKG has many factors that goes into it. If you've looked at "CustomTSC_BKG_Format.txt", you'll see that there are many different values.
+I'll do my best to explain them here!
+
+# Background Name #
+This is the image that gets loaded from /data when you load the <BKG text file.
+This should be self explanatory!
+
+################
+# LAYER VALUES #
+################
+
+Everything below is values per EACH layer of your background. Meaning that you can have multiple layers of backgrounds!
+Top layers in the txt draw last, Bottom layers in the txt draw first.
+Meaning.. Top layers are in the far back, and Bottom layers are in the far front.
+
+# Bitmap X Offset #
+This is the top left X coordinate of the spritesheet that this <BKG layer will draw from.
+
+Example: bkBlue in vanilla would be "0"
+
+# Bitmap Y Offset #
+This is the top left Y coordinate of the spritesheet that this <BKG layer will draw from.
+
+Example: bkBlue in vanilla would be "0"
+
+# Bitmap Width #
+This is the width of the sprite for this <BKG layer.
+The bottom right X coordinate of this layers sprite would be "Bitmap X Offset + Bitmap Width", basically.
+
+Example: bkBlue in vanilla would be "64"
+
+# Bitmap Height #
+This is the Height of the sprite for this <BKG layer.
+The bottom right Y coordinate of this layers sprite would be "Bitmap Y Offset + Bitmap Height", basically.
+
+Example: bkBlue in vanilla would be "64"
+
+# Repeat X #
+How many times this background will repeat on the X axis. This literally means how many times it'll repeat in game.
+
+Every 16 pixels in a background sprite is 1 tile in game.
+If your background was 16x16 pixels, and you set the Repeat X to 1, it would only show up on the top left tile.
+
+Example: bkBlue in vanilla is 64x64 pixels, so it takes up 4x4 tiles for each 1 repeat on the X axis.
+
+# Repeat Y #
+How many times this background will repeat on the Y axis. This literally means how many times it'll repeat in game.
+
+Every 16 pixels in a background sprite is 1 tile in game.
+If your background was 16x16 pixels, and you set the Repeat Y to 1, it would only show up on the top left tile.
+
+Example: bkBlue in vanilla is 64x64 pixels, so it takes up 4x4 tiles for each 1 repeat on the Y axis.
+
+# Repeat Gap X #
+Everytime your background repeats on the X axis, it'll be separated from the other background tiles by an amount of pixels.
+
+Example: bkBlue in vanilla would be "0"
+
+# Repeat Gap Y #
+Everytime your background repeats on the Y axis, it'll be separated from the other background tiles by an amount of pixels.
+
+Example: bkBlue in vanilla would be "0"
+
+# Types #
+Depending on the tile of background, it will do different things. You can combine most of them together to get multiple effects!
+It works similar to EQ+ --> If you want type 1 and type 2, you combine them to create type 3.
+Certain combinations do not work (They will be listed)
+
+///////////////
+// Type List //
+///////////////
+
+1 - Move the background horizontally with the players camera.
+2 - Move the background vertically with the players camera.
+4 - Scroll the camera horizontally automatically -- similar to Ironhead fight.
+8 - Scroll the camera vertically -- similar to Ironhead fight.
+16 - Align the background with gWaterY and the players camera.
+32 - Display the background on the foreground instead. [FORCES THE IMAGE TO LOCK TO THE PLAYERS CAMERA AT ALL TIMES INSTEAD OF THE MAP TILES]
+64 - Add random amount of speed to the X direction, minimum being (0 subtracted by animation speed), maximum being animation speed. [Only if type 8 is set as well]
+128 - Add random amount of speed to the Y direction, minimum being (0 subtracted by animation speed), maximum being animation speed. [Only if type 4 is set as well]
+256 - Lock the background to the Y axis at all times. [Incompatible with type 512]
+512 - Lock the background to the X axis at all times. [Incompatible with type 256]
+1024 - Background x/y position is random between 0 and x/y respectively, animation speed is random between (animation speed, and animation speed * 2), animation counter is random between 0 and animation speed, and starting animation frame as random between 0 and amount of frames.
+
+# Horizontal Scroll Speed #
+Speed at which the background scrolls horizontally.
+
+This is a decimal value!
+
+"Follow Slowly" and "Follow Foreground" backgrounds in vanilla Cave Story use a value of "0.9".
+
+Example: bkBlue in vanilla would be "0.9"
+
+# Vertical Scroll Speed #
+Speed at which the background scrolls vertically.
+
+This is a decimal value!
+
+"Follow Slowly" and "Follow Foreground" backgrounds in vanilla Cave Story use a value of "0.9".
+
+Example: bkBlue in vanilla would be "0.9"
+
+# Sprite Number #
+How many sprites your background has. If set higher than 1, then you can have a background with animated frames as well!
+
+Example: bkBlue in vanilla would be "0"
+
+# Animation Speed #
+How many frames it takes for your animated background to go to the next frame. This will do nothing if "Sprite Number" is not greater than 1.
+
+Example: bkBlue in vanilla would be "0"
+
+# Map X Position #
+Position the background should be placed on the X axis in amount of pixels.
+1 tile is 16 pixels, so setting your background to "16" will cause it to be offset by 1 tile rightwards from the origin point of the map.
+
+Note: It's a decimal, so you can offset it by subpixels as well!
+
+# Map Y Position #
+Position the background should be placed on the Y axis in amount of pixels.
+1 tile is 16 pixels, so setting your background to "16" will cause it to be offset by 1 tile downwards from the origin point of the map.
+
+Note: It's a decimal, so you can offset it by subpixels as well!

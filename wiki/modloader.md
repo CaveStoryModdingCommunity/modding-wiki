@@ -10,9 +10,9 @@ The DLL modloader was developed by Clownacy and initially released in 2017. It s
 It can best be described as a split between complete engine modding with something like [CSE2](cse2) or [d-rs](doukutsu-rs) and straight vanilla modding using an assembler and x86 instructions. Developers write their program in their preferred language (typically c/c++) and tell their code what address in the original EXE to inject the mod. The result provides high-level expandability to Freeware.
 
 
-Since its creation, many other mod dlls have been made for this tool, adding things like wall jumping, customizable bosses, and even multiplayer!
+Since its creation, many other mod dlls have been made for this tool, adding things like wall jumping, customizable bosses, and even *(ghost)* [multiplayer](https://github.com/autumn-mnya/Freeware-Online)!
 
-*Todo: find this database and link it in a non-shill way.*
+One of the more prominent dlls made for the modloader is [AVA](ava), which takes the "Soda Fountain Mixer" approach to dll mods, exposing as many engine tweaks to the user as possible.
 
 ______
 ***The following describes the demo mod that comes with the modloader, downloadable at either link above.***

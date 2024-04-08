@@ -100,10 +100,10 @@ In the words of the developer:
 >On windows, it's `copy WAVE100 + fx96.wav + fx97.wav + fx98.wav + fx99.wav + fx9a.wav + fx9b.wav + fx00.wav + fx00.wav organya-wavetable-doukutsu.bin`
 
 
-A pre-made version of the full org3 wavetable can be found here: [organya-wavetable-orgmaker.bin](files/organya-wavetable-orgmaker.bin)
+A pre-made version of the full org3 wavetable can be found here *(note: this file now ships with all source copies of d-rs, it just needs to be re-named and placed in the proper folder)*: [organya-wavetable-orgmaker.bin](files/organya-wavetable-orgmaker.bin)
 
 
-If the org file is `org-02` or `org-01`, the game will ignore the instruments chosen for drums and hard-index them based on track number, just like CS-Freeware. If the org file is `org-03`, the instrument variable will be used to select the correct sample. This means that dropping a new soundfont file into the game may produce the wrong drum sounds unless the header of each ORG is changed to `org-03` or `org-02` accordingly. The simplest way to do that is to use a [HEX editor](https://mh-nexus.de/en/hxd/) to edit the header. [ORGMaker]() can also be used to do this by editing the drum instruments and re-saving.
+If the org file is `org-02` or `org-01`, the game will ignore the instruments chosen for drums and hard-index them based on track number, just like CS-Freeware. If the org file is `org-03`, the instrument variable will be used to select the correct sample. This means that dropping a new soundfont file into the game may produce the wrong drum sounds unless the header of each ORG is changed to `org-03` or `org-02` accordingly. The simplest way to do that is to use a [HEX editor](https://mh-nexus.de/en/hxd/) to edit the header. [ORGMaker](orgmaker3) can also be used to do this by editing the drum instruments and re-saving.
 
 
 This method is different from Cave Story Vanilla and CSE2. Both of those versions render the drums from `.pxt` (pixtone) files, not `.wav`. This makes using org3 formatted soundtracks with these players much more difficult, and requires (in the case of CSE2) re-writing part of the ORG backend to handle `.wav` samples like d-rs *(This is possible, and has been done multiple times by various CS modders)*.
