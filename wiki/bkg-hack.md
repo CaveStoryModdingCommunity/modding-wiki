@@ -89,7 +89,11 @@ It uses a stack-based method for implementing each layer, where a call to `<BKG`
 
 This version of BKG was based on the one in AVA, and by extension, the one by Bionicobot.
 The primary difference here is that it uses .json files to store BKG configs instead of plaintext files.
-This makes them easier to view and edit without a refrence table.
+This makes them *even* easier to view and edit without a refrence table.
+Additionally, this fixes several bugs that were discovered with the older implementations.
+
+For the complete documentation, please see the [listing on the source page](https://github.com/DrGlaucous/doukutsu-rs-nm/blob/mod-features/Documentation.md).
+
 
 
 
