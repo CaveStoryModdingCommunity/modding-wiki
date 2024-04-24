@@ -1,4 +1,4 @@
-# BKG Hack
+# BKG Hack<!-- omit in toc -->
 
 The BKG hack modularizes the background behaviors, allowing them to be highly customized and changed at runtime.
 
@@ -9,16 +9,17 @@ For instance, all BKG implementations support multiple layers, where each layer 
 
 
 The list of ports for the BKG hack are as follows:
-- [BLink's custom DLL](https://forum.cavestory.org/threads/blinks-multi-layered-background-hack.14250/)
-- [AVA](ava)
-- [JakeV's CSE2 modengine](https://forum.cavestory.org/threads/mod-engine-tsc-extended.15369/)[^1]
-- [Dr. Glaucous's d-rs mod-features](https://github.com/DrGlaucous/doukutsu-rs-nm/tree/mod-features)
+- [BLink Layer Hack](#blink-layer-hack)
+- [AVA](#ava)
+- [JakeV Modengine (tscextended)](#jakev-modengine-tscextended)
+- [d-rs mod-features](#d-rs-mod-features)
 
 
-[^1]: Note: since this is CSE2, the download link has since been removed, but it still exsists on archive.org
 
 
 ## BLink Layer Hack
+
+[Original forum thread here](https://forum.cavestory.org/threads/blinks-multi-layered-background-hack.14250/)
 
 This version is exclusively TSC dependant and uses no external config files. It is a standalone hack, so other dlls and patches need to be added with care.
 
@@ -58,9 +59,12 @@ These can be added to each other, so a value of 9 would make it scroll horizonta
 `<BKNXXXX` Determines how many slots the custom BK has. A value of 0000 makes it render vanilla backgrounds.
 
 ## AVA
-The AVA implementation was based on an earlier implementation by Bionicobot for CSE2[^2], and is essentially unchanged beyond the freeware-related hooks. The configuration files are a plaintext list of values, essentially replicating the TSC command in the BLink Layer hack, but making it easier to read and edit.
 
-[^2]: Now unobtanium due to the DMCA, but since AVA is basically a verbaitm copy, it would be trivial to port it back to CSE2.
+[More info about AVA's general featureset here.](ava)
+
+The AVA implementation was based on an earlier implementation by Bionicobot for CSE2[^1], and is essentially unchanged beyond the freeware-related hooks. The configuration files are a plaintext list of values, essentially replicating the TSC command in the BLink Layer hack, but making it easier to read and edit.
+
+[^1]: Now unobtanium due to the DMCA, but since AVA is basically a verbaitm copy, it would be trivial to port it back to CSE2.
 
 Bionicobot wrote comprehensive documentation on how their BKG mod works, and outlined its featues in the following text documents, which also apply to AVA:
 - [Argument Explanation](files/ava_bkg/CustomTSC_BKG_Explanation.txt)
@@ -71,14 +75,20 @@ Config files themselves are loaded with a much shorter command than with the BLi
 `<BKGconfigname_here$`, where `configname_here` is the name of the config file in the `./data/bkg` folder. The `$` sign denotes the end of the argument.
 
 There are also several other commands that control how the backgrounds behave on the fly:
- - `<BKDwwww` - **Background Disable:** disables background with order wwww
- - `<BKEwwww` - **Background Enable:** enables background with order wwww
- - `<BKGfilename$` - **Background:** see the explaination above
- - `<BKPwwww:xxxx:yyyy` - **Background Parameter** Set background parameter X for layer W to value Y.
+- `<BKDwwww` - **Background Disable:** disables background with order wwww
+- `<BKEwwww` - **Background Enable:** enables background with order wwww
+- `<BKGfilename$` - **Background:** see the explaination above
+- `<BKPwwww:xxxx:yyyy` - **Background Parameter** Set background parameter X for layer W to value Y.
 - `<BKR` - **Background Reset:** Disables the custom backgrounds until they are loaded again with `<BKG` (this reset also happens with map transitions)
 
 
 ## JakeV Modengine (tscextended)
+
+More info about this mod [can be found here.](https://forum.cavestory.org/threads/mod-engine-tsc-extended.15369/)[^2]
+
+[^2]: Note: since this is CSE2, the download link has since been removed, but it still exsists on archive.org
+
+
 
 This BKG implementation is part of a larger toolset for modding CSE2, but lacks much of the versitlity offered by the other BKG implementations.
 

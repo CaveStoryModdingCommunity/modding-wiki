@@ -20,10 +20,11 @@ Layers mode extends the `.pxa` by addressing the tiles with 2 bytes rather than 
 
 
 ## Operation
-In layers mode, the tile's `foreground` or `background` attribute is ignored. Tiles that need to be in front or behind the scene can simply be placed on the corresponding layer.
+
+For all practial purposes, anything placed on the `foreground` layer will behave exactly as it does in unmodified cave story. *(Example: a tile placed on the foreground layer with attribute `0x00` will still be drawn behind the player, but one with attribute `0x40` will be drawn in front)*
 
 
-Collision is only registered with tiles on the `foreground` layer. Tiles with collision attributes will be treated as if they have nothing. Tiles that are animated such as wind will also be treated as static. Anything that interacts with the player or NPCs should be on the `foreground` layer.
+Collision is only registered with tiles on the `foreground` layer. Tiles with collision attributes on other layers will be treated as if they have nothing. Tiles that are animated such as wind will also be treated as static. Anything that interacts with the player or NPCs should be on the `foreground` layer.
 
 Some versions of the layers mode mod include new commands to supplement vanilla's `<CMP` and `<SMP` for editing the different layers. These commands are as follows:
 - `<CMLwwww:xxxx:yyyy:zzzz`, Sets the tile at (xxxx,yyyy) to type zzzz, on layer wwww [0/back, 1/mid, 2/fore, 3/far fore]

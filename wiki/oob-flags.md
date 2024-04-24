@@ -3,7 +3,7 @@ This page contains a list of flag variables that exceed the limit (8000). This i
 
 [Tribute Site Forums Thread](https://forum.cavestory.org/threads/using-oob-tsc-flags-to-exploit-memory.13917/)
 
-The following content was taken from the post made by Enlightened, the original creator of the list, found at the link above. 
+The following content was taken from the post made by **Enlightened**, the original creator of the list, found at the link above. 
 
 >Hey, so I've always been telling myself that after I'm done with modding I'll post these, but since:
 >1. I don't know when that will be.
@@ -76,11 +76,11 @@ HOWEVER, there is a trick to working with most of the NON-KEY values. Since the
 
 #### Example:
 
- Using "<FL+8704" will activate a hard quake, but for only 1 tick/frame. "8705" will add 2 ticks, "8706" will add 4 ticks, and so on in powers of 2. If you want a 100 frame hard quake (2 seconds if the FPS is 50), you would use a combination of flags set to get that amount, or if you are lazy you could just use some larger number like "8711" and call it a day. Be reasonable though or you will likely accidentally be editing something else entirely.
+ Using `<FL+8704` will activate a hard quake, but for only 1 tick/frame. `8705` will add 2 ticks, `8706` will add 4 ticks, and so on in powers of 2. If you want a 100 frame hard quake (2 seconds if the FPS is 50), you would use a combination of flags set to get that amount, or if you are lazy you could just use some larger number like `8711` and call it a day. Be reasonable though or you will likely accidentally be editing something else entirely.
 
 #### Example 2:
 
- Say you wanted the exp counter to visually say "+1337" above the player. The first flag is [B720], so in order to get an exact value of 1337 you would first visualize or jot down each flag to a power of 2 like so:
+ Say you wanted the exp counter to visually say `+1337` above the player. The first flag is `B720`, so in order to get an exact value of `1337` you would first visualize or jot down each flag to a power of 2 like so:
 ```
 1  <FL+B720
 2  <FL+B721
@@ -117,14 +117,14 @@ Now that you may or may not understand how binary works now, here is some other 
 - The key flags are defined as if the key is currently being held, acting like an alt-tab where a key gets stuck and one has to press it to reset it to the off state.
 
 
-- Do note that setting these flags are you essentially telling the game that the key is being held down, and is unfriendly to the player who is actually supposed to be the one behind the controls. It is recommended that you only <FLJ these values to determine what the player is doing. If you NEED to force a key via setting the flag, try adding "32" to the value of the key, which will instead tell the game it was just tapped, and won't result in stuck keys you have to unset.
+- Do note that setting these flags are you essentially telling the game that the key is being held down, and is unfriendly to the player who is actually supposed to be the one behind the controls. It is recommended that you only `<FLJ` these values to determine what the player is doing. If you NEED to force a key via setting the flag, try adding `32` to the value of the key, which will instead tell the game it was just tapped, and won't result in stuck keys you have to unset.
 
-- Various functions are disabled when running TSC events, but seem to work if executed right before an <END. Examples include the invincibility timer and opening the Map/Inventory, you have to set the flag right before ending the script.
+- Various functions are disabled when running TSC events, but seem to work if executed right before an `<END`. Examples include the invincibility timer and opening the Map/Inventory, you have to set the flag right before ending the script.
 
 
 - Likewise, for some odd reason the player is unable to interact with objects if certain keys are held down. Pressing "down" won't open doors and such if the "L" key is stuck, etc.
 
-- **IMPORTANT:** For controller support, all of the buttons are reinterpreted as keys, and so one can still see if the player is pressing the inventory button with "<FLJ9100". THE EXCEPTION is with the movement keys, because the joystick works differently in engine. Because of this one should basically never rely on the arrow/movement keys because they simply don't work with controllers. For making a menu in TSC I instead suggest a moving player character to select between options or using the keys for cycling weapons instead.
+- **IMPORTANT:** For controller support, all of the buttons are reinterpreted as keys, and so one can still see if the player is pressing the inventory button with `<FLJ9100`. THE EXCEPTION is with the movement keys, because the joystick works differently in engine. Because of this one should basically never rely on the arrow/movement keys because they simply don't work with controllers. For making a menu in TSC I instead suggest a moving player character to select between options or using the keys for cycling weapons instead.
 
 
 ## Section 3: How did I get these values, and where can more be found.
