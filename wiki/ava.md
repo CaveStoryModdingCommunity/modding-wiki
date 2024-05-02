@@ -52,8 +52,7 @@ To help make the new features easier to use, the dll comes with a tweaked versio
 | Downloads and Links |
 | - |
 | The source code can be found [here](https://github.com/autumn-mnya/autumns-various-additions/tree/main). |
-| The latest release buld can be found [here](https://github.com/autumn-mnya/autumns-various-additions/releases/download/1.1.3.1/autumns_various_additions.zip). |
-| The latest bundled Booster's Lab installation can be found [here](https://github.com/autumn-mnya/autumns-various-additions/releases/download/1.1.3.1/autumnal_lab.zip). |
+| The latest up-to-date release builds can be found [here](https://autumn-mnya.github.io/dllmods/index.html). |
 
 
 

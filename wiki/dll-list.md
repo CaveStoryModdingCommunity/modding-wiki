@@ -4,7 +4,7 @@ The following page is a compiled list of DLLS compatable with Clownacy's [DLL mo
 
 
 ## Autumn's DLLs
-[Source Page](https://autumn-mnya.github.io/dllmods/index.html)
+These dlls are always available with up-to-date builds at her [website](https://autumn-mnya.github.io/dllmods/index.html).
 
 Currently, this repo contains:
 - [ModCS](modcs)
