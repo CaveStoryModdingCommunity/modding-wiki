@@ -10,7 +10,7 @@ Discussion of this project is primarily found on the [CSMC Discord Server](https
 
 - [CSMC Discord Server](https://discord.gg/xRsWpz6): The Discord Server for the Cave Story Modding Community. It was mentioned earlier, they are the primary maintainers of this wiki.
 
-- [Editors](cavestory-editors): Editors for modifying **The Most Excellent Game Cave Story**.
+- [Editors](cavestory-editors): Editors for modifying and applying Cave Story maps, tweaks and TSC.
 
 - [Engines](cavestory-engines): Engines for running **The Most Excellent Game Cave Story**.
 

@@ -3,6 +3,7 @@
 Links:
 [Original forum post](https://forum.cavestory.org/threads/dll-mod-loader-extra-music-formats-mod.13879/), [Github release](https://github.com/Clownacy/Cave-Story-Mod-Loader/releases/tag/v1.5.2.1)
 
+**A comprehensive list of mods for Modloader [can be found here.](dll-list)**
 
 The DLL modloader was developed by Clownacy and initially released in 2017. It supplements [Freeware](freeware) Cave Story by allowing the user to inject their own code into the executable at runtime. The original mod showcased some quality-of-life enhancements like 60 FPS mode, .ogg music, and the 3DS styled HUD.
 
@@ -10,12 +11,9 @@ The DLL modloader was developed by Clownacy and initially released in 2017. It s
 It can best be described as a split between complete engine modding with something like [CSE2](cse2) or [d-rs](doukutsu-rs) and straight vanilla modding using an assembler and x86 instructions. Developers write their program in their preferred language (typically c/c++) and tell their code what address in the original EXE to inject the mod. The result provides high-level expandability to Freeware.
 
 
-Since its creation, many other mod dlls have been made for this tool, adding things like wall jumping, customizable bosses, and even *(ghost)* [multiplayer](https://github.com/autumn-mnya/Freeware-Online)!
-
-One of the more prominent dlls made for the modloader is [AVA](ava), which takes the "Soda Fountain Mixer" approach to dll mods, exposing as many engine tweaks to the user as possible.
 
 ______
-***The following describes the demo mod that comes with the modloader, downloadable at either link above.***
+***The following describes the demo mod that comes with the modloader, downloadable at either link at the top of the page.***
 
 
 Clownacy's .dll Mod Loader demo will allow you to use and toggle .OGG audio files for your in-game music, provide Widescreen Support, enable Debug Save Mode, Change control methods to WASD, and Simplify Gamepad Controls.

@@ -25,7 +25,7 @@ For basic asset replacement, see the guide on how to replace [ORGs, SFX, and Cre
 Many hacks already exist for Freeware. Chances are, if you want some feature, it's already been made into a convenient patch. Many of these patches can be applied with [Booster's lab](boosters-lab) or other [editors](cavestory-editors).
 For more specifics, please see the [Advanced Freeware Hacking](advanced-freeware-hacking) page.
 
-It is considered the most beginner-friendly engine, primarily due to extensive documentation as well as the large library of user-made hacks made over the years.
+Many consider freeware to be the most beginner-friendly engine, primarily due to extensive documentation as well as the large library of user-made hacks made over the years.
 
 [Download](https://www.cavestory.org/downloads/cavestoryen.zip) (Aeon Genesis English translation pre-patched)
 

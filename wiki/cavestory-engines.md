@@ -23,6 +23,8 @@ The various Cave Story engines and versions available for your modding pleasure.
 
 [NX-Engine](nx-engine)
 
+[Cave Story Recoded](csr)
+
 
 ## Unreleased
 

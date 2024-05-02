@@ -1,9 +1,29 @@
 # Autumn's Various Additions dll
-AVA is a dll written by user **Autumn**[^1] that works with the [modloader](modloader) but takes an "everything but the kitchen sink" approach to DLL modding. Chances are, if you need to add some sort of hack or mod to the vanilla engine, it's in here.
+
+
+<fieldset>
+<legend>AVA:</legend>
+
+<table><tbody>
+
+<tr><td>Creator(s):</td><td>Autumn</td></tr>
+<tr><td>Year:</td><td>2023</td></tr>
+<tr><td>Platform:</td><td>modloader</td></tr>
+<tr><td>Status:</td><td>
+<p style="color:#00B000;">Active development</p>
+</td></tr>
+<tr><td>Website:</td><td><a href="https://autumn-mnya.github.io/dllmods/index.html">Repo page</a></td></tr>
+</tbody></table>
+</fieldset>
 
 
 
-[^1]: Side note: Autumn has made quite a few dll mods that add impressive features to vanilla Cave Story, such as [fmod music support](https://github.com/autumn-mnya/fmod-cave-story) and [ghost multiplayer](https://github.com/autumn-mnya/CS-Netplay-Dll-Server) [^2]
+
+AVA is a dll written by user **Autumn**[^1] that works with the [modloader](modloader) but takes an "everything but the kitchen sink" approach to DLL modding. If you need to add some sort of hack or mod to the vanilla engine, it'll likely be in here.
+
+
+
+[^1]: Side note: Autumn has made quite a few dll mods that add impressive features to vanilla Cave Story, a complete list of which can be found on the [dll index page](dll-index) [^2]
 [^2]: Side-side note: this side note was **not** written by Autumn.
 
 The current version's features are:
@@ -19,7 +39,7 @@ The current version's features are:
 - Pause menu editing
 - Stage.tbl loading
 - Collaboration Mode
-- And many more features
+- And many more
 
 A more detailed rundown on what each feature is and how to use it is present in the `settings.ini` bundled with the release build of the mod.
 
@@ -32,8 +52,8 @@ To help make the new features easier to use, the dll comes with a tweaked versio
 | Downloads and Links |
 | - |
 | The source code can be found [here](https://github.com/autumn-mnya/autumns-various-additions/tree/main). |
-| The latest release buld can be found [here](https://cdn.discordapp.com/attachments/538803810605334559/1190768451623600178/autumns_various_additions.zip?ex=6624338a&is=6611be8a&hm=8890c66eda39949ab813dd717785ab7ae95da6df1b8fe185984ad01710a5ce12&). |
-| The latest bundled Booster's Lab installation can be found [here](https://cdn.discordapp.com/attachments/538803810605334559/1190768452332433659/autumnal_lab.zip?ex=6624338a&is=6611be8a&hm=a6bf3e0aef0166752a556696d66cacffae53be91bead0d09199080de4f4f19ca&). |
+| The latest release buld can be found [here](https://github.com/autumn-mnya/autumns-various-additions/releases/download/1.1.3.1/autumns_various_additions.zip). |
+| The latest bundled Booster's Lab installation can be found [here](https://github.com/autumn-mnya/autumns-various-additions/releases/download/1.1.3.1/autumnal_lab.zip). |
 
 
 
