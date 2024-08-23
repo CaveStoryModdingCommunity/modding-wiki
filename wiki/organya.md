@@ -1,7 +1,7 @@
 
 
 # Organya
-:warning: This page is still under construction! :warning: :cake:
+
 
 
 ## Overview
