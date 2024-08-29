@@ -21,7 +21,7 @@ Layers mode extends the `.pxa` by addressing the tiles with 2 bytes rather than 
 
 ## Operation
 
-For all practial purposes, anything placed on the `foreground` layer will behave exactly as it does in unmodified cave story. *(Example: a tile placed on the foreground layer with attribute `0x00` will still be drawn behind the player, but one with attribute `0x40` will be drawn in front)*
+For all practical purposes, anything placed on the `foreground` layer will behave exactly as it does in unmodified cave story. *(Example: a tile placed on the foreground layer with attribute `0x00` will still be drawn behind the player, but one with attribute `0x40` will be drawn in front)*
 
 
 Collision is only registered with tiles on the `foreground` layer. Tiles with collision attributes on other layers will be treated as if they have nothing. Tiles that are animated such as wind will also be treated as static. Anything that interacts with the player or NPCs should be on the `foreground` layer.

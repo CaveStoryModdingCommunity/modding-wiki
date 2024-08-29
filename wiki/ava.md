@@ -32,7 +32,7 @@ The current version's features are:
 - Custom player physics
 - New Tile types (like bounce pads, ice, etc.)
 - Extra TSC Commands (like variables, sub-functions, etc.)
-- Plaintext TSC (no encrpytion)
+- Plaintext TSC (no encryption)
 - HEX Patch Loader
 - Wall jumping
 - Double jumping/Extra jumping
@@ -43,7 +43,7 @@ The current version's features are:
 
 A more detailed rundown on what each feature is and how to use it is present in the `settings.ini` bundled with the release build of the mod.
 
-Many of the mods in this dll are a conglomeration of other dlls or source edits to CSE2, but since this is not a full engine decompilation, its source code is freely avalable to download.
+Many of the mods in this dll are a conglomeration of other dlls or source edits to CSE2, but since this is not a full engine decompilation, its source code is freely available to download.
 
 To help make the new features easier to use, the dll comes with a tweaked version of [Booster's Lab](boosters-lab) that contains all the custom tiles, TSC syntax, etc.
 

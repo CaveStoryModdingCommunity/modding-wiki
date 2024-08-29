@@ -20,6 +20,7 @@ Not all pages link to each other yet, so this page contains a list of all the su
 - [cavestoryplus-pc](cavestoryplus-pc)
 - [cse](cse)
 - [cse2](cse2)
+- [cs-gm](cs-gm)
 - [csr](csr)
 - [dll-list](dll-list)
 - [dou-asm](dou-asm)

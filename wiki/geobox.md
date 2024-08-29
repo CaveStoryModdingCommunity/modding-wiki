@@ -24,28 +24,42 @@ The geobox engine is notable for its promise of a rich feature-set and beautiful
 
 [Showcase Video](https://www.youtube.com/watch?v=7SRzfUGuSPU)
 
-Currently, the closest obtainable alternative to this engine is [doukutsu-rust](doukutsu-rs).
-
 
 ## Implementation Notes
-These are notes that pick apart the geobox demo video in order to undestand how each graphic feature worked.
+Despite the enhanced look, the engine shares nothing in common with the original cave story engine. All assets loaded by this engine are proprietary, which makes it even worse than the [NXEngine](nx-engine) for modding.
 
-### Backgrounds:
-The engine uses some form of [layers mode](layers-mode) for foreground and background elements, but the background tiles feature some ammount of parallax scrolling.
+### Scripting
+Most of the logic for the engine is implemented in Lua, so NPCs, mapdata, and other behaviors can still be edited and altered in the final compiled engine, but no documentation exists for it, so anyone looking to edit this engine will first have to understand how all the calls work.
+
+### Lighting behavior and characterization
+Because most of this engine's appeal is in its beautiful lighting, this section attempts to break down some of the lights seen in the demo.
+
+#### Backgrounds:
+The engine uses some proprietary form of [layers mode](layers-mode) for foreground and background elements, but the background tiles feature some amount of parallax scrolling.
 
 There can be light elements placed in the scene background that can "shine through" the background tiles and collide with foreground tiles.
 
-### Tile lighting:
+#### Tile lighting:
 There are "bloom" elements on some foreground tiles, where pixels emit light for some radius around the element.
 
 This could potentially also be implemented with some form of "layers" mode, with custom tiletypes that indicate that its contents should be "bloomed"
 
 
-### Entity lighting
-There are 2 types of point raycasting lights: they either don't have collision or follow collision on a per-tile basis, following basic tile shapes and ignoring individual pixels.[D-rs](doukutsu-rs) implements the second type in software in its engine.
+#### Entity lighting
+There are 2 types of point raycasting lights: they either don't have collision or follow collision on a per-tile basis, following basic tile shapes and ignoring individual pixels. [D-rs](doukutsu-rs) implements the second type in software in its engine.
 
 
 There are point lights that ignore all collision. This isn't too groundbreaking; [d-rs](doukutsu-rs) and some ports of [CSE2](cse2) implement this already.
+
+---
+
+Currently, the best alternative to this engine is [doukutsu-rust](doukutsu-rs), which is fully playable, stable, and compatible with traditional Cave Story, in addition to having some advanced lighting features.
+
+
+## Downloads
+Geobox was never meant for public release. Even so, the demo copy has been leaked and is available for download on Archive.org:
+- [Geobox Engine](https://archive.org/details/GeoboxEngine)
+
 
 
 
