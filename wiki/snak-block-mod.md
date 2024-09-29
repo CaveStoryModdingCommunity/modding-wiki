@@ -50,4 +50,4 @@ Be sure to have any foreground or background tile element applied to these tiles
 
 ## Durable Breakable Blocks
 
-Breakable blocks that take more than one hit to destroy can be acheived through placing sn tiles in a horizontal line on the tileset, this could potentially allow for tiles that "crack" upon being shot at, that would then break afterwards. This functions in line with the above section as it explains that when a breakable block is broken, it immediately tuns into the tile one space to the left on the tileset.
+Breakable blocks that take more than one hit to destroy can be achieved through placing sn tiles in a horizontal line on the tileset, this could potentially allow for tiles that "crack" upon being shot at, that would then break afterwards. This functions in line with the above section as it explains that when a breakable block is broken, it immediately turns into the tile one space to the left on the tileset.

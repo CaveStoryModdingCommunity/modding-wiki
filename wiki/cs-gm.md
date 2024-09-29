@@ -33,7 +33,7 @@ The drive links can also be found here:
 - [Source folder](https://drive.google.com/drive/folders/1lah5qYVa3zPbEzTARexR03n_heEaO7Gh)
 - [Resource folder](https://drive.google.com/drive/folders/1Zh8Hs8UIpcr4z2fAE3M_qiNGu3khWmqd)
 
-The cumulative total of all the zipped assets ammounts to roughly a gigabyte.
+The cumulative total of all the zipped assets amounts to roughly a gigabyte.
 
 
 

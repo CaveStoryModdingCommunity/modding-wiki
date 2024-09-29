@@ -29,7 +29,7 @@ One of the many features that come with the [AVA modloader patch](ava). Variable
 - `VIJxxxx:yyyy:zzzz` - `Variable Increment Jump`, Increments variable `xxxx` by 1 until `xxxx` is >= `yyyy`, then it zeros `xxxx` and jumps to `zzzz`
 
 ### Addressing
-Any numeric arguments for any TSC prefixed with `V` will instead use the corresponding variable at that adress.
+Any numeric arguments for any TSC prefixed with `V` will instead use the corresponding variable at that address.
 
 Example:
 ```
@@ -58,7 +58,7 @@ This is a hack for freeware bundled with most releases of [Booster's Lab](booste
 
 
 ### Addressing
-Any numeric arguments for any TSC prefixed with `V` will instead use the corresponding variable at that adress.
+Any numeric arguments for any TSC prefixed with `V` will instead use the corresponding variable at that address.
 
 Example:
 ```

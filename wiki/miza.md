@@ -7,7 +7,7 @@
 {Let's not start a SW vs CE debate in here}"*  - Voidmage_Lowell, 2009
 
 
-**Miza** is commonly referred to as the first available editor for modifying Cave Story. While a defunct tool, it provides a prominent first step as the predicessor of most Cave Story editors and tools used today by modders.
+**Miza** is commonly referred to as the first available editor for modifying Cave Story. While a defunct tool, it provides a prominent first step as the predecessor of most Cave Story editors and tools used today by modders.
 
 The editor was released in 2005 by **Kyofu Kawa-chan**, or simply **Kawa**. It was first released for the Acmlmboard and then eventually added to Romhacking.net before making its way to the Cave Story Tribute Site.
 It soon became a defunct tool as editors such as [Sue's Workshop](sues-workshop) and [Cave Editor](cave-editor) were released.

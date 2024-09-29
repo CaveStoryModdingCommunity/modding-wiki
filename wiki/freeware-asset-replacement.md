@@ -1,6 +1,6 @@
 # Game asset replacement
 
-By default, quite a few of the assets in Cave Story Freeware can be replaced by custom ones without the need for advanced knowledge of executable structure or programming. This is one of the most basic ways to modify the game and get familliar with its structure before [delving into more involved modding tecniques](advanced-freeware-hacking).
+By default, quite a few of the assets in Cave Story Freeware can be replaced by custom ones without the need for advanced knowledge of executable structure or programming. This is one of the most basic ways to modify the game and get familiar with its structure before [delving into more involved modding techniques](advanced-freeware-hacking).
 
 The following assets can be replaced by editing or changing assets in the `data` folder:
 - Maps *(`.pxm`, PiXel Map)*
@@ -19,7 +19,7 @@ The bitmaps themselves are fairly basic, with a bit depth of 4 and the file exte
 
 What makes them unique is that appended to the end of every image file is the string `(C)Pixel`. The stock freeware game will check for this string each time is tries to load an image, and will crash if it does not detect it. *(Saving or editing the bitmap in an image editor will remove this string!)*
 
-***Note: The methods below, although informative, are largely depricated in favor of using a map editor like [Booster's Lab](boosters-lab), [SDE](sky-dragon-editor), or [TKT](the-kings-table), all of which do this modification automatically.***
+***Note: The methods below, although informative, are largely deprecated in favor of using a map editor like [Booster's Lab](boosters-lab), [SDE](sky-dragon-editor), or [TKT](the-kings-table), all of which do this modification automatically.***
 
 There are several ways to sidestep this roadblock. For simple file replacements, a hex editor such as [HxD](https://mh-nexus.de/en/hxd/) can be used to add back the `(C)Pixel` after the image has been edited.
 
@@ -36,7 +36,7 @@ Maps aren't *technically* encrypted, but it makes no sense to not use a [map edi
 
 ## TSC Editing
 
-Unlike maps or even bitmaps, TSC is actually encrypted to an extent, but once again, thanks to the work of a dilligent modding community, several different [map editors](cavestory-editors) exist that take care of decryption, re-encryption, and format highlighting for TSC.
+Unlike maps or even bitmaps, TSC is actually encrypted to an extent, but once again, thanks to the work of a diligent modding community, several different [map editors](cavestory-editors) exist that take care of decryption, re-encryption, and format highlighting for TSC.
 
 *Note: Some releases of Cave Story such as CS Switch do **not** encrypt the TSC files, meaning that they can be edited with a plaintext editor.*
 

@@ -1,6 +1,6 @@
 # DLLs for Modloader
 
-The following page is a compiled list of DLLS compatable with Clownacy's [DLL modloader](modloader). These make it possible to add a wide array of features to [freeware Cave Story](freeware) in a simple, reversible, and safe manner.
+The following page is a compiled list of DLLS compatible with Clownacy's [DLL modloader](modloader). These make it possible to add a wide array of features to [freeware Cave Story](freeware) in a simple, reversible, and safe manner.
 
 
 ## Autumn's DLLs

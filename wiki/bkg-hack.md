@@ -3,25 +3,25 @@
 The BKG hack modularizes the background behaviors, allowing them to be highly customized and changed at runtime.
 
 
-Unlike with [layers mode](layers-mode), there is no real set-in-stone implementation for the BKG hack; each one will funtion slightly differently, but they all have simmilar traits.
+Unlike with [layers mode](layers-mode), there is no real set-in-stone implementation for the BKG hack; each one will function slightly differently, but they all have similar traits.
 
 For instance, all BKG implementations support multiple layers, where each layer has a set of sub-settings that control how it moves, behaves, or animates, but the degrees of freedom that each layer can be animated varies from port to port.
 
 
 The list of ports for the BKG hack are as follows:
-- [BLink Layer Hack](#blink-layer-hack)
-- [AVA](#ava)
-- [JakeV Modengine (tscextended)](#jakev-modengine-tscextended)
-- [d-rs mod-features](#d-rs-mod-features)
+- [BLink - Layer Hack](#blink---layer-hack)
+- [Autumn - AVA](#autumn---ava)
+- [JakeV - Modengine (tscextended)](#jakev---modengine-tscextended)
+- [Dr. Glaucous - d-rs mod-features](#dr-glaucous---d-rs-mod-features)
 
 
 
 
-## BLink Layer Hack
+## BLink - Layer Hack
 
 [Original forum thread here](https://forum.cavestory.org/threads/blinks-multi-layered-background-hack.14250/)
 
-This version is exclusively TSC dependant and uses no external config files. It is a standalone hack, so other dlls and patches need to be added with care.
+This version is exclusively TSC dependent and uses no external config files. It is a standalone hack, so other dlls and patches need to be added with care.
 
 The new TSC commands and arguments are as follows:
 ```
@@ -58,15 +58,15 @@ These can be added to each other, so a value of 9 would make it scroll horizonta
 
 `<BKNXXXX` Determines how many slots the custom BK has. A value of 0000 makes it render vanilla backgrounds.
 
-## AVA
+## Autumn - AVA
 
-[More info about AVA's general featureset here.](ava)
+[More info about AVA's general feature-set here.](ava)
 
 The AVA implementation was based on an earlier implementation by Bionicobot for CSE2[^1], and is essentially unchanged beyond the freeware-related hooks. The configuration files are a plaintext list of values, essentially replicating the TSC command in the BLink Layer hack, but making it easier to read and edit.
 
-[^1]: Now unobtanium due to the DMCA, but since AVA is basically a verbaitm copy, it would be trivial to port it back to CSE2.
+[^1]: Now unobtanium due to the DMCA, but since AVA is basically a verbatim copy, it would be trivial to port it back to CSE2.
 
-Bionicobot wrote comprehensive documentation on how their BKG mod works, and outlined its featues in the following text documents, which also apply to AVA:
+Bionicobot wrote comprehensive documentation on how their BKG mod works, and outlined its features in the following text documents, which also apply to AVA:
 - [Argument Explanation](files/ava_bkg/CustomTSC_BKG_Explanation.txt)
 - [Example config file](files/ava_bkg/CustomTSC_BKG_Example.txt)
 - [Example format list](files/ava_bkg/CustomTSC_BKG_Format.txt)
@@ -77,29 +77,29 @@ Config files themselves are loaded with a much shorter command than with the BLi
 There are also several other commands that control how the backgrounds behave on the fly:
 - `<BKDwwww` - **Background Disable:** disables background with order wwww
 - `<BKEwwww` - **Background Enable:** enables background with order wwww
-- `<BKGfilename$` - **Background:** see the explaination above
+- `<BKGfilename$` - **Background:** see the explanation above
 - `<BKPwwww:xxxx:yyyy` - **Background Parameter** Set background parameter X for layer W to value Y.
 - `<BKR` - **Background Reset:** Disables the custom backgrounds until they are loaded again with `<BKG` (this reset also happens with map transitions)
 
 
-## JakeV Modengine (tscextended)
+## JakeV - Modengine (tscextended)
 
 More info about this mod [can be found here.](https://forum.cavestory.org/threads/mod-engine-tsc-extended.15369/)[^2]
 
-[^2]: Note: since this is CSE2, the download link has since been removed, but it still exsists on archive.org
+[^2]: Note: since this is CSE2, the download link has since been removed, but it still exists on archive.org
 
 
 
-This BKG implementation is part of a larger toolset for modding CSE2, but lacks much of the versitlity offered by the other BKG implementations.
+This BKG implementation is part of a larger toolset for modding CSE2, but lacks much of the versatility offered by the other BKG implementations.
 
 It uses a stack-based method for implementing each layer, where a call to `<BKG` will push a new layer to the background "stack" with the parameters provided. This command only takes 4 parameters instead of the 8+ for the other versions.
 
 
-## d-rs mod-features
+## Dr. Glaucous - d-rs mod-features
 
 This version of BKG was based on the one in AVA, and by extension, the one by Bionicobot.
 The primary difference here is that it uses .json files to store BKG configs instead of plaintext files.
-This makes them *even* easier to view and edit without a refrence table.
+This makes them *even* easier to view and edit without a reference table.
 Additionally, this fixes several bugs that were discovered with the older implementations.
 
 For the complete documentation, please see the [listing on the source page](https://github.com/DrGlaucous/doukutsu-rs-nm/blob/mod-features/Documentation.md).

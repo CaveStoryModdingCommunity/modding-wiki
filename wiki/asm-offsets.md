@@ -238,7 +238,7 @@ This list was initiated and collaborated by S. P. Gardebiter, Runelancer and GIR
 
 This list is over 1300 lines long, and for obvious reasons, if included inline, would bloat the page, so it has been moved to a [downloadable text document](files/function-offsets.txt).
 
-Many of the functions described in this list can be cross-refrenced with [CSE2](cse2.md), the cave story engine decompilation to see what they do and exactly how they do it.
+Many of the functions described in this list can be cross-referenced with [CSE2](cse2.md), the cave story engine decompilation to see what they do and exactly how they do it.
 
 
 ## Assembly Compendium

@@ -24,7 +24,7 @@ CSE2 is popular among modders for its relatively clean code and accurate-to-orig
 From the original source code's readme, the port's history is as follows:
 
 > When Pixel made Cave Story, he compiled the original Windows EXE with no
-optimisations. This left the generated assembly code extremely verbose and easy
+optimizations. This left the generated assembly code extremely verbose and easy
 to read. It also made the code very decompiler-friendly, since the assembly
 could be mapped directly back to the original C++ code.
 >
@@ -77,7 +77,7 @@ When CSE2 was publicly available, these branches existed:
 - **Enhanced:** Based on the `enhanced-lite` branch, this branch is **intended for players**, and adds further enhancements and features to the engine:
   - Support for alternate soundtracks
 
-- **Emscripten:** This branch allows the game to be compiled with [Emscripten](http://emscripten.org/), enabling it to be played in a browser. This requires fairly extensive (and messy) modifications to the engine, to remove its dependency on "mainloops" - the infinite loops games put themselves in so they can run indefinitely. It's because of this that Emscripten support is limited to this branch: it's just so invasive. A proof-of-concept can be found [here](https://sonicresearch.org/clownacy/cave.html).
+- **Emscripten:** This branch allows the game to be compiled with [Emscripten](http://emscripten.org/), enabling it to be played in a browser. This requires fairly extensive (and messy) modifications to the engine, to remove its dependency on "mainloops" - the infinite loops games put themselves in so they can run indefinitely. It's because of this that Emscripten support is limited to this branch: it's just so invasive. A proof-of-concept can be found [here](https://sonicresearch.org/clownacy/cave.html). 
 
 - **Wii:** Ports the engine to the Nintendo Wii.
 

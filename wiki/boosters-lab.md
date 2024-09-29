@@ -14,9 +14,9 @@
 
 [Forum Thread Link](https://www.cavestory.org/forums/threads/boosters-lab-its-pretty-good-now.3865/)
 
+[Comparison to other editors.](cavestory-editors.md)
 
 ## Trivia
 
   - This editor has over 10,000 lines of code.
   - Sprites from Noxid's parody of Pixel's '100 Cats' appear in the various menus.
-  - This is the most complete editor for Cave Story to date.

@@ -45,5 +45,6 @@ Not all pages link to each other yet, so this page contains a list of all the su
 - [snak-block-mod](snak-block-mod)
 - [sues-workshop](sues-workshop)
 - [the-kings-table](the-kings-table)
+- [tsc](tsc)
 - [tsc-var](tsc-var)
 

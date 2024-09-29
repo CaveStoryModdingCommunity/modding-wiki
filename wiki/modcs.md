@@ -19,7 +19,7 @@
 
 ModCS is primarily a lua interface for modding Cave Story[^1]. It allows NPCs, maps, tiles, and many other componets of the game to be altered through the easy to understand [Lua script language](https://en.wikipedia.org/wiki/Lua_(programming_language)).
 
-It was initially released as a modified version of [CSE2](cse2) by user **ilikebreadtoomuch**, but later made avalable for [freeware](freeware) by user **Autumn** as a [dll mod](modloader).
+It was initially released as a modified version of [CSE2](cse2) by user **ilikebreadtoomuch**, but later made available for [freeware](freeware) by user **Autumn** as a [dll mod](modloader).
 
 The API's documentation [can be found here.](https://modcavestory.github.io/)
 
