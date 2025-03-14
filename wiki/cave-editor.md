@@ -1,5 +1,24 @@
 # Cave Editor	
 
+<fieldset>
+<legend>Cave Editor:</legend>
+<img src="img\editors\ce-assets\CE_icon.png">
+<table><tbody>
+
+
+<tr><td>Creator(s):</td><td>Wistil</td></tr>
+<tr><td>Year:</td><td>2006</td></tr>
+<tr><td>Platform:</td><td>Windows</td></tr>
+<tr><td>Status:</td><td>
+<p style="color:#8B8000;">Abandoned</p>
+</td></tr>
+<tr><td>Info:</td><td><a href="https://forum.cavestory.org/threads/caveeditor-again-beta-maybe-alpha.611/">Original Forum Thread</a></td></tr>
+
+
+</tbody></table>
+</fieldset>
+
+<br>
 
 > *"Whoa. I like this. In fact, I think you may be giving Sue's Workshop a run for its money."* 
       - Xaser, 2007
@@ -17,7 +36,7 @@ Despite having a "help" section, the editor unfortunately doesn't come with cont
 
 To start, it should be noted Cave Editor has several menus that, unlike it's counterpart editor Booster Lab, are all program windows not attached to each other. For example, you can open the program and be met with the main interface. From there you can open the map editing interface, and then the script interface one layer deeper if you so desire. It is capable of opening the script menu from the main interface but entities will not be tracked properly, it is best advised to open the map interface before opening the script interface if one wishes to most effectively write events and commands. 
 
-here are several key features to Cave Editor:
+here are several key features to Cave Editor:<br>
 The Main Menu Interface, which includes:
 - Maps
 - Tile Sets
