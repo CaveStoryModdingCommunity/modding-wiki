@@ -13,7 +13,7 @@ The term TSC is shorthand for *Text SCript*, which is the custom scripting langu
 - Script sizes can be a maximum of 17,999 characters (including spaces and line returns). This is for the buffer that combines BOTH `Head.tsc` and the Map Script, so the combined size cannot exceed 17,999 characters. There are ways to increase this limitation.
 - Commands are of the form <CMDwwww:xxxx:yyyy:zzzz. The first 3 letters after the `<` denote which command is being used, and each command has a set number of arguments (denoted by example letters here). Each argument is and must be 4 numerical digits, and are seperated by an ignored character. Standard practice (taken from the original vanilla scripts) is to use `:` colons to seperate arguments, but technically anything can be used as a seperator as it will be ignored.
 - ALL arguments and event numbers must be four digits in length. This means that event 250 MUST be formatted as `#0250` and CANNOT be formatted as `#250`. Same with arguments, where `<AM+0010:0020` is correct but `<AM+10:20` is not and will cause problems.
-- Events MUST BE IN ASCENDING NUMERICAL ORDER. Event #0310 must come after Event #0200 and be before Event #0320. You can skip events but they must be in order.
+- Events MUST BE IN ASCENDING NUMERICAL ORDER. Event `#0310` must come after Event `#0200` and be before Event `#0320`. You can skip events but they must be in order.
 - You cannot use `<` or `#` in your events for anything other than denoting Event Numbers and the start of a Command. This means that outside of patching or changing game behavior, one cannot display these two special characters in a textbox.
 
 ## TSC Commands
@@ -85,7 +85,7 @@ Here is a list of all the TSC commands that are found in the 2004 Freeware versi
 | <MM0 | My Motion 0 | Halt the PC's forward motion. Used in cutscene triggers to stop the player in mid-air and have them drop straight-down instead of keeping their momentum and having them fall PAST the trigger. |
 | <MNA | Map NAme | Displays the name of current map. |
 | <MNPwwww:xxxx:yyyy:zzzz | Move NPc | Move entity with event W to coordinates X:Y with direction Z. |
-| <MOVw:x | MOVe | Move the PC to coordinates W:X. |
+| <MOVxxxx:yyyy | MOVe | Move the PC to coordinates X:Y. |
 | <MP+wwww | MaP flag + | Sets Map Flag W. NOTE that Map Flags are an unused mechanic of the game. Map flags cannot be unset. Highest usable flag is 127.
 | <MPJxxxx | MaP flag Jump | Jump to event W if the map flag FOR THE CURRENT MAP is set. |
 | <MS2 | MeSsage 2 | Opens an invisible message box at the top of screen. |
@@ -117,7 +117,7 @@ Here is a list of all the TSC commands that are found in the 2004 Freeware versi
 | <TAMwwww:xxxx:yyyy | Trade ArMs | Trades weapon W for weapon X and sets max ammo to Y. Use 0000 to keep the same amount of ammo. | 
 | <TRAwwww:eeee:xxxx:yyyy | TRAnsport | Travels to map W, runs event E in the map you travel to, and moves the PC to coordinates X:Y. Make sure that event E exists in map W! |
 | <TUR | TURbo | Instantly displays text. Use after a <MSG/2/3; works until another <MSG/2/3 or an `<END`. | 
-| <UNIx | UNIverse | Sets character movement type. Use 0000 for normal, 0001 for Zero Gravity like in the Ironhead fight (this will disable FOM from being able to follow the player), and 0002 to freeze the player in place but still allow them to point in directions and shoot weapons. |
+| <UNIwwww | UNIverse | Sets character movement type W. Use 0000 for normal, 0001 for Zero Gravity like in the Ironhead fight (this will disable FOM from being able to follow the player), and 0002 to freeze the player in place but still allow them to point in directions and shoot weapons. |
 | <UNJwwww:xxxx | UNiverse Jump | Jump to event X if movement type is of type W (from the above command). |
 | <WAIwwww | WAIt | Pause script for W ticks. Ticks are determined by FPS, so 50 ticks equals 1 second when the game runs at 50 FPS. Any number between 0 and 3 inclusive is inconsistent. |
 | <WAS | WAit until Standing | Pauses script until character is on ground. Will softlock the game if the PC is unable to touch the ground. |
