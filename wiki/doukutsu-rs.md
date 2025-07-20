@@ -27,7 +27,7 @@
 The earliest mention of this engine was on August 5, 2020 in the CSMC discord server. On [August 18, 2020](https://github.com/doukutsu-rs/doukutsu-rs/commit/b89d54251f42f4d8b247bbc6ebac2c9efe78ac74), the first commit was uploaded to Github.
 
 
-Since this engine is still in active development, there is still no "Official" release of the engine, though nightly builds are available with the latest changes, auto-built with Appveyor and available on the official website.
+Since this engine is still in active development, there is still no "Official" release of the engine, though nightly builds with the latest changes are available on the official website.
 
 
 ## Behavior
@@ -134,7 +134,7 @@ The F12 debug window contains more, in depth functions, such as arbitrary TSC ex
 
 
 ## Scripting
-D-rs has comprehensive support for lua scripting, allowing for some engine or behavior modifications without needing to recompile the source code. [Documentation can be found here](https://doukutsu-rs.gitbook.io/docs/modding-guide/lua-api).
+From the earliest versions, doukutsu-rs had support for lua scripting, which allowed to make some engine and behavior modifications without needing to recompile the source code. However, this feature was completely removed in version **0.101.0-beta6**. 
 
 
 
