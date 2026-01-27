@@ -25,7 +25,6 @@
 
 
 **Cave Editor** is a Cave Story editor created by **Wistil.** The editor was first unveiled in 2006 and was abandoned in 2010, thus making it abandonware. Unlike the rest of the legacy modding tools, Cave Editor is entirely stable, additionally supporting external custom resource hacking. 
-Unlike the rest of the legacy modding tools, Cave Editor is entirely stable, additionally supporting external custom resource hacking.
 
 ![Cave Editor Sample Page](img/editors/ce-assets/0_Sample_Page.png)
 A view of Cave Editor's map editing interface, alongside the tile sheet display are entities and several settings to toggle background, tile, and entity visibility.
@@ -69,4 +68,4 @@ The Script Editor Interface
 
 ## Trivia
 
-todo
+Cave Editor once had a display issue that made Wistil have to make entirely new program had to be made to figure it out, the issue was eventually fixed.
