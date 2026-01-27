@@ -1,21 +1,21 @@
 
 
-# Organya
+# Organya Music Format
 
 
 
 ## Overview
-*:warning: Information Incomplete: Fillers currently in use*
+> [!WARNING]
+> Information Incomplete: Fillers currently in use
 
-Organa is a custom music tracker format created by Pixel in [insert proper date here].
-It is most prominently known for its use in Cave Story, but several other games use it, too, such as:
-- [Stargazer](http://www5b.biglobe.ne.jp/~kiss-me/aji/star/)
+Organya(org) is a custom music tracker format created by Pixel in 1999 as an improved version of his other music format; Pixel Music Data(pmd), which was used by his other music editor PiyoPiyo.
+It is most prominently known for its use in Cave Story, but a couple other games use it, too, like [Stargazer](http://www5b.biglobe.ne.jp/~kiss-me/aji/star/) and [Azarashi 2001](https://www.cavestory.org/pixels-works/azarashi.php).
 
 
 The format allows the playback of 14-16 simultaneous channels, with 8 note polyphony and 6-8 different percussion instruments, depending on the player used.
 
 
-Cave Story only allows 6 of the 8 available percussion tracks to be used, and each is hard-baked to a specific instrument. Changing percussion instruments in the editor will not affect which one will be used during playback ingame. Any notes put in tracks U and I will be ignored during playback.
+Cave Story only allows 6 of the 8 available percussion tracks to be used, and each is hard-coded to a specific instrument. Changing percussion instruments in the editor will not affect which one will be used during playback ingame. **Any notes put in tracks U and I will crash the game**.
 These instruments are:
 
 - **Channel Q:** Bass01
@@ -27,22 +27,27 @@ These instruments are:
 - **Channel U:** Unused (Bass01 by default in OrgMaker)
 - **Channel I:** Unused (Bass01 by default in OrgMaker)
 
-This is the case because unlike the org editors which use .wav samples for drums, Cave Story uses the .pxtone format. This means that drum samples can be replaced in the same manner as [other sfx](freeware-asset-replacement), but the other drum formats used in Orgmaker2 will need to be recreated using a pixtone editor, such as [SeaTone](freeware-asset-replacement).
+This is the case because unlike the org editors which use .wav samples for drums, Cave Story uses the .pxt or PixTone format. This means that drum samples in Orgmaker2 can be replaced by downloading the source code and replacing the .wav files, but the other drum formats used in Cave Story will need to be edited using a PixTone editor, such as [PixTone](freeware-asset-replacement) or [SeaTone](freeware-asset-replacement) and can also be extracted via SeaTone's sfx pusher.
 
 
 
 
 ## Editors
 
-*:warning: Information Incomplete: Fillers currently in use*
+> [!WARNING]
+> Information Incomplete: Fillers currently in use
 
 Two original versions of the org editor have been released to the public, titled [Orgmaker](orgmaker1) and [Orgmaker2](orgmaker2), respectively.
+Recovered versions of the org editor have also surfaced, those versions are:
+[V1.0](placeholder), [V1.1](placeholder), [V1.3.2](placeholder), [V1.3.3](placeholder).
 
 
-The Orgmaker2 editor allows for different drum types to be specified.
+The Orgmaker2 editor allows for different drum instruments to be specified.
 
 
 Several other community efforts have been made to update or completely replace these editors and add some missing quality-of-life features. A notable example of this is [Orgmaker3](orgmaker3).
+
+An effort has also been made to double the amount of tracks in the editor above. The project is called *Organya Maker-16*.
 
 
 ## File format
@@ -54,11 +59,12 @@ The ORG music file is in binary.
 The instruments are baked into the reader (the file tells the player what instrument number to use)
 
 
-### Header
+### The Org Header
 
 
 The first 6+12 (18) bytes are header info, containing the:
-- Org Type (6 char string). This can be `org-01`, `org-02`, or `org-03` and corresponds to the capabilities that the file has, such as fancy drums or using pipi.
+- Org Type (6 char string). This can be `org-02`, `org-03` or `org-16` and corresponds to the capabilities that the file has, such as fancy drums or using more tracks.
+- There is an Org type of `org-01`, but sometime after V1.1 Pixel made Orgmaker write `org-01` as `org-02`, regardless of if pipi is used or not.
 
 - Wait (tempo, 2 bytes), see **Org Tempo**
 - Line (number of beats per measure, 1 byte), can also be thought of as the number of vertical "lines" the editor shows between each measure.
@@ -86,10 +92,10 @@ After this, there is a chunk of (16 (tracks, including drums AND notes) *6 (byte
 
 
 Bit structure:
-- Frequency/pitch detune (2 bytes)
-- Wave_no (waveform/percussion instrument) (1 byte)
-- Pipi(1 byte) (only regarded if org version is 2 or more, otherwise is set to 0, is a binary value)
-- Note_num (2 bytes) (total number of notes in the song from this track, including note modifiers, such as pan or volume events).
+- Frequency (Detunes the instrument; the farther from 1000 the more apparent the detune becomes.) (2 bytes)
+- Wave_no (Waveform/Percussion instrument) (1 byte)
+- Pipi (only regarded if org type is `org-02` or greater, otherwise is set to 0, is a binary value. Makes the selected instruemnt play in a pizzicato state) (1 byte)
+- Note_num (Total number of notes in the song from this track, including note modifiers, such as pan or volume events) (2 bytes)
 
 
 <details>
@@ -109,12 +115,12 @@ E8 03 46 00 00 00 E8 03 46 00 31 00 E8 03 20 00 00 00 E8 03 00 00 00 00 E8 03 00
 
 
 
-The file then goes by individual tracks, starting at instrument track 0 and incrementing to 15 (covering all tracks)
+The file then goes by individual tracks, starting at track 0 and incrementing to 15 (covering all tracks)
 
 
 Each track length has the note data in the following order, each piece of data is repeated by the number of notes in the track in question (I.E all the note values are written back-to-back for the first track, then all the pan values, etc.):
-- 4 bytes determining X location (start of note)
-- 1 byte determining Y location (tone, doesn’t need to be as big of a number, 00 is low, FF is high, FF if the note does not exist (is instead a modifier event like pan/vol))
+- 4 bytes determining X location (Placement of a note)
+- 1 byte determining Y location (Key, doesn’t need to be as big of a number, 00 is low, FF is high, FF if the note does not exist (is instead a modifier event like pan/vol))
 - 1 byte determining the length of each note (from X location, 01 if note is just something like a volume change)
 - 1 byte determining note volume (`0x00` is quiet, `0xFF` is loud) (Orgmaker limits this between 4 and 252) (`0xFF` is given to undefined notes)
 - 1 byte determining note pan (Left pan is `0x00`. `0x0C` is right pan, given `0xFC` if undefined)
@@ -192,16 +198,52 @@ Plugging this in yields: `60000/(128*4)=117.1875`
 
 Converting 117 BPM back to WAIT yields: `60000/(117*4)=128.205`
 
-Note that ORG Wait time is in decimals only, so 128.205 would be truncated to 128.
+Note that ORG Wait time is in whole numbers only, so 128.205 would be truncated to 128.
+
+## Music in Organya
+Below is a list of songs created with an Organya Editor to show how it looks and sounds.
+
+### Cave Story Soundtrack by Studio Pixel
+******
+  - [Access](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FAccess.org#)
+  - [Gestation](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FGestation%20%28Internal%20Percussion%29.org#)
+  - [Mimiga Town](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FMimiga%20Town.org#)
+  - [Plant](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FPlant.org#)
+  - [Balrog's Theme](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FBalrog%27s%20Theme.org#)
+  - [Gravity](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FGravity%20%28Internal%20Percussion%29.org#)
+  - [Cemetery](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FCemetery%20%28Internal%20Percussion%29.org#)
+  - [Safety](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FSafety.org#)
+  - [Mischevous Robot](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FMischievous%20Robot.org#)
+  - [Pulse](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FPulse.org#)
+  - [On to GrassTown](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FOn%20to%20Grasstown.org#)
+  - [Eyes of Flame](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FEyes%20of%20Flame.org#)
+  - [Meltdown 2](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FMeltdown%202.org#)
+  - [Tyrant](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FTyrant.org#)
+  - [Run!](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FRun%21.org#)
+  - [Jenka 1](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FJenka%201.org#)
+  - [Jenka 2](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FJenka%202.org#)
+  - [Labrinyth Fight](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FLabyrinth%20Fight.org#)
+  - [Geothermal](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FGeothermal.org#)
+  - [Oppression](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FOppression.org#)
+  - [Living Waterway](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FLiving%20Waterway%20%28Internal%20Percussion%29.org#)
+  - [Quiet](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FQuiet.org#)
+  - [Scorching Back](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FScorching%20Back.org#)
+  - [Moonsong](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FMoonsong.org#)
+  - [Hero's End](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FHero%27s%20End.org#)
+  - [Cave Story (Theme)](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FCave%20Story.org#)
+  - [Last Cave](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FLast%20Cave.org#)
+  - [Balcony](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FBalcony.org#)
+  - [Charge](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FCharge.org#)
+  - [Zombie](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FZombie.org#)
+  - [Last Battle](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FLast%20Battle.org#)
+  - [Break Down](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FBreak%20Down.org#)
+  - [Running Hell](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FRunning%20Hell.org#)
+  - [Seal Chamber](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FSeal%20Chamber.org#)
+  - [The Way Back Home](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FThe%20Way%20Back%20Home%20%28Internal%20Percussion%29.org#)
+  
+  ### Azarashi 2001 Soundtrack by Studio Pixel
+  ******
+  - [Azarashi](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fazarashi-2001%2Forg%2FAzarashi.org)
 
 
-
-
-
-
-
-
-
-
-
-
+  
