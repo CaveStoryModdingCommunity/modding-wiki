@@ -68,4 +68,4 @@ The Script Editor Interface
 
 ## Trivia
 
-Cave Editor once had a display issue that made Wistil have to make entirely new program had to be made to figure it out, the issue was eventually fixed.
+Cave Editor once had a display issue that made Wistil have to make an entirely new program to figure it out the issue eventually the issue was fixed.
