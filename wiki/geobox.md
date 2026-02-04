@@ -53,7 +53,7 @@ There are point lights that ignore all collision. This isn't too groundbreaking;
 
 ---
 
-Currently, the best alternative to this engine is [doukutsu-rust](doukutsu-rs), which is fully playable, stable, and compatible with traditional Cave Story, in addition to having some advanced lighting features.
+Currently, the best alternative to this engine is [doukutsu-rs](doukutsu-rs), which is fully playable, stable, and compatible with traditional Cave Story, in addition to having some advanced lighting features.
 
 
 ## Downloads
