@@ -7,7 +7,7 @@
 
 <tr><td>Creator:</td><td>Oleh "Olly" Yuschuk</td></tr>
 <tr><td>Year (Newest):</td><td>2014</td></tr>
-<tr><td>Platform:</td><td>Windows OS</td></tr>
+<tr><td>Platform:</td><td>Windows</td></tr>
 <tr><td>Status:</td><td>
 <p style="color:#B0B000;">Stale</p>
 </td></tr>
