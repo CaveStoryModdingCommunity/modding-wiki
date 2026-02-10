@@ -10,7 +10,7 @@
 
 <tr><td>Creator(s):</td><td>Alula Et al.</td></tr>
 <tr><td>Year:</td><td>2021</td></tr>
-<tr><td>Platform:</td><td>Mac, Linux, Windows, Android</td></tr>
+<tr><td>Platform:</td><td>Windows, Mac, Linux, Android</td></tr>
 <tr><td>Status:</td><td>
 <p style="color:#00B000;">Active development</p>
 </td></tr>

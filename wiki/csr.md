@@ -7,7 +7,7 @@
 
 <tr><td>Creator(s):</td><td>Gabriel, SlightlyIntelligentMonkey, et.al</td></tr>
 <tr><td>Year:</td><td>2018</td></tr>
-<tr><td>Platform:</td><td>Mac OS, Linux OS, Windows OS</td></tr>
+<tr><td>Platform:</td><td>Windows, Mac, Linux</td></tr>
 <tr><td>Status:</td><td>
 <p style="color:#B00000;">Abandoned</p>
 </td></tr>

@@ -7,7 +7,7 @@
 
 <tr><td>Creator:</td><td>Carrotlord</td></tr>
 <tr><td>Year (Newest):</td><td>2010</td></tr>
-<tr><td>Platform:</td><td>Windows OS, Mac OS, Linux OS (Java)</td></tr>
+<tr><td>Platform:</td><td>Windows, Mac, Linux (Java)</td></tr>
 <tr><td>Status:</td><td>
 <p style="color:#B0B000;">Stale</p>
 </td></tr>

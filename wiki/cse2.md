@@ -7,7 +7,7 @@
 
 <tr><td>Creator(s):</td><td>Clownacy Et al.</td></tr>
 <tr><td>Year:</td><td>2019</td></tr>
-<tr><td>Platform:</td><td>Mac OS, Linux OS, Windows OS</td></tr>
+<tr><td>Platform:</td><td>Windows, Mac, Linux</td></tr>
 <tr><td>Status:</td><td>
 <p style="color:#B00000;">DMCA'd</p>
 </td></tr>

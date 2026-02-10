@@ -2,7 +2,7 @@
 
 <fieldset>
 <legend>Cave Editor:</legend>
-<img src="img\editors\ce-assets\CE_icon.png">
+<img src="/wiki/img/editors/ce-assets/CE_icon.png">
 <table><tbody>
 
 

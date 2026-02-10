@@ -10,7 +10,7 @@
 
 <tr><td>Creator(s):</td><td>Caitlin Shaw, isage</td></tr>
 <tr><td>Year:</td><td>2010</td></tr>
-<tr><td>Platform:</td><td>Mac, Linux, Windows, RetroArch, SEGA Genesis, Others</td></tr>
+<tr><td>Platform:</td><td>Windows, Mac, Linux, RetroArch, SEGA Genesis, Others</td></tr>
 <tr><td>Status:</td><td>
 <p style="color: #B0B000;">Stale</p>
 </td></tr>
