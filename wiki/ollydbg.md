@@ -2,7 +2,7 @@
 
 <fieldset>
 <legend>OllyDbg:</legend>
-<img src="/wiki/img/engines/cse2-assets/ICON_MINI.png">
+<img src="/wiki/img/utils/ollydbg-assets/OllyDbg_icon.png">
 <table><tbody>
 
 <tr><td>Creator:</td><td>Oleh "Olly" Yuschuk</td></tr>
