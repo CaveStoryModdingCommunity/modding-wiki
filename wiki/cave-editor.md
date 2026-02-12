@@ -68,4 +68,7 @@ The Script Editor Interface
 
 ## Trivia
 
-Cave Editor once had a display issue that made Wistil have to make an entirely new program to figure it out the issue eventually the issue was fixed.
+- Cave Editor once had a display issue that made Wistil have to make an entirely new program to figure it out[^1]. Eventually, the issue was fixed[^2].
+
+[^1] https://forum.cavestory.org/threads/cave-editor-display-problem.1726/
+[^2] https://forum.cavestory.org/threads/caveeditor-again-beta-maybe-alpha.611/post-19898
