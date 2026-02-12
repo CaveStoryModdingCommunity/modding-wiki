@@ -1,15 +1,15 @@
 # Doukutsu Assembler
 
 <fieldset>
-<legend>Doukutsu Assembler:</legend>
-<img src="/wiki/img/engines/cse2-assets/ICON_MINI.png">
+<legend>Doukutsu Assembler:</legend><br>
+<img src="/wiki/img/utils/dou-asm-assets/DOU-ASM_banner.png">
 <table><tbody>
 
 <tr><td>Creator:</td><td>Carrotlord</td></tr>
 <tr><td>Year (Newest):</td><td>2010</td></tr>
 <tr><td>Platform:</td><td>Windows, Mac, Linux (Java)</td></tr>
 <tr><td>Status:</td><td>
-<p style="color:#B0B000;">Stale</p>
+<p style="color:#00B000;">Stable</p>
 </td></tr>
 
 <tr><td>Download:</td><td><a href="http://www.cavestory.org/downloads/DoukutsuAssembler1.31.zip">From cavestory.org</a></td></tr>
