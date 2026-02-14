@@ -30,8 +30,8 @@ The following is a "Defines" list for the Doukutsu Assembler, made by Noxid.
 
 Currently, this doesn't have support for Floating Point Units (FPUs), as the assembler doesn't natively have support either.
 
-```
-JPE=JP
+
+`JPE=JP
 JZ=JE
 JNZ=JNE
 JNL=JGE
@@ -47,13 +47,13 @@ JAE=JNB
 JNP=JPO
 JP=JPE
 MOV EIP,=JMP
-MOV DX,=data 66 BA
+MOV DX,=data 66 BA`
 
 
 
 
 
-PlayerXPos=[49E654]
+`PlayerXPos=[49E654]
 PlayerYPos=[49E658]
 PlayerXVel=[49E66C]
 PlayerYVel=[49E670]
@@ -69,9 +69,9 @@ PlayerTile=[49E63C]
 DirectionFaced=[49E640]
 IsFacingUp=[49E644]
 IsFacingDown=[49E648]
-Equippeditems=[49E650]
+Equippeditems=[49E650]`
 
-KeyHeld=[49E210]
+`KeyHeld=[49E210]
 KeyPressed=[49E214]
 LastKey=[49E218]
 ScreenRect=48F91C
@@ -86,25 +86,25 @@ RightKey=[493638]
 JumpKey=[493628]
 UpKey=[493634]
 DownKey=[49363C]
-ShootKey=[49362C]
+ShootKey=[49362C]`
 
-WeaponDataLoc=499BC8
-WeaponDataSize=14
+`WeaponDataLoc=499BC8
+WeaponDataSize=14`
 
-CameraPosX=[49E1C8]
+`CameraPosX=[49E1C8]
 CameraPosY=[49E1CC]
 TitleCursorPos=[49E1E4]
 GameState=[49E1E8]
 AppInstance=[49E44C]
 AppWinHandle=[49E458]
-ShowFPS=[49E464]
+ShowFPS=[49E464]`
 
-EnvironmentSound=[49E6EC]
+`EnvironmentSound=[49E6EC]
 CurrentMapID=[4A57F0]
 CurrentSongID=[4A57F4]
-PrevSongID=[4A57FC]
+PrevSongID=[4A57FC]`
 
-MessageBoxBuffer=4A58D0
+`MessageBoxBuffer=4A58D0
 MessageBoxBufferSize=100
 CurrentScript=[4A5AD8]
 ScriptPos=[4A5AE0]
@@ -113,15 +113,15 @@ TextRow=[4A5AE8]
 FaceSlideTimer=[4A5B10]
 FaceID=[4A5B0C]
 CurrentSongBeat=[4A4B00]
-PrevSongBeat=[4A57F8]
+PrevSongBeat=[4A57F8]`
 
-setpointer=mov edi,[ebp+8]
+`setpointer=mov edi,[ebp+8]`
 
-NPCArray=4A6220
+`NPCArray=4A6220
 NPCSize=AC
-NumNPC=200
+NumNPC=200`
 
-npc.inuse=[edi]
+`npc.inuse=[edi]
 npc.collision=[edi+4]
 npc.x=[edi+8]
 npc.y=[edi+C]
@@ -159,9 +159,9 @@ npc.hitrectD=[edi+88]
 npc.HitTrue=[edi+9C]
 npc.DamageTaken=[edi+A0]
 npc.Damage=[edi+A4]
-npc.parent=[edi+A8]
+npc.parent=[edi+A8]`
 
-BulletArray=499C98
+`BulletArray=499C98
 BulletSize=80
 NumBullet=40
 bullet.collision=[edi]
@@ -182,9 +182,9 @@ bullet.displayd=[edi+48]
 bullet.distance=[edi+4C]
 bullet.maxdistance=[edi+54]
 bullet.damage=[edi+58]
-bullet.numImpacts=[edi+5C]
+bullet.numImpacts=[edi+5C]`
 
-EffectArray=49BCA8
+`EffectArray=49BCA8
 EffectSize=44
 effect.inuse=[edi]
 effect.ID=[edi+4]
@@ -202,15 +202,15 @@ effect.yoffset=[edi+30]
 effect.displayl=[edi+34]
 effect.displayU=[edi+38]
 effect.displayR=[edi+3C]
-effect.displayD=[edi+40]
+effect.displayD=[edi+40]`
 
-CreateNPC=46EFD0
+`CreateNPC=46EFD0
 CreateBlast=40EA70
 CreateExplosion=46F150
 CreateExplosions=46F200
-CreateXp=46F2B0
+CreateXp=46F2B0`
 
-Bullet01=404160
+`Bullet01=404160
 Bullet02=4043F0
 Bullet04=4047B0
 Bullet07=404B30
@@ -231,9 +231,9 @@ Bullet22=408230
 CreateBullet=403F80
 CountAllShots=403C40
 CountSpecificShot=403CB0
-CountSpecificWeapon=403D10
+CountSpecificWeapon=403D10`
 
-Effect01=409680
+`Effect01=409680
 Effect02=409880
 Effect03=409B80
 Effect04=409C70
@@ -247,16 +247,16 @@ Effect0B=40A5F0
 Effect0F=40A8F0
 Effect10=40A9E0
 Effect11=40AAA0
-CreateEffect=40AC90
+CreateEffect=40AC90`
 
-RenderGraphics=40C3C0
+`RenderGraphics=40C3C0
 RenderNumber=40F380
 GiveXP=4196F0
 TakeDamage=419910
 EntityCollisSolid=418C20
-EntityCollis=418B10
+EntityCollis=418B10`
 
-Weapon1=41DBD0
+`Weapon1=41DBD0
 Weapon2=41DE60
 Weapon3=41E110
 Weapon4=41E3D0
@@ -267,17 +267,17 @@ Weapon9=41F580
 WeaponC=41F710
 WeaponD=41FA10
 AddAmmo=402020
-SubAmmo=401FA0
+SubAmmo=401FA0`
 
-PlaySound=420640
-PlayMusic=420EE0
+`PlaySound=420640
+PlayMusic=420EE0`
 
-RunEvent=421990
+`RunEvent=421990
 CheckFlag=40E930
 ASCIItoNumber=421900
-Random=40F350
+Random=40F350`
 
-NPC000=426530
+`NPC000=426530
 NPC001=4265B0
 NPC002=426AF0
 NPC003=426FD0
@@ -642,6 +642,6 @@ NPC363=4772F0
 NPC365=47E6F0
 NPC366=47A8A0
 NPC368=474400
-NPC369=47C820
-```
+NPC369=47C820`
+
 
