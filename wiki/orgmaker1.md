@@ -9,7 +9,8 @@
 <tr><td>Year (Newest):</td><td>2003</td></tr>
 <tr><td>Platform:</td><td>Windows</td></tr>
 <tr><td>Status:</td><td><p style="color:#8B8000;">Abandoned</p></td></tr>
-<tr><td>Download:</td><td><a href = "https://www.cavestory.org/pixels-works/org-maker.php">OrgMaker ~ CSTS</td></tr>
+<tr><td>Download:</td><td><a href="https://www.cavestory.org/pixels-works/org-maker.php">OrgMaker ~ CSTS</a></td></tr>
+
 </tbody></table>
 </fieldset>
 
