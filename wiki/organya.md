@@ -233,8 +233,8 @@ Below is a list of songs created with an Organya Editor to show how it looks and
   - [The Way Back Home](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FThe%20Way%20Back%20Home%20%28Internal%20Percussion%29.org#)
 
   
-  ### Azarashi 2001 Soundtrack by Studio Pixel
-  <hr>
+### Azarashi 2001 Soundtrack by Studio Pixel
+<hr>
   
   - [Azarashi](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fazarashi-2001%2Forg%2FAzarashi.org)
 
