@@ -1,15 +1,12 @@
-
-
 # Organya Music Format
 
 
 
 ## Overview
-> [!WARNING]
-> Information Incomplete: Fillers currently in use
+*:warning: Information Incomplete: Fillers currently in use*
 
-Organya(org) is a custom music tracker format created by Pixel in 1999 as an improved version of his other music format; Pixel Music Data(pmd), which was used by his other music editor PiyoPiyo.
-It is most prominently known for its use in Cave Story, but a couple other games use it, too, like [Stargazer](http://www5b.biglobe.ne.jp/~kiss-me/aji/star/) and [Azarashi 2001](https://www.cavestory.org/pixels-works/azarashi.php).
+Organya (org) is a custom music tracker format created by Pixel in 1999 as an improved version of his other music format - Pixel Music Data(pmd), which was used by his other music editor PiyoPiyo.
+It is most prominently known for its use in Cave Story, but several other games use it, too, like [Stargazer](http://www5b.biglobe.ne.jp/~kiss-me/aji/star/) and [Azarashi 2001](https://www.cavestory.org/pixels-works/azarashi.php).
 
 
 The format allows the playback of 14-16 simultaneous channels, with 8 note polyphony and 6-8 different percussion instruments, depending on the player used.
@@ -27,27 +24,23 @@ These instruments are:
 - **Channel U:** Unused (Bass01 by default in OrgMaker)
 - **Channel I:** Unused (Bass01 by default in OrgMaker)
 
-This is the case because unlike the org editors which use .wav samples for drums, Cave Story uses the .pxt or PixTone format. This means that drum samples in Orgmaker2 can be replaced by downloading the source code and replacing the .wav files, but the other drum formats used in Cave Story will need to be edited using a PixTone editor, such as [PixTone](freeware-asset-replacement) or [SeaTone](freeware-asset-replacement) and can also be extracted via SeaTone's sfx pusher.
+This is the case because unlike the org editors which use .wav samples for drums, Cave Story uses the `.pxt` (PixTone) format. This means that drum samples in Orgmaker2 can be replaced by downloading the source code and replacing the .wav files, but the other drum formats used in Cave Story will need to be edited using a PixTone editor, such as [PixTone](freeware-asset-replacement) or [SeaTone](freeware-asset-replacement) and can also be extracted via SeaTone's sfx pusher.
 
 
 
 
 ## Editors
+*:warning: Information Incomplete: Fillers currently in use*
 
-> [!WARNING]
-> Information Incomplete: Fillers currently in use
-
-Two original versions of the org editor have been released to the public, titled [Orgmaker](orgmaker1) and [Orgmaker2](orgmaker2), respectively.
-Recovered versions of the org editor have also surfaced, those versions are:
-[V1.0](placeholder), [V1.1](placeholder), [V1.3.2](placeholder), [V1.3.3](placeholder).
+Two original versions of the org editor have been released to the public, titled [Orgmaker](orgmaker1) and [Orgmaker 2](orgmaker2), respectively.
 
 
 The Orgmaker2 editor allows for different drum instruments to be specified.
 
 
-Several other community efforts have been made to update or completely replace these editors and add some missing quality-of-life features. A notable example of this is [Orgmaker3](orgmaker3).
+Several other community efforts have been made to update or completely replace these editors and add some missing quality-of-life features. A notable example of this is [Orgmaker 3](orgmaker3).
 
-An effort has also been made to double the amount of tracks in the editor above. The project is called *Organya Maker-16*.
+There is also a project called **OrganyaMaker-16**, whose initial goal was to double the number of channels from 16 to 32. Since it's still in active development and may be unstable, its file format is not described in this article.
 
 
 ## File format
@@ -59,12 +52,11 @@ The ORG music file is in binary.
 The instruments are baked into the reader (the file tells the player what instrument number to use)
 
 
-### The Org Header
+### Header
 
 
 The first 6+12 (18) bytes are header info, containing the:
-- Org Type (6 char string). This can be `org-02`, `org-03` or `org-16` and corresponds to the capabilities that the file has, such as fancy drums or using more tracks.
-- There is an Org type of `org-01`, but sometime after V1.1 Pixel made Orgmaker write `org-01` as `org-02`, regardless of if pipi is used or not.
+- Org Type (6 char string). This can be `org-01`, `org-02`, or `org-03` and corresponds to the capabilities that the file has, such as fancy drums or using more tracks. However, starting with version v1.3.2, OrgMaker writes `org-02` instead of `org-01`, regardless of whether pipi is used or not.
 
 - Wait (tempo, 2 bytes), see **Org Tempo**
 - Line (number of beats per measure, 1 byte), can also be thought of as the number of vertical "lines" the editor shows between each measure.
@@ -86,16 +78,14 @@ The first 6+12 (18) bytes are header info, containing the:
 ### Track Info
 
 
-
-
 After this, there is a chunk of (16 (tracks, including drums AND notes) *6 (bytes of info each)), for a total of 96 bytes.
 
 
 Bit structure:
-- Frequency (Detunes the instrument; the farther from 1000 the more apparent the detune becomes.) (2 bytes)
-- Wave_no (Waveform/Percussion instrument) (1 byte)
-- Pipi (only regarded if org type is `org-02` or greater, otherwise is set to 0, is a binary value. Makes the selected instruemnt play in a pizzicato state) (1 byte)
-- Note_num (Total number of notes in the song from this track, including note modifiers, such as pan or volume events) (2 bytes)
+- Frequency (2 bytes)
+- Wave_no (waveform/percussion instrument) (1 byte)
+- Pipi (makes the selected instruemnt play in a pizzicato state. Only regarded if org type is `org-02` or greater, otherwise is set to 0, is a binary value) (1 byte)
+- Note_num (total number of notes in the song from this track, including note modifiers, such as pan or volume events) (2 bytes)
 
 
 <details>
@@ -119,8 +109,8 @@ The file then goes by individual tracks, starting at track 0 and incrementing to
 
 
 Each track length has the note data in the following order, each piece of data is repeated by the number of notes in the track in question (I.E all the note values are written back-to-back for the first track, then all the pan values, etc.):
-- 4 bytes determining X location (Placement of a note)
-- 1 byte determining Y location (Key, doesn’t need to be as big of a number, 00 is low, FF is high, FF if the note does not exist (is instead a modifier event like pan/vol))
+- 4 bytes determining X location (placement of a note)
+- 1 byte determining Y location (key, doesn’t need to be as big of a number, 00 is low, FF is high, FF if the note does not exist (is instead a modifier event like pan/vol))
 - 1 byte determining the length of each note (from X location, 01 if note is just something like a volume change)
 - 1 byte determining note volume (`0x00` is quiet, `0xFF` is loud) (Orgmaker limits this between 4 and 252) (`0xFF` is given to undefined notes)
 - 1 byte determining note pan (Left pan is `0x00`. `0x0C` is right pan, given `0xFC` if undefined)
@@ -179,7 +169,7 @@ Access.org uses only 1 non-percussion channel: **channel 2**. This means that th
 </details>
 
 
-### ORG Tempo:
+### ORG Tempo
 ORG music can handle 1000 individual notes per second. The wait time is expressed in milliseconds, with the shortest time possible for a single note being 1 millisecond *(having a wait value of "1")*.
 
 To convert BPM to "WAIT", use the following formula:
@@ -204,7 +194,8 @@ Note that ORG Wait time is in whole numbers only, so 128.205 would be truncated 
 Below is a list of songs created with an Organya Editor to show how it looks and sounds.
 
 ### Cave Story Soundtrack by Studio Pixel
-******
+<hr>
+
   - [Access](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FAccess.org#)
   - [Gestation](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FGestation%20%28Internal%20Percussion%29.org#)
   - [Mimiga Town](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FMimiga%20Town.org#)
@@ -242,7 +233,8 @@ Below is a list of songs created with an Organya Editor to show how it looks and
   - [The Way Back Home](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FThe%20Way%20Back%20Home%20%28Internal%20Percussion%29.org#)
   
   ### Azarashi 2001 Soundtrack by Studio Pixel
-  ******
+  <hr>
+  
   - [Azarashi](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fazarashi-2001%2Forg%2FAzarashi.org)
 
 
