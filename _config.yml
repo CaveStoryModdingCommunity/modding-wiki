@@ -103,7 +103,7 @@ plugins:
   - jekyll-avatar
   - jekyll-coffeescript
   - jekyll-default-layout
-  - jekyll-feed
+#  - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
   - jekyll-mentions
