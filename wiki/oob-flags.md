@@ -1,22 +1,13 @@
 # Out Of Bounds (OOB) TSC Flags
 This page contains a list of flag variables that exceed the limit (8000). This is why going over 8000 by using flags is inadvisable, since toggling these flags will cause the game to do some strange things. Luckily enough, some of these "Out of Bounds" flags can prove to be useful for you.
 
-[Tribute Site Forums Thread](https://forum.cavestory.org/threads/using-oob-tsc-flags-to-exploit-memory.13917/)
+The following content was taken from the post[^1] made by **Enlightened**, the original creator of the list.
 
-The following content was taken from the post made by **Enlightened**, the original creator of the list, found at the link above. 
-
->Hey, so I've always been telling myself that after I'm done with modding I'll post these, but since:
->1. I don't know when that will be.
->2. I have a habit of randomly disconnecting from this place, never intending to come back.
->3. It ain't doing any favors and is kinda selfish I guess?
->4. The question about them came up recently in the Discord group.
-
->I've decided to share them right now, here's a new tool any newcomer can use in their mods.
-
+[^1]: [Using OOB TSC flags to exploit memory](https://forum.cavestory.org/threads/using-oob-tsc-flags-to-exploit-memory.13917/)
 
 ## Section 1: The Reference Sheet
 
-### KEYS:
+### Keys
 
 Setting these flags will simulate player keypresses ingame, allowing for some control over user input from TSC.
 
@@ -45,7 +36,8 @@ Setting these flags will simulate player keypresses ingame, allowing for some co
 [9108] = (Unused)
 ```
 
-NON-KEY:
+### Non-key
+
 ```
 [B752] Player invincibility timer
 [B800] Current Whimsical star count (Max onscreen is three, must have <EQ+0128)
@@ -76,11 +68,12 @@ HOWEVER, there is a trick to working with most of the NON-KEY values. Since the
 
 #### Example:
 
- Using `<FL+8704` will activate a hard quake, but for only 1 tick/frame. `8705` will add 2 ticks, `8706` will add 4 ticks, and so on in powers of 2. If you want a 100 frame hard quake (2 seconds if the FPS is 50), you would use a combination of flags set to get that amount, or if you are lazy you could just use some larger number like `8711` and call it a day. Be reasonable though or you will likely accidentally be editing something else entirely.
+Using `<FL+8704` will activate a hard quake, but for only 1 tick/frame. `8705` will add 2 ticks, `8706` will add 4 ticks, and so on in powers of 2. If you want a 100 frame hard quake (2 seconds if the FPS is 50), you would use a combination of flags set to get that amount, or if you are lazy you could just use some larger number like `8711` and call it a day. Be reasonable though or you will likely accidentally be editing something else entirely.
 
 #### Example 2:
 
- Say you wanted the exp counter to visually say `+1337` above the player. The first flag is `B720`, so in order to get an exact value of `1337` you would first visualize or jot down each flag to a power of 2 like so:
+Say you wanted the exp counter to visually say `+1337` above the player. The first flag is `B720`, so in order to get an exact value of `1337` you would first visualize or jot down each flag to a power of 2 like so:
+
 ```
 1  <FL+B720
 2  <FL+B721
@@ -96,18 +89,23 @@ HOWEVER, there is a trick to working with most of the NON-KEY values. Since the
 ```
 
 And sum up the numbers to get a total of 1337, resulting in this code:
-
-```<FL+B720<FL+B723<FL+B724<FL+B725<FL+B728<FL+B730```
+```
+<FL+B720<FL+B723<FL+B724<FL+B725<FL+B728<FL+B730
+```
 
 Or you could be lazy and look at these other codes:
-```
-+69
-<FL+B726<FL+B722<FL+B720
-+404
-<FL+B728<FL+B727<FL+B724<FL+B722
-+666
-<FL+B729<FL+B727<FL+B724<FL+B723<FL+B721
-```
+- +69:
+    ```
+    <FL+B726<FL+B722<FL+B720
+    ```
+- +404:
+    ```
+    <FL+B728<FL+B727<FL+B724<FL+B722
+    ```
+- +666:
+    ```
+    <FL+B729<FL+B727<FL+B724<FL+B723<FL+B721
+    ```
 
 *And no, before you ask if you can display a `+80085` above the player, you are only allowed a 4-digit number.*
 
@@ -129,4 +127,4 @@ Now that you may or may not understand how binary works now, here is some other 
 
 ## Section 3: How did I get these values, and where can more be found.
 
-First one should note that you can't reach every corner of the executable when working with bits. I'm pretty sure this is 90% of the useful values, as others like player velocity, soft quakes, and the dimensions of the current map are practically useless to edit in a pure TSC script, and learning ASM from the community would be a better option to achieve your goals.
+First one should note that you can't reach every corner of the executable when working with bits. This likely covers about 90% of the useful values, as others like player velocity, soft quakes, and the dimensions of the current map are practically useless to edit in a pure TSC script, and learning ASM from the community would be a better option to achieve your goals.
