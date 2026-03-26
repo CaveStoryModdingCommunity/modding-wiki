@@ -9,7 +9,7 @@
 <tr><td>Year:</td><td>2015</td></tr>
 <tr><td>Platform:</td><td>Windows</td></tr>
 <tr><td>Status:</td><td>
-<p style="color:#B00000;">Abandoned</p>
+<p style="color:#8B8000;">Abandoned</p>
 </td></tr>
 <tr><td>Info:</td><td><a href="https://forum.cavestory.org/threads/geobox-engine-getting-ready-for-public-use.5844/">Original Forum Thread</a></td></tr>
 
