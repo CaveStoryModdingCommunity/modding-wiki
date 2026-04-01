@@ -1,39 +1,30 @@
 # Sue's Workshop
 
-
 <fieldset>
-<legend>Sue's Workshop:</legend>
-<img src="/wiki/img/editors/sw-assets/SW_icon.png">
-<table><tbody>
-
-
-<tr><td>Creator(s):</td><td>ProfEich</td></tr>
-<tr><td>Year:</td><td>2006</td></tr>
-<tr><td>Platform:</td><td>Windows</td></tr>
-<tr><td>Status:</td><td>
-<p style="color:#B00000;">Deprecated</p>
-</td></tr>
-<tr><td>Info:</td><td><a href="https://forum.cavestory.org/threads/sues-workshop-finally-a-new-version.351/">Original Forum Thread</a></td></tr>
-
-
-</tbody></table>
+  <legend>Sue's Workshop:</legend>
+  <img src="/wiki/img/editors/sw-assets/SW_icon.png">
+  <table>
+    <tbody>
+      <tr><td>Creator(s):</td><td>ProfEich</td></tr>
+      <tr><td>Year:</td><td>2006</td></tr>
+      <tr><td>Platform:</td><td>Windows</td></tr>
+      <tr><td>Status:</td><td><p style="color:#B00000;">Deprecated</p></td></tr>
+      <tr><td>Info:</td><td><a href="https://forum.cavestory.org/threads/sues-workshop-finally-a-new-version.351/">Original Forum Thread</a></td></tr>
+    </tbody>
+  </table>
 </fieldset>
 
-<br>
-
-  >*"4) Fix SW's compatibility issues with CE."* - Andwhyisit, 2009
-
-
-
-
 <p style="color:#B00000;"><i>Note: It is <b>Not</b> recommended to use Sue's workshop for Cave Story modding in any capacity! The program can and will corrupt your cave story executable, especially if used in tandem with other <a href="{{ '/cavestory-editors' | relative_url }}">editors</a>. The page and instructions are still here for archival purposes only.</i></p>
+
+
+> *"4) Fix SW's compatibility issues with CE."* **- Andwhyisit, 2009** [^1]
 
 
 **Sue's Workshop** is a defunct tool created in 2006 by **Benjamin Schulte**, also known as **ProfEich**. The tool was abandoned in 2007, and updates were planned to be released by ex-CSTSF admin S.P. Gardebiter but this new version never came to fruition.
 The tool was also packaged in the old version of the "Cave Story Deluxe Package" on the Tribute Site.
 
 
-
+![A basic image showing off Sue's Workshop in action. Inside the Main interface is a Map editing interface in tile edit mode.](/wiki/img/editors/sw-assets/SW_sample_1.webp)
 
 [Download](https://www.cavestory.org/downloads/Editor0.3A.zip) *(Version 0.3A).*
 
@@ -43,6 +34,7 @@ The tool was also packaged in the old version of the "Cave Story Deluxe Package"
 
 [Forum Thread Link (S.P. Gardebiter)](https://forum.cavestory.org/threads/sues-workshop-new-version-in-development.1592/) *(It should be noted this thread leads to the "New Version" thread started by S.P. Gardebiter. This thread is added for archival purposes.)*
 
+[^1]: <https://forum.cavestory.org/threads/sues-workshop-new-version-in-development.1592/post-69208>
 
 ## How to use Sue's Workshop
 
@@ -57,6 +49,9 @@ Inside the program once loaded will show the Main interface, and from there you 
 Sue's Workshop Main interface Sample 2
 ### The Main menu interface
 
+<figure>
+  <img src="/wiki/img/editors/sw-assets/SW_Main_interface_(Sample_2).webp">
+</figure>
 
 In the Main interface of Sue's Workshop is where you will perform your work and open other menus to access different features. There are four sub tabs up top and the list of stages. *(Each bullet layer represents its respective layer in the UI)*
 
@@ -71,8 +66,11 @@ In the Main interface of Sue's Workshop is where you will perform your work and 
     - **Tile set editor:** This feature allows you to change the hex value of tiles in tile sheets. Due to the limitations of knowledge at the time, only a select handful of tiles were documented in SW.
         - **Tiles that were documented were:** `0, 1, 2, 5, 40, 41, 42, 43, 46, 50, 51, 52, 53, 54, 55, 56, 60, 62, 70, 71, 72, 73, 74, 75, 76, 77, 80, 81, 82, 83, A0, A1, A2, A3, and FF.`
             The feature had one quirk in that you could select and modify multiple tile hex values at once.
+    <figure>
+      <img src="/wiki/img/editors/sw-assets/SW_Game_Settings_button_(Sample_3).webp">
+    </figure>
     - **SW's game settings feature:**
-        - Game Settings: The setting's button is very limited compared to other editors, only allows for the game's window name caption to be changed, as well as the starting event (default is 200).
+        - **Game Settings:** The setting's button is very limited compared to other editors, only allows for the game's window name caption to be changed, as well as the starting event (default is 200).
 
 
 - **Run:** This feature simply ran the game from the editor without having to close out of it, allowing for changes to be made more quickly in the editor.
@@ -86,8 +84,12 @@ In the Main interface of Sue's Workshop is where you will perform your work and 
         - **Credit:** Displays the script file for the game's credits that use a different TSC method for writing text in-game.
 
 
-**[image needed]** *SW Map editor interface sample image, showing multiple maps loaded*
 ### The Map editor interface
+
+
+<figure>
+  <img src="/wiki/img/editors/sw-assets/SW_Map_editor_interface_(Sample_4).webp" alt="SW Map editor interface sample image, showing multiple maps loaded.">
+</figure>
 
 
 Upon loading a map you will be greeted with another window for the map that you can zoom in or zoom out. There are several handy features with the Map editor that allow for ease of access across multiple maps and utilizing their windows:
@@ -106,23 +108,25 @@ Inside the Map editor interface are several options at the very top that lead di
     - **Save Map:** This button saves all modifications whether it is tile edits or entity edits.
 
 
-**[image needed]**
-*SW's tile set sheet, with an elongated sub-window*
+
 
 
 After this the editor has two modes for editing tiles and entities.
+<figure>
+  <img src="/wiki/img/editors/sw-assets/SW_tile_set_sheet.webp" alt="SW's tile set sheet, with an elongated sub-window">
+</figure>
 - **Map Edit Mode:** Switches the editor to edit tiles only.
 
 
     Inside this Map Edit mode, only tiles can be edited and right below the sub tabs will be your tileset sheet. This sheet's sub-window can be lengthened up and down to accommodate your needs.
-- **Pen Mode:** This tool will allow you to put tiles on the map like a paintbrush on the canvas.
-- **Rectangle Mode:** A more meticulous tool that allows you to place down specific rectangles of objects from the tile sheet.
+    - **Pen Mode:** This tool will allow you to put tiles on the map like a paintbrush on the canvas.
+    - **Rectangle Mode:** A more meticulous tool that allows you to place down specific rectangles of objects from the tile sheet.
 
 
-    **[image needed]** SW gif showing the difference between tile and entity edits
+        ![SW gif showing the difference between tile and entity edits](/wiki/img/editors/sw-assets/SW_tile_and_entity_edit_modes_gif.webp)
 
 
-    *Shown here is the difference between tile edit and entity edit mode. Tile edit has the pen and rectangle modes, meanwhile entity edit has add one and many NPCs, as well as edit entities.*
+        *Shown here is the difference between tile edit and entity edit mode. Tile edit has the pen and rectangle modes, meanwhile entity edit has add one and many NPCs, as well as edit entities.*
 
 
 - **Entity Edit Mode:** Switches the editor to edit entities only. In this mode entities will be displayed with their event number, but there is no numbered limit, meaning modders will not know if they've hit the entity cap (of 255) without manually counting. As well, entities are highlighted with a white square, and entities with FlagID's will be highlighted yellow.
@@ -132,7 +136,10 @@ After this the editor has two modes for editing tiles and entities.
     When clicking on an entity you can perform several actions:
     - **Event:** This lets you dictate an entity's event number if they need one.
     - **Sprite:** This basic option lets you choose what NPC the entity becomes. This feature is extremely basic compared to other editors and requires the exact sprite number.
-    **[image needed]** SW Flag/FlagID window, it's very basic.
+
+        <figure>
+            <img src="/wiki/img/editors/sw-assets/SW_Flags-Flag_ID_window.webp" alt="SW Flag/FlagID window, it's very basic.">
+        </figure>
 
 
         - **Flags and FlagID:** The parameters an entity takes on, can be edited in the Edit Flags section.
@@ -152,11 +159,12 @@ After this the editor has two modes for editing tiles and entities.
     Edit map script: This button enters the Script interface.
 
 
-**[image needed]** SW's Script interface on top of the Map interface.
-
-
 ### The Script interface
 
+
+<figure>
+  <img src="/wiki/img/editors/sw-assets/SW_Script_interface_(Sample_5).webp" alt="SW's Script interface on top of the Map interface.">
+</figure>
 
 The third and final interface of Sue's Workshop, this feature exists on its own window, but its size can be toggled and minimized to share its space with your other maps and scripts on your workspace. The Script interface's layout is very basic and doesn't provide any other features besides script editing. Unlike its contemporaries, CE and BL, there is no command list nor prompts to assist modders on how to set up commands, so much of your work will be guesswork or copying commands and lines from other lines without proficient understanding.
 
@@ -167,7 +175,7 @@ When right-clicking, basic undo (no redo), select all, cut, copy, paste, and del
 The Script editor interface has a very basic layout, no extraneous functions or features exist, and the format does not warn modders of text boxes trailing outside the 26 to 35 character limit nor warns them of commands not being inputted properly. The interface's background and text color are also close to one another, and with no variation in command and text colors, figuring out what to edit can be confusing and one can lose track of where they were fast.
 
 
-- Save Script: The only button in the Script editor interface. It saves the current script regardless of syntax and changes made.
+- **Save Script:** The only button in the Script editor interface. It saves the current script regardless of syntax and changes made.
 
 
 ## Features
@@ -201,8 +209,9 @@ The Script editor interface has a very basic layout, no extraneous functions or 
 
 ## Bugs (Compatibility issues):
 
-
-SW but the exe is corrupted.
+<figure>
+  <img src="/wiki/img/editors/sw-assets/SW_broken_exe_(Sample_6).webp" alt="SW but the exe is corrupted.">
+</figure>
 
 
 The editor doesn't have many notable bugs due to its lack of features, so few errors will show up if at all.
