@@ -5,7 +5,7 @@
 ## Overview
 
 Organya (org) is a custom music tracker format created by Pixel in 1999 as an improved version of his other music format - Pixel Music Data(pmd), which was used by his other music editor PiyoPiyo.
-It is most prominently known for its use in Cave Story, but several other games use it, too, like [Stargazer](http://www5b.biglobe.ne.jp/~kiss-me/aji/star/) and [Azarashi 2001](https://www.cavestory.org/pixels-works/azarashi.php).
+It is most prominently known for its use in Cave Story, but several other games use it, too, like [Stargazer](http://www5b.biglobe.ne.jp/~kiss-me/aji/star/) and [Azarashi 2001](https://www.cavestory.one/pixels-works/azarashi.php).
 
 
 The format allows the playback of 14-16 simultaneous channels, with 8 note polyphony and 6-8 different percussion instruments, depending on the player used.
@@ -159,7 +159,7 @@ Structure of the info block for every track is as follows:
       <td>1</td>
       <td>Pipi</td>
       <td>
-        Makes the selected instruemnt play in a pizzicato state. Only regarded if org type is <code>org-02</code> or greater, otherwise is set to 0, is a binary value.
+        Makes the selected instrument play in a pizzicato state. Only regarded if org type is <code>org-02</code> or greater, otherwise is set to 0, is a binary value.
       </td>
     </tr>
     <tr>
@@ -211,14 +211,14 @@ Each track length has the note data in the following order, each piece of data i
       <td>0</td>
       <td>4</td>
       <td>X location</td>
-      <td>Placement of a note.</td>
+      <td>Number of dots to the current note starting at zero.</td>
     </tr>
     <tr>
       <td>4</td>
       <td>1</td>
       <td>Y location</td>
       <td>
-        Key, doesn’t need to be as big of a number, 00 is low, FF is high, FF if the note does not exist (is instead a modifier event like pan/vol).
+        Key, doesn’t need to be as big of a number, 00 is low, FE is high, FF if the note does not exist (is instead a modifier event like pan/vol).
       </td>
     </tr>
     <tr>
@@ -326,45 +326,45 @@ Below is a list of songs created with an Organya Editor to show how it looks and
 ### Cave Story Soundtrack by Studio Pixel
 <hr>
 
-  - [Access](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FAccess.org#)
-  - [Gestation](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FGestation%20%28Internal%20Percussion%29.org#)
-  - [Mimiga Town](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FMimiga%20Town.org#)
-  - [Plant](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FPlant.org#)
-  - [Balrog's Theme](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FBalrog%27s%20Theme.org#)
-  - [Gravity](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FGravity%20%28Internal%20Percussion%29.org#)
-  - [Cemetery](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FCemetery%20%28Internal%20Percussion%29.org#)
-  - [Safety](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FSafety.org#)
-  - [Mischevous Robot](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FMischievous%20Robot.org#)
-  - [Pulse](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FPulse.org#)
-  - [On to GrassTown](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FOn%20to%20Grasstown.org#)
-  - [Eyes of Flame](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FEyes%20of%20Flame.org#)
-  - [Meltdown 2](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FMeltdown%202.org#)
-  - [Tyrant](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FTyrant.org#)
-  - [Run!](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FRun%21.org#)
-  - [Jenka 1](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FJenka%201.org#)
-  - [Jenka 2](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FJenka%202.org#)
-  - [Labrinyth Fight](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FLabyrinth%20Fight.org#)
-  - [Geothermal](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FGeothermal.org#)
-  - [Oppression](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FOppression.org#)
-  - [Living Waterway](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FLiving%20Waterway%20%28Internal%20Percussion%29.org#)
-  - [Quiet](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FQuiet.org#)
-  - [Scorching Back](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FScorching%20Back.org#)
-  - [Moonsong](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FMoonsong.org#)
-  - [Hero's End](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FHero%27s%20End.org#)
-  - [Cave Story (Theme)](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FCave%20Story.org#)
-  - [Last Cave](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FLast%20Cave.org#)
-  - [Balcony](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FBalcony.org#)
-  - [Charge](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FCharge.org#)
-  - [Zombie](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FZombie.org#)
-  - [Last Battle](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FLast%20Battle.org#)
-  - [Break Down](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FBreak%20Down.org#)
-  - [Running Hell](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FRunning%20Hell.org#)
-  - [Seal Chamber](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FSeal%20Chamber.org#)
-  - [The Way Back Home](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fcave-story%2Forg%2FThe%20Way%20Back%20Home%20%28Internal%20Percussion%29.org#)
+  - [Access](https://www.cavestory.one/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.one%2Fsoundtrack%2Fcave-story%2Forg%2FAccess.org#)
+  - [Gestation](https://www.cavestory.one/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.one%2Fsoundtrack%2Fcave-story%2Forg%2FGestation%20%28Internal%20Percussion%29.org#)
+  - [Mimiga Town](https://www.cavestory.one/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.one%2Fsoundtrack%2Fcave-story%2Forg%2FMimiga%20Town.org#)
+  - [Plant](https://www.cavestory.one/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.one%2Fsoundtrack%2Fcave-story%2Forg%2FPlant.org#)
+  - [Balrog's Theme](https://www.cavestory.one/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.one%2Fsoundtrack%2Fcave-story%2Forg%2FBalrog%27s%20Theme.org#)
+  - [Gravity](https://www.cavestory.one/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.one%2Fsoundtrack%2Fcave-story%2Forg%2FGravity%20%28Internal%20Percussion%29.org#)
+  - [Cemetery](https://www.cavestory.one/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.one%2Fsoundtrack%2Fcave-story%2Forg%2FCemetery%20%28Internal%20Percussion%29.org#)
+  - [Safety](https://www.cavestory.one/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.one%2Fsoundtrack%2Fcave-story%2Forg%2FSafety.org#)
+  - [Mischevous Robot](https://www.cavestory.one/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.one%2Fsoundtrack%2Fcave-story%2Forg%2FMischievous%20Robot.org#)
+  - [Pulse](https://www.cavestory.one/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.one%2Fsoundtrack%2Fcave-story%2Forg%2FPulse.org#)
+  - [On to GrassTown](https://www.cavestory.one/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.one%2Fsoundtrack%2Fcave-story%2Forg%2FOn%20to%20Grasstown.org#)
+  - [Eyes of Flame](https://www.cavestory.one/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.one%2Fsoundtrack%2Fcave-story%2Forg%2FEyes%20of%20Flame.org#)
+  - [Meltdown 2](https://www.cavestory.one/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.one%2Fsoundtrack%2Fcave-story%2Forg%2FMeltdown%202.org#)
+  - [Tyrant](https://www.cavestory.one/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.one%2Fsoundtrack%2Fcave-story%2Forg%2FTyrant.org#)
+  - [Run!](https://www.cavestory.one/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.one%2Fsoundtrack%2Fcave-story%2Forg%2FRun%21.org#)
+  - [Jenka 1](https://www.cavestory.one/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.one%2Fsoundtrack%2Fcave-story%2Forg%2FJenka%201.org#)
+  - [Jenka 2](https://www.cavestory.one/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.one%2Fsoundtrack%2Fcave-story%2Forg%2FJenka%202.org#)
+  - [Labrinyth Fight](https://www.cavestory.one/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.one%2Fsoundtrack%2Fcave-story%2Forg%2FLabyrinth%20Fight.org#)
+  - [Geothermal](https://www.cavestory.one/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.one%2Fsoundtrack%2Fcave-story%2Forg%2FGeothermal.org#)
+  - [Oppression](https://www.cavestory.one/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.one%2Fsoundtrack%2Fcave-story%2Forg%2FOppression.org#)
+  - [Living Waterway](https://www.cavestory.one/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.one%2Fsoundtrack%2Fcave-story%2Forg%2FLiving%20Waterway%20%28Internal%20Percussion%29.org#)
+  - [Quiet](https://www.cavestory.one/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.one%2Fsoundtrack%2Fcave-story%2Forg%2FQuiet.org#)
+  - [Scorching Back](https://www.cavestory.one/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.one%2Fsoundtrack%2Fcave-story%2Forg%2FScorching%20Back.org#)
+  - [Moonsong](https://www.cavestory.one/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.one%2Fsoundtrack%2Fcave-story%2Forg%2FMoonsong.org#)
+  - [Hero's End](https://www.cavestory.one/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.one%2Fsoundtrack%2Fcave-story%2Forg%2FHero%27s%20End.org#)
+  - [Cave Story (Theme)](https://www.cavestory.one/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.one%2Fsoundtrack%2Fcave-story%2Forg%2FCave%20Story.org#)
+  - [Last Cave](https://www.cavestory.one/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.one%2Fsoundtrack%2Fcave-story%2Forg%2FLast%20Cave.org#)
+  - [Balcony](https://www.cavestory.one/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.one%2Fsoundtrack%2Fcave-story%2Forg%2FBalcony.org#)
+  - [Charge](https://www.cavestory.one/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.one%2Fsoundtrack%2Fcave-story%2Forg%2FCharge.org#)
+  - [Zombie](https://www.cavestory.one/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.one%2Fsoundtrack%2Fcave-story%2Forg%2FZombie.org#)
+  - [Last Battle](https://www.cavestory.one/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.one%2Fsoundtrack%2Fcave-story%2Forg%2FLast%20Battle.org#)
+  - [Break Down](https://www.cavestory.one/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.one%2Fsoundtrack%2Fcave-story%2Forg%2FBreak%20Down.org#)
+  - [Running Hell](https://www.cavestory.one/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.one%2Fsoundtrack%2Fcave-story%2Forg%2FRunning%20Hell.org#)
+  - [Seal Chamber](https://www.cavestory.one/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.one%2Fsoundtrack%2Fcave-story%2Forg%2FSeal%20Chamber.org#)
+  - [The Way Back Home](https://www.cavestory.one/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.one%2Fsoundtrack%2Fcave-story%2Forg%2FThe%20Way%20Back%20Home%20%28Internal%20Percussion%29.org#)
 
   
 ### Azarashi 2001 Soundtrack by Studio Pixel
 <hr>
   
-  - [Azarashi](https://www.cavestory.org/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.org%2Fsoundtrack%2Fazarashi-2001%2Forg%2FAzarashi.org)
+  - [Azarashi](https://www.cavestory.one/soundtrack/organya-js/orgplayext.php?s=https%3A%2F%2Fwww.cavestory.one%2Fsoundtrack%2Fazarashi-2001%2Forg%2FAzarashi.org)
 
