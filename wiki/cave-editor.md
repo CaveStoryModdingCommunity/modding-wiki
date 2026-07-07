@@ -12,7 +12,7 @@
 <tr><td>Status:</td><td>
 <p style="color:#8B8000;">Abandoned</p>
 </td></tr>
-<tr><td>Info:</td><td><a href="https://forum.cavestory.org/threads/caveeditor-again-beta-maybe-alpha.611/">Original Forum Thread</a></td></tr>
+<tr><td>Info:</td><td><a href="https://forum.cavestory.one/threads/caveeditor-again-beta-maybe-alpha.611/">Original Forum Thread</a></td></tr>
 
 
 </tbody></table>
@@ -60,16 +60,16 @@ The Script Editor Interface
 
 
 
-[Download](http://www.cavestory.org/downloads/CaveEditor0.99d.zip) (Version 0.99d).
+[Download](http://www.cavestory.one/downloads/CaveEditor0.99d.zip) (Version 0.99d).
 
-[Download Source Code](http://www.cavestory.org/downloads/CaveEditorSource0.98e.zip).
+[Download Source Code](http://www.cavestory.one/downloads/CaveEditorSource0.98e.zip).
 
-[Forum Thread Link](https://forum.cavestory.org/threads/caveeditor-again-beta-maybe-alpha.611/)
+[Forum Thread Link](https://forum.cavestory.one/threads/caveeditor-again-beta-maybe-alpha.611/)
 
 
 ## Trivia
 
 - Cave Editor once had a display issue that made Wistil have to make an entirely new program to figure it out[^1]. Eventually, the issue was fixed[^2].
 
-[^1]: <https://forum.cavestory.org/threads/cave-editor-display-problem.1726/>
-[^2]: <https://forum.cavestory.org/threads/caveeditor-again-beta-maybe-alpha.611/post-19898>
+[^1]: <https://forum.cavestory.one/threads/cave-editor-display-problem.1726/>
+[^2]: <https://forum.cavestory.one/threads/caveeditor-again-beta-maybe-alpha.611/post-19898>

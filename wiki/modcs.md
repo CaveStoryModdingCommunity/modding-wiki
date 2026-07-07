@@ -12,7 +12,7 @@
 <p style="color:#00B000;">Finished</p>
 </td></tr>
 <tr><td>Website:</td><td><a href="https://modcavestory.github.io/">modcavestory.github.io</a></td></tr>
-<tr><td>Info:</td><td><a href="https://forum.cavestory.org/threads/modcs-lua-modding-api-to-cave-story.15385/">Original Forum Post</a></td></tr>
+<tr><td>Info:</td><td><a href="https://forum.cavestory.one/threads/modcs-lua-modding-api-to-cave-story.15385/">Original Forum Post</a></td></tr>
 </tbody></table>
 </fieldset>
 

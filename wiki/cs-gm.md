@@ -12,7 +12,7 @@
 <tr><td>Status:</td><td>
 <p style="color:#B00000;">Abandoned</p>
 </td></tr>
-<tr><td>Info:</td><td><a href="https://forum.cavestory.org/threads/cave-story-gm.14957/#post-371205">Original Forum Thread</a></td></tr>
+<tr><td>Info:</td><td><a href="https://forum.cavestory.one/threads/cave-story-gm.14957/#post-371205">Original Forum Thread</a></td></tr>
 
 </tbody></table>
 </fieldset>

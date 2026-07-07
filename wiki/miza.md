@@ -34,7 +34,7 @@ Due to the guide's bouts of tasteful language it will not be mentioned beyond th
 
 ![Miza Sample Page](/wiki/img/editors/miza-assets/0_Sample_Page.png)
 
-[^1]: <https://forum.cavestory.org/threads/miza-exe.1778/post-78552>
+[^1]: <https://forum.cavestory.one/threads/miza-exe.1778/post-78552>
 
 ## How to use Miza
 

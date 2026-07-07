@@ -48,7 +48,7 @@ You can also link to specific headers of an article, whether it be in the same p
 
 If you want to just have the actual full URL display, wrap it up in `<>` angle-brackets:
 
-<https://cavestory.org/>
+<https://cavestory.one/>
 
 ***
 

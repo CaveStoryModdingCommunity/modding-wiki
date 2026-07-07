@@ -11,7 +11,7 @@
 <tr><td>Status:</td><td>
 <p style="color:#8B8000;">Abandoned</p>
 </td></tr>
-<tr><td>Info:</td><td><a href="https://forum.cavestory.org/threads/geobox-engine-getting-ready-for-public-use.5844/">Original Forum Thread</a></td></tr>
+<tr><td>Info:</td><td><a href="https://forum.cavestory.one/threads/geobox-engine-getting-ready-for-public-use.5844/">Original Forum Thread</a></td></tr>
 
 </tbody></table>
 </fieldset>

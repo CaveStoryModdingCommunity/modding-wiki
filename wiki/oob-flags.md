@@ -3,7 +3,7 @@ This page contains a list of flag variables that exceed the limit (8000). This i
 
 The following content was taken from the post[^1] made by **Enlightened**, the original creator of the list.
 
-[^1]: [Using OOB TSC flags to exploit memory](https://forum.cavestory.org/threads/using-oob-tsc-flags-to-exploit-memory.13917/)
+[^1]: [Using OOB TSC flags to exploit memory](https://forum.cavestory.one/threads/using-oob-tsc-flags-to-exploit-memory.13917/)
 
 ## Section 1: The Reference Sheet
 

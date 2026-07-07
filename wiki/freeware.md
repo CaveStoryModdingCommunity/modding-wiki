@@ -11,7 +11,7 @@
 <tr><td>Status:</td><td>
 <p style="color:#00B000;">Finished</p>
 </td></tr>
-<tr><td>Website:</td><td><a href="https://www.cavestory.org/">Tribute Site</a></td></tr>
+<tr><td>Website:</td><td><a href="https://www.cavestory.one/">Tribute Site</a></td></tr>
 
 </tbody></table>
 </fieldset>
@@ -27,6 +27,6 @@ For more specifics, please see the [Advanced Freeware Hacking](advanced-freeware
 
 Many consider freeware to be the most beginner-friendly engine, primarily due to extensive documentation as well as the large library of user-made hacks made over the years.
 
-[Download](https://www.cavestory.org/downloads/cavestoryen.zip) (Aeon Genesis English translation pre-patched)
+[Download](https://www.cavestory.one/downloads/cavestoryen.zip) (Aeon Genesis English translation pre-patched)
 
 [Download](https://studiopixel.jp/binaries/dou_1006.zip) (Original Japanese release)

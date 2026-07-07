@@ -12,9 +12,9 @@
 <p style="color:#00B000;">Stable</p>
 </td></tr>
 
-<tr><td>Download:</td><td><a href="http://www.cavestory.org/downloads/DoukutsuAssembler1.31.zip">From cavestory.org</a></td></tr>
+<tr><td>Download:</td><td><a href="http://www.cavestory.one/downloads/DoukutsuAssembler1.31.zip">Tribute Site</a></td></tr>
 
-<tr><td>Info:</td><td><a href="https://www.cavestory.org/forums/threads/doukutsu-assembler.2658/">Original Forum Thread</a></td></tr>
+<tr><td>Info:</td><td><a href="https://www.cavestory.one/forums/threads/doukutsu-assembler.2658/">Original Forum Thread</a></td></tr>
 
 </tbody></table>
 </fieldset>

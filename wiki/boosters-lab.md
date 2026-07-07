@@ -12,7 +12,7 @@
 
 [Download](https://github.com/autumn-mnya/boosters-lab/releases/tag/0.5.1.3)
 
-[Forum Thread Link](https://www.cavestory.org/forums/threads/boosters-lab-its-pretty-good-now.3865/)
+[Forum Thread Link](https://www.cavestory.one/forums/threads/boosters-lab-its-pretty-good-now.3865/)
 
 [Comparison to other editors.](cavestory-editors.md)
 

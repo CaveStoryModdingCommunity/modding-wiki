@@ -1,7 +1,7 @@
 # Modloader
 
 Links:
-[Original forum post](https://forum.cavestory.org/threads/dll-mod-loader-extra-music-formats-mod.13879/), [Github release](https://github.com/Clownacy/Cave-Story-Mod-Loader/releases/tag/v1.5.2.1)
+[Original forum post](https://forum.cavestory.one/threads/dll-mod-loader-extra-music-formats-mod.13879/), [Github release](https://github.com/Clownacy/Cave-Story-Mod-Loader/releases/tag/v1.5.2.1)
 
 **A comprehensive list of mods for Modloader [can be found here.](dll-list)**
 

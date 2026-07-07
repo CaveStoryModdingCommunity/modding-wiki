@@ -11,7 +11,7 @@
 <tr><td>Status:</td><td>
 <p style="color:#B00000;">DMCA'd</p>
 </td></tr>
-<tr><td>Info:</td><td><a href="https://forum.cavestory.org/threads/cse2-the-cave-story-decompilation-project.14657/">Original Forum Thread</a></td></tr>
+<tr><td>Info:</td><td><a href="https://forum.cavestory.one/threads/cse2-the-cave-story-decompilation-project.14657/">Original Forum Thread</a></td></tr>
 
 </tbody></table>
 </fieldset>

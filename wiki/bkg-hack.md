@@ -19,7 +19,7 @@ The list of ports for the BKG hack are as follows:
 
 ## BLink - Layer Hack
 
-[Original forum thread here](https://forum.cavestory.org/threads/blinks-multi-layered-background-hack.14250/)
+[Original forum thread here](https://forum.cavestory.one/threads/blinks-multi-layered-background-hack.14250/)
 
 This version is exclusively TSC dependent and uses no external config files. It is a standalone hack, so other dlls and patches need to be added with care.
 
@@ -84,7 +84,7 @@ There are also several other commands that control how the backgrounds behave on
 
 ## JakeV - Modengine (tscextended)
 
-More info about this mod [can be found here.](https://forum.cavestory.org/threads/mod-engine-tsc-extended.15369/)[^2]
+More info about this mod [can be found here.](https://forum.cavestory.one/threads/mod-engine-tsc-extended.15369/)[^2]
 
 [^2]: Note: since this is CSE2, the download link has since been removed, but it still exists on archive.org
 

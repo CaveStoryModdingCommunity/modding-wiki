@@ -16,7 +16,7 @@ Discussion of this project is primarily found on the [CSMC Discord Server](https
 
 - [The Example Page](example-page): Which does exist. *For now.* This is the primary guide form that other pages should follow.
 
-- [cavestory.org](https://cavestory.org): If you haven't played **Cave Story** yet, you are probably lost on the internet. I would recommend that you acquire a map or follow a quest marker to make your way to the destination you are trying to reach.
+- [cavestory.one](https://www.cavestory.one): If you haven't played **Cave Story** yet, you are probably lost on the internet. I would recommend that you acquire a map or follow a quest marker to make your way to the destination you are trying to reach.
 
  - [All other pages](all): A complete list of everything on the wiki so far.
 

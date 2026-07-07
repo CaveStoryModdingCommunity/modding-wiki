@@ -9,7 +9,7 @@
       <tr><td>Year:</td><td>2006</td></tr>
       <tr><td>Platform:</td><td>Windows</td></tr>
       <tr><td>Status:</td><td><p style="color:#B00000;">Deprecated</p></td></tr>
-      <tr><td>Info:</td><td><a href="https://forum.cavestory.org/threads/sues-workshop-finally-a-new-version.351/">Original Forum Thread</a></td></tr>
+      <tr><td>Info:</td><td><a href="https://forum.cavestory.one/threads/sues-workshop-finally-a-new-version.351/">Original Forum Thread</a></td></tr>
     </tbody>
   </table>
 </fieldset>
@@ -26,15 +26,15 @@ The tool was also packaged in the old version of the "Cave Story Deluxe Package"
 
 ![A basic image showing off Sue's Workshop in action. Inside the Main interface is a Map editing interface in tile edit mode.](/wiki/img/editors/sw-assets/SW_sample_1.webp)
 
-[Download](https://www.cavestory.org/downloads/Editor0.3A.zip) *(Version 0.3A).*
+[Download](https://www.cavestory.one/downloads/Editor0.3A.zip) *(Version 0.3A).*
 
 
-[Forum Thread Link (ProfEich)](https://forum.cavestory.org/threads/sues-workshop-finally-a-new-version.351/) *(Download link on the page doesn't work.)*
+[Forum Thread Link (ProfEich)](https://forum.cavestory.one/threads/sues-workshop-finally-a-new-version.351/) *(Download link on the page doesn't work.)*
 
 
-[Forum Thread Link (S.P. Gardebiter)](https://forum.cavestory.org/threads/sues-workshop-new-version-in-development.1592/) *(It should be noted this thread leads to the "New Version" thread started by S.P. Gardebiter. This thread is added for archival purposes.)*
+[Forum Thread Link (S.P. Gardebiter)](https://forum.cavestory.one/threads/sues-workshop-new-version-in-development.1592/) *(It should be noted this thread leads to the "New Version" thread started by S.P. Gardebiter. This thread is added for archival purposes.)*
 
-[^1]: <https://forum.cavestory.org/threads/sues-workshop-new-version-in-development.1592/post-69208>
+[^1]: <https://forum.cavestory.one/threads/sues-workshop-new-version-in-development.1592/post-69208>
 
 ## How to use Sue's Workshop
 

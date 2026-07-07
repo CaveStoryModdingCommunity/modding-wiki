@@ -10,7 +10,7 @@
 
 
 only other evidence of the engine to exist
-https://forum.cavestory.org/threads/kitten-battle-dungeon.5247/
+https://forum.cavestory.one/threads/kitten-battle-dungeon.5247/
 
 https://n0xid.wordpress.com/2012/04/10/on-sues-workshop/
 

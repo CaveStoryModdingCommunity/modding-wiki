@@ -47,7 +47,7 @@ Credit images and ORG files are embedded into the EXE rather than placed into th
 
 ## Sound FX Replacement
 
-Sound Effects are synthesized in real time from PixTone files embedded in the executable. These *cannot* be replaced with Resource Hacker, but there is a tool that allows them to be extracted, edited, and re-pushed into the executable. [SeaTone](https://www.cavestory.org/downloads/tone_pusher_rev1.zip) is an all-in-one suite of tools that allow the user to create new tones to be used in Cave Story.
+Sound Effects are synthesized in real time from PixTone files embedded in the executable. These *cannot* be replaced with Resource Hacker, but there is a tool that allows them to be extracted, edited, and re-pushed into the executable. [SeaTone](https://www.cavestory.one/downloads/tone_pusher_rev1.zip) is an all-in-one suite of tools that allow the user to create new tones to be used in Cave Story.
 
 Pixel himself also released a PixTone editor, aptly named [PixTone](https://www.vector.co.jp/download/file/win95/art/fh351456.html), but many find SeaTone to be more polished and user-friendly.
 
