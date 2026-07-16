@@ -17,7 +17,8 @@ The term TSC is shorthand for *Text SCript*, which is the custom scripting langu
 - You cannot use `<` or `#` in your events for anything other than denoting Event Numbers and the start of a Command. This means that outside of patching or changing game behavior, one cannot display these two special characters in a textbox.
 
 ## TSC Commands
-Here is a list of all the TSC commands that are found in the 2004 Freeware version in alphabetical order:
+### Freeware
+Here is a list of all the TSC commands that are found in the 2004 Freeware version in alphabetical order. All other versions of Cave Story and Cave Story+ support these commands, though the implementation details may differ.
 
 | Command Format | Command Name | Description |
 | --- | --- | --- |
@@ -29,7 +30,7 @@ Here is a list of all the TSC commands that are found in the 2004 Freeware versi
 | <BOAwwww | **BO**ss **A**nimate | Give the Map Boss (eg. Omega) scriptstate W |
 | <BSLwwww | **B**oss **S**how **L**ife | Displays a boss health bar for the entity with event W. Only one can display at a time. Use `<BSL0000` for the Map Boss (eg. Omega) if one is set for the map. You usually need an <ANP or <BOA to actually make the boss start attacking. |
 | <CAT | **C**lear **A**uto **T**urbo | Instantly displays text. Use before a `<MSG/2/3`; works until `<END`. Same command as `<SAT`; evidence suggests it was MEANT to disable `<SAT` but it is bugged to be an exact clone of it. |
-| <CIL | vC**lear **IL**lustration | Clear illustration (during credits). |
+| <CIL | **C**lear **IL**lustration | Clear illustration (during credits). |
 | <CLO | **CLO**se | Close message box. Certain other commands like `<END` will also close it. |
 | <CLR | **CL**ea**R** | Clears the message box but does not close it. Certain other commands like `<END` will also close it. |
 | <CMPwwww:xxxx:yyyy | **C**hange **M**a**P** tile | Change the tile at coordinates W:X to type Y. Produces smoke. |
@@ -92,7 +93,7 @@ Here is a list of all the TSC commands that are found in the 2004 Freeware versi
 | <SILwwww | **S**how **IL**lustration | Show illustration W (during credits). |
 | <SK+wwww | **SK**ipflag + | Sets skipflag W. Valid values are 0 through 63 inclusive. Skipflags are preserved while the game is running, even when reloading a save. They do not save to the save file. Used to skip lengthy cutscenes if the player saw it once and then died. |
 | <SK-wwww | **SK**ipflag - | Clears/Unsets skipflag W. |
-| <SKJwwww:xxxx | **SK**ipflag Jump | Jumps to event Y if skipflag X is set. |
+| <SKJwwww:xxxx | **SK**ipflag **J**ump | Jumps to event W if skipflag X is set. |
 | <SLP | **S**how **L**ocation **P**ortals | Shows the teleporter menu. I'm pretty sure(?) this will ignore any following commands after this one within the same event (since selecting an option will run a different event), but maybe it continues if you select nothing. |
 | <SMC | **S**how **M**y **C**haracter | Unhides the PC after a `<HMC`. You want to use this after a Balrog bossfight as he essentially performs an internal `<HMC` when he grabs the PC. |
 | <SMPxxxx:yyyy | **S**hift/Subtract **M**a**P** tile | Subtracts 1 from the Tile ID at coordinate X:Y, making it transform into the tile to its left in the tile sheet. This means Right-to-Left and Bottom-to-Top. Does not create smoke. |
@@ -113,11 +114,48 @@ Here is a list of all the TSC commands that are found in the 2004 Freeware versi
 | <YNJwwww | **Y**es/**N**o **J**ump | Prompt Yes/No; jump to event W if No is selected. |
 | <ZAM | **Z**ero **A**r**M**s | Sets all weapon levels to zero. |
 
-### Notes:
+
+### Cave Story+ (PC, 2011)
+
+| Command Format | Command Name | Description |
+| --- | --- | --- |
+| <ACHxxxx | **ACH**ievement | Get achievement X. Triggers Steam achievement; no-op in other versions. |
+
+
+### Cave Story+ (Switch)
+
+| Command Format | Command Name | Description |
+| --- | --- | --- |
+| <ACHxxxx | **ACH**ievement | Unlock achievement X. |
+| <2MVwwwx | **2**P **M**o**V**e | Moves the other player to the player that triggered this event. Also generates 4 smoke entities at that location. If `W < 11`, the other player is moved to one block away from this player. Otherwise, the other player is moved to WWW pixels away from this player. If X is 1, the other player is moved to the right side of this player; otherwise they are moved to the left side. |
+| <2PJxxxx | **2P** **J**ump | Jump to event X if in 2-player mode. |
+| <FR2 | **FR**ee **2** | Exits the multi-page item description state (undoes `<KE2`). |
+| <FF-xxxx:yyyy | **F**irst **F**lag **-** | Unsets the first set flag in the range from X to Y (inclusive). |
+| <HM2 | **H**ide **M**y character **2** | Hides only the player that triggered this event (unlike `<HMC`, which hides both). |
+| <I+Nxxxx:yyyy | **I**tem **+ N**umber | Adds item X with maximum amount of Y. For instance `<I+N0014:0002` adds one of item 14 but doesn't let the item count go higher than 2. |
+| <INJxxxx:yyyy:zzzz | **I**tem **N**umber **Jump** | Jump to event Z if player has at least Y quantity of item X. |
+| <KE2 | **KE**y **2** | Enters the multi-page item description state. In this state the OK button doesn't restart the item description event (resets when the cursor is moved, however it does not prevent the cancel button from exiting the inventory). |
+| <POP | **POP** | Restores read position from top of event stack. |
+| <PSHxxx | **P**u**SH** | Saves the next read position to a stack and then jumps to event xxxx. |
+| <RFW | **R**apid **F**ire **W**eapon | Enable rapid firing of weapons. Normally, this only affects the Polar Star. Not used in the Switch version. |
+| <RSP | **R**eset **S**econdary **P**osition | Moves all players to the first player's position. Not used in the Switch version. |
+
+
+### Cave Story+ (Steam, 2026)
+Includes all commands from CS+ for Switch, and also adds the following:
+
+| Command Format | Command Name | Description |
+| --- | --- | --- |
+| <MYCxxxx | **MY C**haracter | Changes the PC's character. See <a href="#player-characters-outfits-myc-cs-2026">Player Character's outfits</a>. |
+| <XX2xxxx | **XX2** | Sets `TimgXXXX.png` over the screen. The "tag" (`xxxx`) for the file name must be exactly 4 characters. |
+
+
+### Notes
 - Invalid commands show an error message displaying the command before the game exits. Unless patched in Freeware, this error text will will be in Japanese, which if your computer is not set to the Japanese Locale, it will display [Mojibake](https://en.wikipedia.org/wiki/Mojibake) gibberish.
 - There is no <EQJ to jump to an Event if an Equip Flag is set. In the original vanilla game, both Booster versions and the Whimsical Star use an arbitrary Event Flag (`<FLJ`) in `ArmsItem.tsc` to determine if the item is equipped or not.
+- CS+ Switch supports a max of 32 events on the stack.
 
-For editing TSC, please see the [this sub-section](freeware-asset-replacement#tsc-editing).
+For editing TSC, please see the [sub-section](freeware-asset-replacement#tsc-editing).
 
 ## Argument lists
 ### Direction (`<FAI`, `<FAO`)
@@ -131,20 +169,39 @@ For editing TSC, please see the [this sub-section](freeware-asset-replacement#ts
 | 0004 | Center | Attempts to make them face the player by giving 0000 to face left or 0002 to face right. |
 | 0005 | INVALID | Ignored/Unchanged. An NPC with direction 3 and transformed into another with `<CNPwwww:xxxx:0005` will keep direction 3. |
 
+
 ### Equip flags (`<EQ+`, `<EQ-`):
 
 | #### | Name | Item id | Notes |
 | --- | --- | --- | --- |
-| 0001 | Booster v0.8 | 0018 | (ignored if v2.0 on) |
-| 0002 | Map System | 0002 | - |
-| 0004 | Arms Barrier | 0019 | - |
-| 0008 | Turbocharge | 0020 | - |
-| 0016 | Curly's Air Tank | 0021 | - |
-| 0032 | Booster v2.0 | 0023 | - |
-| 0064 | Mimiga Mask | 0024 | - |
-| 0128 | Whimsical Star | 0038 | - |
-| 0256 | Nikumaru Counter | 0022 | - |
+| 0001 | Booster v0.8 | 0018 | Ignored if v2.0 on |
+| 0002 | Map System | 0002 |
+| 0004 | Arms Barrier | 0019 |
+| 0008 | Turbocharge | 0020 |
+| 0016 | Curly's Air Tank | 0021 |
+| 0032 | Booster v2.0 | 0023 |
+| 0064 | Mimiga Mask | 0024 |
+| 0128 | Whimsical Star | 0038 |
+| 0256 | Nikumaru Counter | 0022 |
 
-## Other
-TODO:
-- Add CS+, CS+Switch, and Modded Commands
+
+### Player Character's outfits (`<MYC`, CS+ 2026)
+
+| #### | Outfit |
+| --- | --- |
+| 0001 | Quote |
+| 0002 | Curly |
+| 0003 | King |
+| 0004 | Sue |
+| 0005 | Professor Booster |
+| 0006 | Toroko |
+| 0007 | Killer robot |
+| 0008 | Curly Clone |
+
+
+All other values, including invalid ones, reset the outfit to the default.
+
+
+## References
+1. Description of commands from CS+ (Steam, 2026): <https://github.com/Clownacy/boosters-lab-csplus-2026/raw/f6909e254b88e8f045eb595e6d8b1e14a3f44fea/tsc_list.txt>
+2. The first description of CS+ (Switch) commands (has a bit more detail): <https://doukutsu-rs.gitbook.io/docs/references/cs+-switch-reference#tsc-behavior-details-by-periwinkle-on-discord>
